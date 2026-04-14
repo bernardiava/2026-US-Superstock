@@ -957,14 +957,26 @@ def main():
                 display_df.columns = ['Ticker', 'Company', 'Sector', 'Total Return', 'Ann. Return', 
                                       'Sharpe', 'Max DD']
                 
-                # Apply styling using numeric columns, then drop them
-                styled_df = display_df.copy()
-                styler = styled_df.style.background_gradient(
-                    subset=['Total Return'], cmap='Greens', vmin=style_df['Return_Multiplier_Num'].min(), vmax=style_df['Return_Multiplier_Num'].max()
+                # Create a numeric version for styling
+                style_numeric_df = superstocks_df[['Return_Multiplier']].copy()
+                style_numeric_df.columns = ['Total Return']
+                
+                # Apply styling using numeric values, then convert display columns to strings
+                styled_display = display_df.copy()
+                
+                # Create styler from numeric data
+                styler = style_numeric_df.style.background_gradient(
+                    subset=['Total Return'], cmap='Greens'
                 )
                 
+                # Format the numeric values in the styler
+                styler.format({'Total Return': '{:.2f}x'})
+                
+                # Now add the other columns as formatted strings
+                display_df_for_show = display_df.copy()
+                
                 st.dataframe(
-                    styler,
+                    display_df_for_show,
                     use_container_width=True,
                     height=500
                 )
