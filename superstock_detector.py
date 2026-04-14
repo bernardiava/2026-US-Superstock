@@ -941,6 +941,14 @@ def main():
                 # Display top stocks in a styled table
                 display_df = superstocks_df[['Ticker', 'Name', 'Sector', 'Return_Multiplier', 
                                              'Annualized_Return', 'Sharpe_Ratio', 'Max_Drawdown']].head(20).copy()
+                
+                # Create numeric copies for styling
+                style_df = display_df.copy()
+                style_df['Return_Multiplier_Num'] = style_df['Return_Multiplier']
+                style_df['Annualized_Return_Num'] = style_df['Annualized_Return']
+                style_df['Max_Drawdown_Num'] = style_df['Max_Drawdown']
+                
+                # Format as strings for display
                 display_df['Return_Multiplier'] = display_df['Return_Multiplier'].apply(lambda x: f"{x:.2f}x")
                 display_df['Annualized_Return'] = display_df['Annualized_Return'].apply(lambda x: f"{x:.2%}")
                 display_df['Sharpe_Ratio'] = display_df['Sharpe_Ratio'].apply(lambda x: f"{x:.2f}")
@@ -949,10 +957,14 @@ def main():
                 display_df.columns = ['Ticker', 'Company', 'Sector', 'Total Return', 'Ann. Return', 
                                       'Sharpe', 'Max DD']
                 
+                # Apply styling using numeric columns, then drop them
+                styled_df = display_df.copy()
+                styler = styled_df.style.background_gradient(
+                    subset=['Total Return'], cmap='Greens', vmin=style_df['Return_Multiplier_Num'].min(), vmax=style_df['Return_Multiplier_Num'].max()
+                )
+                
                 st.dataframe(
-                    display_df.style.format(precision=2).background_gradient(
-                        subset=['Total Return'], cmap='Greens'
-                    ),
+                    styler,
                     use_container_width=True,
                     height=500
                 )
