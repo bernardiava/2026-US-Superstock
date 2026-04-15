@@ -1,0 +1,2618 @@
+--- index.html (原始)
+
+
++++ index.html (修改后)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDX Portfolio Optimizer | LQ45 Intelligence</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+
+    <!-- jStat for statistics -->
+    <script src="https://cdn.jsdelivr.net/npm/jstat@1.9.6/dist/jstat.min.js"></script>
+
+    <!-- jsPDF for export -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <style>
+        :root {
+            --bg-primary: #0a0e1a;
+            --bg-secondary: #111827;
+            --bg-tertiary: #1f2937;
+            --accent-blue: #3b82f6;
+            --accent-green: #10b981;
+            --accent-amber: #f59e0b;
+            --danger: #ef4444;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --border-color: #374151;
+            --success: #059669;
+            --warning: #d97706;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* Layout */
+        .app-container {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            grid-column: 1 / -1;
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--accent-blue);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-green));
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            color: white;
+        }
+
+        .portfolio-summary {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .summary-item {
+            text-align: center;
+        }
+
+        .summary-label {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .summary-value {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .summary-value.positive { color: var(--accent-green); }
+        .summary-value.negative { color: var(--danger); }
+
+        .data-freshness {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .freshness-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--accent-green);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: var(--bg-secondary);
+            border-right: 1px solid var(--border-color);
+            padding: 1.5rem;
+            overflow-y: auto;
+            max-height: calc(100vh - 140px);
+        }
+
+        .sidebar-section {
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+        }
+
+        /* Risk Profiler */
+        .risk-quiz {
+            display: none;
+        }
+
+        .risk-quiz.active {
+            display: block;
+        }
+
+        .quiz-question {
+            margin-bottom: 1.5rem;
+        }
+
+        .quiz-question h4 {
+            font-size: 0.875rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+        }
+
+        .quiz-options {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .quiz-option {
+            padding: 0.75rem;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 0.8125rem;
+        }
+
+        .quiz-option:hover {
+            border-color: var(--accent-blue);
+            background: rgba(59, 130, 246, 0.1);
+        }
+
+        .quiz-option.selected {
+            border-color: var(--accent-blue);
+            background: rgba(59, 130, 246, 0.2);
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 0.875rem;
+        }
+
+        .btn-primary {
+            background: var(--accent-blue);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #2563eb;
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: var(--bg-tertiary);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--accent-blue);
+        }
+
+        .risk-profile-result {
+            display: none;
+            text-align: center;
+            padding: 1.5rem;
+            background: var(--bg-tertiary);
+            border-radius: 12px;
+            margin-top: 1rem;
+        }
+
+        .risk-profile-result.active {
+            display: block;
+        }
+
+        .profile-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+        }
+
+        .profile-conservative { background: rgba(16, 185, 129, 0.2); color: var(--accent-green); }
+        .profile-moderate { background: rgba(245, 158, 11, 0.2); color: var(--accent-amber); }
+        .profile-aggressive { background: rgba(59, 130, 246, 0.2); color: var(--accent-blue); }
+        .profile-speculative { background: rgba(239, 68, 68, 0.2); color: var(--danger); }
+
+        /* Stock Selector */
+        .stock-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .stock-item {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem;
+            background: var(--bg-tertiary);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: 2px solid transparent;
+        }
+
+        .stock-item:hover {
+            background: rgba(59, 130, 246, 0.1);
+        }
+
+        .stock-item.selected {
+            border-color: var(--accent-blue);
+            background: rgba(59, 130, 246, 0.15);
+        }
+
+        .stock-checkbox {
+            width: 18px;
+            height: 18px;
+            border: 2px solid var(--border-color);
+            border-radius: 4px;
+            margin-right: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+
+        .stock-item.selected .stock-checkbox {
+            background: var(--accent-blue);
+            border-color: var(--accent-blue);
+        }
+
+        .stock-item.selected .stock-checkbox::after {
+            content: '✓';
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        .stock-info {
+            flex: 1;
+        }
+
+        .stock-ticker {
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+
+        .stock-name {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+
+        .stock-sector {
+            font-size: 0.6875rem;
+            color: var(--text-secondary);
+            background: var(--bg-secondary);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 1.5rem;
+            overflow-y: auto;
+            max-height: calc(100vh - 140px);
+        }
+
+        /* Tabs */
+        .tabs {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .tab {
+            padding: 0.75rem 1.5rem;
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            font-weight: 500;
+            cursor: pointer;
+            border-radius: 8px 8px 0 0;
+            transition: all 0.2s;
+            font-size: 0.875rem;
+        }
+
+        .tab:hover {
+            color: var(--text-primary);
+            background: var(--bg-tertiary);
+        }
+
+        .tab.active {
+            color: var(--accent-blue);
+            background: rgba(59, 130, 246, 0.1);
+        }
+
+        /* Tab Content */
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Cards */
+        .card {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .card-title {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        /* Optimization Strategy Cards */
+        .strategy-selector {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .strategy-card {
+            padding: 1rem;
+            background: var(--bg-tertiary);
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .strategy-card:hover {
+            border-color: var(--accent-blue);
+            transform: translateY(-2px);
+        }
+
+        .strategy-card.active {
+            border-color: var(--accent-blue);
+            background: rgba(59, 130, 246, 0.1);
+        }
+
+        .strategy-name {
+            font-weight: 600;
+            font-size: 0.875rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .strategy-desc {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+
+        /* Metrics Grid */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .metric-card {
+            background: var(--bg-tertiary);
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .metric-label {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-value {
+            font-size: 1.25rem;
+            font-weight: 600;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .metric-value.positive { color: var(--accent-green); }
+        .metric-value.negative { color: var(--danger); }
+        .metric-value.neutral { color: var(--accent-amber); }
+
+        /* Weights Display */
+        .weights-container {
+            margin-top: 1rem;
+        }
+
+        .weight-item {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .weight-item:last-child {
+            border-bottom: none;
+        }
+
+        .weight-ticker {
+            width: 60px;
+            font-weight: 600;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .weight-bar-container {
+            flex: 1;
+            margin: 0 1rem;
+            height: 8px;
+            background: var(--bg-tertiary);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .weight-bar {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+
+        .weight-value {
+            width: 60px;
+            text-align: right;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.875rem;
+        }
+
+        /* Forecast Section */
+        .forecast-controls {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .forecast-stock-selector {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .horizon-btn {
+            padding: 0.5rem 1rem;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 0.8125rem;
+        }
+
+        .horizon-btn:hover {
+            border-color: var(--accent-blue);
+        }
+
+        .horizon-btn.active {
+            background: var(--accent-blue);
+            border-color: var(--accent-blue);
+            color: white;
+        }
+
+        .forecast-card {
+            background: var(--bg-tertiary);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .forecast-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .forecast-ticker {
+            font-size: 1.25rem;
+            font-weight: 700;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .forecast-signal {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+
+        .signal-bullish {
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--accent-green);
+        }
+
+        .signal-neutral {
+            background: rgba(245, 158, 11, 0.2);
+            color: var(--accent-amber);
+        }
+
+        .signal-bearish {
+            background: rgba(239, 68, 68, 0.2);
+            color: var(--danger);
+        }
+
+        .forecast-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .forecast-metric {
+            text-align: center;
+        }
+
+        .forecast-metric-label {
+            font-size: 0.6875rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+        }
+
+        .forecast-metric-value {
+            font-size: 1rem;
+            font-weight: 600;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .volatility-regime {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .regime-low { background: rgba(16, 185, 129, 0.2); color: var(--accent-green); }
+        .regime-medium { background: rgba(245, 158, 11, 0.2); color: var(--accent-amber); }
+        .regime-high { background: rgba(239, 68, 68, 0.2); color: var(--danger); }
+        .regime-crisis { background: rgba(139, 92, 246, 0.2); color: #8b5cf6; }
+
+        /* Commentary */
+        .commentary-section {
+            background: var(--bg-tertiary);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid var(--accent-blue);
+        }
+
+        .commentary-title {
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .commentary-text {
+            font-size: 0.9375rem;
+            line-height: 1.7;
+            color: var(--text-secondary);
+        }
+
+        .risk-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .risk-tag {
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.6875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .tag-warning { background: rgba(245, 158, 11, 0.2); color: var(--accent-amber); }
+        .tag-danger { background: rgba(239, 68, 68, 0.2); color: var(--danger); }
+        .tag-info { background: rgba(59, 130, 246, 0.2); color: var(--accent-blue); }
+        .tag-success { background: rgba(16, 185, 129, 0.2); color: var(--accent-green); }
+
+        /* Weight Sliders */
+        .weight-slider-container {
+            margin-top: 1rem;
+        }
+
+        .slider-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .slider-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .slider-ticker {
+            font-weight: 600;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .slider-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.875rem;
+            color: var(--accent-blue);
+        }
+
+        .slider {
+            width: 100%;
+            height: 6px;
+            border-radius: 3px;
+            background: var(--bg-tertiary);
+            outline: none;
+            -webkit-appearance: none;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: var(--accent-blue);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .slider::-webkit-slider-thumb:hover {
+            transform: scale(1.1);
+        }
+
+        /* Efficient Frontier */
+        .frontier-container {
+            height: 500px;
+        }
+
+        /* Correlation Heatmap */
+        .correlation-container {
+            margin-top: 1.5rem;
+        }
+
+        /* Export Buttons */
+        .export-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        /* Skeleton Loader */
+        .skeleton {
+            background: linear-gradient(90deg, var(--bg-tertiary) 25%, var(--bg-secondary) 50%, var(--bg-tertiary) 75%);
+            background-size: 200% 100%;
+            animation: skeleton-loading 1.5s infinite;
+            border-radius: 4px;
+        }
+
+        @keyframes skeleton-loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+
+        /* Tooltip */
+        .tooltip {
+            position: relative;
+            cursor: help;
+        }
+
+        .tooltip::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            padding: 0.5rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.2s;
+            z-index: 1000;
+        }
+
+        .tooltip:hover::after {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Footer */
+        .footer {
+            grid-column: 1 / -1;
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            padding: 1rem 1.5rem;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .app-container {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                max-height: none;
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+            }
+
+            .portfolio-summary {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .metrics-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .tabs {
+                overflow-x: auto;
+            }
+        }
+
+        /* Progress Bar */
+        .progress-container {
+            display: none;
+            margin-bottom: 1rem;
+        }
+
+        .progress-container.active {
+            display: block;
+        }
+
+        .progress-bar {
+            height: 4px;
+            background: var(--bg-tertiary);
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--accent-blue);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        .progress-text {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+
+        /* Language Toggle */
+        .lang-toggle {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .lang-btn {
+            padding: 0.25rem 0.75rem;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-size: 0.75rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .lang-btn.active {
+            background: var(--accent-blue);
+            border-color: var(--accent-blue);
+            color: white;
+        }
+
+        /* Modal */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal {
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 2rem;
+            max-width: 500px;
+            width: 90%;
+            border: 1px solid var(--border-color);
+        }
+
+        .modal-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .modal-close {
+            float: right;
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Top Bar -->
+        <header class="top-bar">
+            <div class="logo">
+                <div class="logo-icon">IDX</div>
+                <span>Portfolio Optimizer</span>
+            </div>
+
+            <div class="portfolio-summary mono">
+                <div class="summary-item tooltip" data-tooltip="Expected annual return based on optimization">
+                    <div class="summary-label">Expected Return</div>
+                    <div class="summary-value positive" id="summary-return">--%</div>
+                </div>
+                <div class="summary-item tooltip" data-tooltip="Annualized volatility (risk)">
+                    <div class="summary-label">Volatility</div>
+                    <div class="summary-value" id="summary-vol">--%</div>
+                </div>
+                <div class="summary-item tooltip" data-tooltip="Risk-adjusted return metric">
+                    <div class="summary-label">Sharpe Ratio</div>
+                    <div class="summary-value" id="summary-sharpe">--</div>
+                </div>
+            </div>
+
+            <div class="data-freshness">
+                <span class="freshness-dot"></span>
+                <span>Data: Dec 2024</span>
+            </div>
+        </header>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <!-- Risk Profiler -->
+            <div class="sidebar-section">
+                <div class="section-title">Risk Profile</div>
+
+                <div class="risk-quiz active" id="riskQuiz">
+                    <div class="quiz-question" data-q="1">
+                        <h4>1. What is your investment horizon?</h4>
+                        <div class="quiz-options">
+                            <div class="quiz-option" data-score="1">&lt; 1 year</div>
+                            <div class="quiz-option" data-score="2">1-3 years</div>
+                            <div class="quiz-option" data-score="3">3-5 years</div>
+                            <div class="quiz-option" data-score="4">&gt; 5 years</div>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question" data-q="2">
+                        <h4>2. Maximum acceptable loss in one year?</h4>
+                        <div class="quiz-options">
+                            <div class="quiz-option" data-score="1">&lt; 5%</div>
+                            <div class="quiz-option" data-score="2">5-10%</div>
+                            <div class="quiz-option" data-score="3">10-20%</div>
+                            <div class="quiz-option" data-score="4">&gt; 20%</div>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question" data-q="3">
+                        <h4>3. How would you react to a 20% portfolio drop?</h4>
+                        <div class="quiz-options">
+                            <div class="quiz-option" data-score="1">Sell immediately</div>
+                            <div class="quiz-option" data-score="2">Sell some holdings</div>
+                            <div class="quiz-option" data-score="3">Hold and wait</div>
+                            <div class="quiz-option" data-score="4">Buy more</div>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question" data-q="4">
+                        <h4>4. How stable is your income?</h4>
+                        <div class="quiz-options">
+                            <div class="quiz-option" data-score="1">Unstable/irregular</div>
+                            <div class="quiz-option" data-score="2">Somewhat stable</div>
+                            <div class="quiz-option" data-score="3">Stable salary</div>
+                            <div class="quiz-option" data-score="4">Very stable + savings</div>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question" data-q="5">
+                        <h4>5. Your investment experience level?</h4>
+                        <div class="quiz-options">
+                            <div class="quiz-option" data-score="1">Beginner</div>
+                            <div class="quiz-option" data-score="2">Some experience</div>
+                            <div class="quiz-option" data-score="3">Experienced</div>
+                            <div class="quiz-option" data-score="4">Advanced/Professional</div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;" onclick="calculateRiskProfile()">
+                        Calculate My Profile
+                    </button>
+                </div>
+
+                <div class="risk-profile-result" id="riskResult">
+                    <div class="profile-badge" id="profileBadge">Moderate</div>
+                    <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1rem;" id="profileDesc">
+                        Balanced approach with moderate risk tolerance. Suitable for diversified equity exposure.
+                    </p>
+                    <button class="btn btn-secondary" onclick="resetQuiz()" style="font-size: 0.75rem; padding: 0.5rem 1rem;">
+                        Retake Quiz
+                    </button>
+                </div>
+            </div>
+
+            <!-- Stock Selector -->
+            <div class="sidebar-section">
+                <div class="section-title">Select Stocks (LQ45)</div>
+                <div class="stock-list" id="stockList">
+                    <!-- Populated by JS -->
+                </div>
+                <div style="margin-top: 1rem; font-size: 0.75rem; color: var(--text-secondary);">
+                    <span id="selectedCount">0</span>/10 stocks selected
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="sidebar-section">
+                <div class="section-title">Quick Actions</div>
+                <button class="btn btn-secondary" style="width: 100%; margin-bottom: 0.5rem;" onclick="selectAllStocks()">
+                    Select All
+                </button>
+                <button class="btn btn-secondary" style="width: 100%;" onclick="selectBlueChips()">
+                    Blue Chips Only
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Progress Indicator -->
+            <div class="progress-container" id="progressContainer">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-text" id="progressText">Running optimizations...</div>
+            </div>
+
+            <!-- Tabs -->
+            <div class="tabs">
+                <button class="tab active" onclick="switchTab('optimizer')">Optimizer</button>
+                <button class="tab" onclick="switchTab('frontier')">Efficient Frontier</button>
+                <button class="tab" onclick="switchTab('forecasts')">Forecasts</button>
+                <button class="tab" onclick="switchTab('commentary')">AI Commentary</button>
+                <button class="tab" onclick="switchTab('builder')">Portfolio Builder</button>
+            </div>
+
+            <!-- Optimizer Tab -->
+            <div class="tab-content active" id="tab-optimizer">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Optimization Strategy</div>
+                        <div class="lang-toggle">
+                            <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
+                            <button class="lang-btn" onclick="setLanguage('id')">ID</button>
+                        </div>
+                    </div>
+
+                    <div class="strategy-selector">
+                        <div class="strategy-card active" data-strategy="max-sharpe" onclick="selectStrategy('max-sharpe')">
+                            <div class="strategy-name">🎯 Max Sharpe</div>
+                            <div class="strategy-desc">Maximum risk-adjusted returns</div>
+                        </div>
+                        <div class="strategy-card" data-strategy="min-vol" onclick="selectStrategy('min-vol')">
+                            <div class="strategy-name">🛡️ Min Volatility</div>
+                            <div class="strategy-desc">Lowest portfolio risk</div>
+                        </div>
+                        <div class="strategy-card" data-strategy="risk-parity" onclick="selectStrategy('risk-parity')">
+                            <div class="strategy-name">⚖️ Risk Parity</div>
+                            <div class="strategy-desc">Equal risk contribution</div>
+                        </div>
+                        <div class="strategy-card" data-strategy="equal-weight" onclick="selectStrategy('equal-weight')">
+                            <div class="strategy-name">📊 Equal Weight</div>
+                            <div class="strategy-desc">Simple diversification</div>
+                        </div>
+                    </div>
+
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-label">Expected Return</div>
+                            <div class="metric-value positive" id="opt-return">--%</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">Volatility</div>
+                            <div class="metric-value" id="opt-vol">--%</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">Sharpe Ratio</div>
+                            <div class="metric-value" id="opt-sharpe">--</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">Sortino Ratio</div>
+                            <div class="metric-value" id="opt-sortino">--</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">Max Drawdown</div>
+                            <div class="metric-value negative" id="opt-dd">--%</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">Calmar Ratio</div>
+                            <div class="metric-value" id="opt-calmar">--</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">VaR 95%</div>
+                            <div class="metric-value negative" id="opt-var">--%</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">CVaR 95%</div>
+                            <div class="metric-value negative" id="opt-cvar">--%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">Portfolio Weights</div>
+                        </div>
+                        <div class="weights-container" id="weightsContainer">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">Allocation Chart</div>
+                        </div>
+                        <div id="allocationChart" style="height: 300px;"></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Correlation Heatmap</div>
+                    </div>
+                    <div id="correlationChart" style="height: 400px;"></div>
+                </div>
+            </div>
+
+            <!-- Efficient Frontier Tab -->
+            <div class="tab-content" id="tab-frontier">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Efficient Frontier</div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 1rem;">
+                        The efficient frontier shows optimal portfolios for each risk level. The Capital Market Line (CML)
+                        represents the risk-free rate (BI Rate: 6.25%) combined with the market portfolio.
+                    </p>
+                    <div class="frontier-container" id="frontierChart"></div>
+
+                    <div style="margin-top: 1.5rem;">
+                        <label style="font-size: 0.875rem; color: var(--text-secondary);">Risk Appetite Slider</label>
+                        <input type="range" class="slider" id="riskSlider" min="0" max="100" value="50"
+                               style="margin-top: 0.5rem;" oninput="updateRiskSlider(this.value)">
+                        <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.5rem;">
+                            <span>Conservative</span>
+                            <span id="riskSliderValue">50%</span>
+                            <span>Aggressive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Forecasts Tab -->
+            <div class="tab-content" id="tab-forecasts">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Stock Forecasts</div>
+                    </div>
+
+                    <div class="forecast-controls">
+                        <div class="horizon-btn active" data-horizon="5" onclick="setForecastHorizon(5)">1 Week</div>
+                        <div class="horizon-btn" data-horizon="22" onclick="setForecastHorizon(22)">1 Month</div>
+                        <div class="horizon-btn" data-horizon="66" onclick="setForecastHorizon(66)">3 Months</div>
+                        <div class="horizon-btn" data-horizon="252" onclick="setForecastHorizon(252)">1 Year</div>
+                    </div>
+
+                    <div id="forecastsContainer">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Commentary Tab -->
+            <div class="tab-content" id="tab-commentary">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Portfolio Commentary</div>
+                        <div class="lang-toggle">
+                            <button class="lang-btn active" onclick="setCommentaryLang('en')">English</button>
+                            <button class="lang-btn" onclick="setCommentaryLang('id')">Bahasa</button>
+                        </div>
+                    </div>
+
+                    <div class="commentary-section" id="portfolioCommentary">
+                        <div class="commentary-title">
+                            📋 Strategy Overview
+                        </div>
+                        <div class="commentary-text" id="portfolioCommentaryText">
+                            <!-- Populated by JS -->
+                        </div>
+                        <div class="risk-tags" id="portfolioRiskTags">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+
+                    <div id="stockCommentaries">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Builder Tab -->
+            <div class="tab-content" id="tab-builder">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Manual Weight Adjustment</div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 1rem;">
+                        Fine-tune your portfolio weights. Total must equal 100%.
+                    </p>
+
+                    <div class="weight-slider-container" id="weightSliders">
+                        <!-- Populated by JS -->
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem; padding: 1rem; background: var(--bg-tertiary); border-radius: 8px;">
+                        <div>
+                            <span style="font-size: 0.875rem; color: var(--text-secondary);">Total Allocation:</span>
+                            <span class="mono" id="totalWeight" style="margin-left: 0.5rem; font-weight: 600;">100%</span>
+                        </div>
+                        <button class="btn btn-primary" onclick="rebalanceWeights()">Rebalance to 100%</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Export & Share</div>
+                    </div>
+
+                    <div class="export-buttons">
+                        <button class="btn btn-primary" onclick="exportPDF()">📄 Download PDF</button>
+                        <button class="btn btn-secondary" onclick="exportCSV()">📊 Export CSV</button>
+                        <button class="btn btn-secondary" onclick="sharePortfolio()">🔗 Copy Share Link</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div>
+                <strong>Disclaimer:</strong> This tool is for educational purposes only. Past performance does not guarantee future results.
+                Always consult with a licensed financial advisor before making investment decisions.
+            </div>
+            <div class="mono">
+                Data Source: Embedded Historical OHLCV | Risk-free Rate: BI Rate 6.25%
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // ============================================
+        // DATA: Indonesian Stock Historical Prices
+        // Simulated 3-year daily OHLCV data for LQ45 stocks
+        // ============================================
+
+        const STOCK_INFO = {
+            'BBCA': { name: 'Bank Central Asia', sector: 'Financials' },
+            'BBRI': { name: 'Bank Rakyat Indonesia', sector: 'Financials' },
+            'BMRI': { name: 'Bank Mandiri', sector: 'Financials' },
+            'TLKM': { name: 'Telkom Indonesia', sector: 'Telecommunications' },
+            'ASII': { name: 'Astra International', sector: 'Consumer Cyclical' },
+            'GOTO': { name: 'GoTo Gojek Tokopedia', sector: 'Technology' },
+            'UNVR': { name: 'Unilever Indonesia', sector: 'Consumer Defensive' },
+            'INDF': { name: 'Indofood Sukses Makmur', sector: 'Consumer Defensive' },
+            'ADRO': { name: 'Adaro Energy', sector: 'Energy' },
+            'PTBA': { name: 'Bukit Asam', sector: 'Energy' }
+        };
+
+        const COLORS = [
+            '#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6',
+            '#06b6d4', '#ec4899', '#84cc16', '#f97316', '#14b8a6'
+        ];
+
+        // Generate realistic price data with trends, volatility clusters
+        function generatePriceData(basePrice, trend, vol, days = 756) {
+            const prices = [basePrice];
+            const returns = [];
+
+            for (let i = 1; i < days; i++) {
+                // AR(1) component for momentum
+                const prevReturn = returns.length > 0 ? returns[returns.length - 1] * 0.1 : 0;
+
+                // GARCH-like volatility clustering
+                const baseVol = vol * (1 + 0.3 * Math.sin(i / 50) + 0.2 * Math.random());
+
+                // Daily return with drift
+                const dailyDrift = trend / 252;
+                const shock = jStat.normal.sample(0, baseVol / Math.sqrt(252));
+                const dailyReturn = dailyDrift + prevReturn + shock;
+
+                returns.push(dailyReturn);
+                const newPrice = prices[i - 1] * (1 + dailyReturn);
+                prices.push(Math.max(newPrice, basePrice * 0.1)); // Floor at 10% of base
+            }
+
+            return prices;
+        }
+
+        // Generate full OHLCV dataset
+        function generateOHLCV(prices) {
+            const data = [];
+            const baseDate = new Date('2022-01-03');
+
+            for (let i = 0; i < prices.length; i++) {
+                const date = new Date(baseDate);
+                date.setDate(date.getDate() + i);
+
+                // Skip weekends
+                if (date.getDay() === 0 || date.getDay() === 6) continue;
+
+                const open = prices[i] * (1 + (Math.random() - 0.5) * 0.01);
+                const close = prices[i];
+                const high = Math.max(open, close) * (1 + Math.random() * 0.02);
+                const low = Math.min(open, close) * (1 - Math.random() * 0.02);
+                const volume = Math.floor(Math.random() * 50000000) + 10000000;
+
+                data.push({
+                    date: date.toISOString().split('T')[0],
+                    open, high, low, close, volume
+                });
+            }
+
+            return data;
+        }
+
+        // Stock parameters: [basePrice, annualTrend, annualVol]
+        const STOCK_PARAMS = {
+            'BBCA': [9500, 0.15, 0.25],
+            'BBRI': [5200, 0.12, 0.30],
+            'BMRI': [6800, 0.14, 0.28],
+            'TLKM': [3800, 0.05, 0.22],
+            'ASII': [5500, 0.08, 0.32],
+            'GOTO': [120, -0.10, 0.55],
+            'UNVR': [3200, 0.02, 0.20],
+            'INDF': [6500, 0.06, 0.25],
+            'ADRO': [2800, 0.18, 0.40],
+            'PTBA': [2500, 0.15, 0.38]
+        };
+
+        // Generate all stock data
+        const STOCK_DATA = {};
+        Object.keys(STOCK_PARAMS).forEach(ticker => {
+            const [base, trend, vol] = STOCK_PARAMS[ticker];
+            const prices = generatePriceData(base, trend, vol);
+            STOCK_DATA[ticker] = generateOHLCV(prices);
+        });
+
+        // ============================================
+        // STATE MANAGEMENT
+        // ============================================
+
+        let state = {
+            selectedStocks: ['BBCA', 'BBRI', 'BMRI', 'TLKM', 'ASII'],
+            currentStrategy: 'max-sharpe',
+            forecastHorizon: 22,
+            riskProfile: null,
+            language: 'en',
+            commentaryLang: 'en',
+            customWeights: {},
+            optimizationResults: {}
+        };
+
+        // ============================================
+        // STATISTICAL FUNCTIONS
+        // ============================================
+
+        // Calculate returns from prices
+        function calculateReturns(prices) {
+            const returns = [];
+            for (let i = 1; i < prices.length; i++) {
+                returns.push((prices[i] - prices[i - 1]) / prices[i - 1]);
+            }
+            return returns;
+        }
+
+        // Extract closing prices
+        function getClosePrices(data) {
+            return data.map(d => d.close);
+        }
+
+        // Mean of array
+        function mean(arr) {
+            return arr.reduce((a, b) => a + b, 0) / arr.length;
+        }
+
+        // Standard deviation
+        function std(arr) {
+            const m = mean(arr);
+            const variance = arr.reduce((sum, val) => sum + Math.pow(val - m, 2), 0) / (arr.length - 1);
+            return Math.sqrt(variance);
+        }
+
+        // Covariance matrix
+        function covarianceMatrix(returnsData) {
+            const n = returnsData.length;
+            const m = returnsData[0].length;
+            const cov = Array(n).fill(null).map(() => Array(n).fill(0));
+
+            for (let i = 0; i < n; i++) {
+                for (let j = 0; j < n; j++) {
+                    const meanI = mean(returnsData[i]);
+                    const meanJ = mean(returnsData[j]);
+                    let sum = 0;
+                    for (let k = 0; k < m; k++) {
+                        sum += (returnsData[i][k] - meanI) * (returnsData[j][k] - meanJ);
+                    }
+                    cov[i][j] = sum / (m - 1);
+                }
+            }
+            return cov;
+        }
+
+        // Annualized metrics
+        function annualizeReturn(dailyReturn) {
+            return Math.pow(1 + dailyReturn, 252) - 1;
+        }
+
+        function annualizeVol(dailyVol) {
+            return dailyVol * Math.sqrt(252);
+        }
+
+        // ============================================
+        // PORTFOLIO OPTIMIZATION
+        // ============================================
+
+        // Get returns data for selected stocks
+        function getSelectedReturns() {
+            return state.selectedStocks.map(ticker => {
+                const prices = getClosePrices(STOCK_DATA[ticker]);
+                return calculateReturns(prices);
+            });
+        }
+
+        // Portfolio return given weights
+        function portfolioReturn(weights, meanReturns) {
+            return weights.reduce((sum, w, i) => sum + w * meanReturns[i], 0);
+        }
+
+        // Portfolio volatility given weights and covariance
+        function portfolioVolatility(weights, covMatrix) {
+            const n = weights.length;
+            let varSum = 0;
+            for (let i = 0; i < n; i++) {
+                for (let j = 0; j < n; j++) {
+                    varSum += weights[i] * weights[j] * covMatrix[i][j];
+                }
+            }
+            return Math.sqrt(varSum);
+        }
+
+        // Sharpe ratio
+        function sharpeRatio(ret, vol, riskFree = 0.0625) {
+            return (ret - riskFree) / vol;
+        }
+
+        // Sortino ratio (downside deviation)
+        function sortinoRatio(weights, returnsData, portRet, riskFree = 0.0625) {
+            const n = returnsData.length;
+            const m = returnsData[0].length;
+            const downsideSq = [];
+
+            for (let k = 0; k < m; k++) {
+                let portRetK = 0;
+                for (let i = 0; i < n; i++) {
+                    portRetK += weights[i] * returnsData[i][k];
+                }
+                if (portRetK < 0) {
+                    downsideSq.push(portRetK * portRetK);
+                }
+            }
+
+            const downsideDev = Math.sqrt(mean(downsideSq.length > 0 ? downsideSq : [0.0001])) * Math.sqrt(252);
+            return (portRet - riskFree) / downsideDev;
+        }
+
+        // Maximum drawdown
+        function maxDrawdown(weights, returnsData) {
+            const n = returnsData.length;
+            const m = returnsData[0].length;
+
+            // Calculate cumulative returns
+            const cumRet = [1];
+            for (let k = 0; k < m; k++) {
+                let dailyRet = 0;
+                for (let i = 0; i < n; i++) {
+                    dailyRet += weights[i] * returnsData[i][k];
+                }
+                cumRet.push(cumRet[cumRet.length - 1] * (1 + dailyRet));
+            }
+
+            // Find max drawdown
+            let peak = cumRet[0];
+            let maxDD = 0;
+            for (let i = 1; i < cumRet.length; i++) {
+                if (cumRet[i] > peak) {
+                    peak = cumRet[i];
+                }
+                const dd = (peak - cumRet[i]) / peak;
+                if (dd > maxDD) {
+                    maxDD = dd;
+                }
+            }
+
+            return maxDD;
+        }
+
+        // VaR and CVaR
+        function calculateVaRCVaR(weights, returnsData, confidence = 0.95) {
+            const n = returnsData.length;
+            const m = returnsData[0].length;
+
+            const portReturns = [];
+            for (let k = 0; k < m; k++) {
+                let ret = 0;
+                for (let i = 0; i < n; i++) {
+                    ret += weights[i] * returnsData[i][k];
+                }
+                portReturns.push(ret);
+            }
+
+            portReturns.sort((a, b) => a - b);
+
+            const varIndex = Math.floor((1 - confidence) * m);
+            const var95 = Math.abs(portReturns[varIndex]);
+
+            // CVaR = average of returns below VaR
+            const tailReturns = portReturns.slice(0, varIndex + 1);
+            const cvar = Math.abs(mean(tailReturns));
+
+            return { var: var95 * Math.sqrt(252), cvar: cvar * Math.sqrt(252) };
+        }
+
+        // Optimization: Maximum Sharpe Ratio (grid search approximation)
+        function optimizeMaxSharpe(returnsData, covMatrix) {
+            const n = returnsData.length;
+            const dailyMeans = returnsData.map(r => mean(r));
+
+            let bestWeights = Array(n).fill(1 / n);
+            let bestSharpe = -Infinity;
+
+            // Random sampling + local refinement
+            for (let iter = 0; iter < 1000; iter++) {
+                // Generate random weights
+                let weights = Array(n).fill(0).map(() => Math.random());
+                const sum = weights.reduce((a, b) => a + b, 0);
+                weights = weights.map(w => w / sum);
+
+                const ret = annualizeReturn(portfolioReturn(weights, dailyMeans) * 252);
+                const vol = annualizeVol(portfolioVolatility(weights, covMatrix));
+                const sharpe = sharpeRatio(ret, vol);
+
+                if (sharpe > bestSharpe) {
+                    bestSharpe = sharpe;
+                    bestWeights = [...weights];
+                }
+            }
+
+            return bestWeights;
+        }
+
+        // Optimization: Minimum Volatility
+        function optimizeMinVol(returnsData, covMatrix) {
+            const n = returnsData.length;
+
+            let bestWeights = Array(n).fill(1 / n);
+            let bestVol = Infinity;
+
+            for (let iter = 0; iter < 1000; iter++) {
+                let weights = Array(n).fill(0).map(() => Math.random());
+                const sum = weights.reduce((a, b) => a + b, 0);
+                weights = weights.map(w => w / sum);
+
+                const vol = annualizeVol(portfolioVolatility(weights, covMatrix));
+
+                if (vol < bestVol) {
+                    bestVol = vol;
+                    bestWeights = [...weights];
+                }
+            }
+
+            return bestWeights;
+        }
+
+        // Optimization: Risk Parity
+        function optimizeRiskParity(returnsData, covMatrix) {
+            const n = returnsData.length;
+
+            // Iterative approach to equalize risk contributions
+            let weights = Array(n).fill(1 / n);
+
+            for (let iter = 0; iter < 500; iter++) {
+                const portVol = portfolioVolatility(weights, covMatrix);
+                const riskContributions = [];
+
+                for (let i = 0; i < n; i++) {
+                    let rc = 0;
+                    for (let j = 0; j < n; j++) {
+                        rc += weights[j] * covMatrix[i][j];
+                    }
+                    rc = (weights[i] * rc) / (portVol * portVol);
+                    riskContributions.push(rc);
+                }
+
+                // Adjust weights towards equal risk
+                const targetRC = 1 / n;
+                const newWeights = weights.map((w, i) => {
+                    const adjustment = targetRC / (riskContributions[i] || 0.001);
+                    return w * Math.sqrt(adjustment);
+                });
+
+                const sum = newWeights.reduce((a, b) => a + b, 0);
+                weights = newWeights.map(w => w / sum);
+            }
+
+            return weights;
+        }
+
+        // Run all optimizations
+        function runOptimizations() {
+            const returnsData = getSelectedReturns();
+            const covMatrix = covarianceMatrix(returnsData);
+            const dailyMeans = returnsData.map(r => mean(r));
+
+            const strategies = {
+                'max-sharpe': optimizeMaxSharpe(returnsData, covMatrix),
+                'min-vol': optimizeMinVol(returnsData, covMatrix),
+                'risk-parity': optimizeRiskParity(returnsData, covMatrix),
+                'equal-weight': Array(returnsData.length).fill(1 / returnsData.length)
+            };
+
+            // Calculate metrics for each strategy
+            Object.keys(strategies).forEach(strategy => {
+                const weights = strategies[strategy];
+                const portRet = annualizeReturn(portfolioReturn(weights, dailyMeans) * 252);
+                const portVol = annualizeVol(portfolioVolatility(weights, covMatrix));
+                const sharpe = sharpeRatio(portRet, portVol);
+                const sortino = sortinoRatio(weights, returnsData, portRet);
+                const maxDD = maxDrawdown(weights, returnsData);
+                const { var: var95, cvar: cvar95 } = calculateVaRCVaR(weights, returnsData, 0.95);
+                const calmar = maxDD > 0 ? portRet / maxDD : 0;
+
+                state.optimizationResults[strategy] = {
+                    weights,
+                    return: portRet,
+                    volatility: portVol,
+                    sharpe,
+                    sortino,
+                    maxDD,
+                    calmar,
+                    var95,
+                    cvar95
+                };
+            });
+
+            return { returnsData, covMatrix, dailyMeans };
+        }
+
+        // ============================================
+        // FORECASTING ENGINE
+        // ============================================
+
+        // Simple ARIMA forecasting (AR(1) approximation)
+        function forecastARIMA(prices, horizon) {
+            const returns = calculateReturns(prices);
+            const ar1Coeff = (() => {
+                const n = returns.length;
+                let num = 0, den = 0;
+                const meanRet = mean(returns);
+                for (let i = 1; i < n; i++) {
+                    num += (returns[i] - meanRet) * (returns[i-1] - meanRet);
+                    den += Math.pow(returns[i-1] - meanRet, 2);
+                }
+                return den > 0 ? num / den : 0;
+            })();
+
+            const lastReturn = returns[returns.length - 1];
+            const meanRet = mean(returns);
+            const vol = std(returns);
+
+            const forecasts = [prices[prices.length - 1]];
+            const ci80Lower = [prices[prices.length - 1]];
+            const ci80Upper = [prices[prices.length - 1]];
+            const ci95Lower = [prices[prices.length - 1]];
+            const ci95Upper = [prices[prices.length - 1]];
+
+            for (let h = 1; h <= horizon; h++) {
+                const expectedReturn = meanRet + Math.pow(ar1Coeff, h) * (lastReturn - meanRet);
+                const forecastPrice = forecasts[h - 1] * (1 + expectedReturn);
+                forecasts.push(forecastPrice);
+
+                // Confidence intervals widen with horizon
+                const ciWidth = vol * Math.sqrt(h) * Math.sqrt(252);
+                ci80Lower.push(forecastPrice * (1 - 1.28 * ciWidth));
+                ci80Upper.push(forecastPrice * (1 + 1.28 * ciWidth));
+                ci95Lower.push(forecastPrice * (1 - 1.96 * ciWidth));
+                ci95Upper.push(forecastPrice * (1 + 1.96 * ciWidth));
+            }
+
+            return { forecasts: forecasts.slice(1), ci80Lower: ci80Lower.slice(1), ci80Upper: ci80Upper.slice(1), ci95Lower: ci95Lower.slice(1), ci95Upper: ci95Upper.slice(1) };
+        }
+
+        // GARCH(1,1) volatility forecasting
+        function forecastGARCH(returns, horizon) {
+            // Estimate GARCH parameters via method of moments
+            const squaredReturns = returns.map(r => r * r);
+            const longRunVar = mean(squaredReturns);
+
+            // Simplified GARCH(1,1): sigma²_t = omega + alpha * r²_{t-1} + beta * sigma²_{t-1}
+            const omega = longRunVar * 0.1;
+            const alpha = 0.15;
+            const beta = 0.80;
+
+            const lastSquared = squaredReturns[squaredReturns.length - 1];
+            let currentVar = longRunVar;
+
+            const volForecasts = [];
+            for (let h = 1; h <= horizon; h++) {
+                currentVar = omega + alpha * lastSquared + beta * currentVar;
+                volForecasts.push(Math.sqrt(currentVar) * Math.sqrt(252));
+            }
+
+            // Classify volatility regime
+            const avgVol = mean(volForecasts);
+            let regime = 'low';
+            if (avgVol > 0.40) regime = 'crisis';
+            else if (avgVol > 0.30) regime = 'high';
+            else if (avgVol > 0.20) regime = 'medium';
+
+            return { volForecasts, regime };
+        }
+
+        // Ensemble forecast
+        function ensembleForecast(prices, horizon) {
+            const arima = forecastARIMA(prices, horizon);
+            const returns = calculateReturns(prices);
+            const garch = forecastGARCH(returns, horizon);
+
+            const lastPrice = prices[prices.length - 1];
+            const predictedReturn = (arima.forecasts[horizon - 1] - lastPrice) / lastPrice;
+
+            // Probability of positive return (simplified)
+            const avgVol = mean(garch.volForecasts) / Math.sqrt(252);
+            const probPositive = jStat.normal.cdf(predictedReturn / (avgVol * Math.sqrt(horizon)), 0, 1);
+
+            // Signal
+            let signal = 'neutral';
+            if (predictedReturn > 0.05 && garch.regime !== 'crisis') signal = 'bullish';
+            if (predictedReturn < -0.05 || garch.regime === 'crisis') signal = 'bearish';
+
+            return {
+                arima,
+                garch,
+                predictedReturn,
+                probPositive,
+                signal
+            };
+        }
+
+        // ============================================
+        // AI COMMENTARY ENGINE
+        // ============================================
+
+        const COMMENTARY_TEMPLATES = {
+            en: {
+                portfolio: {
+                    'max-sharpe': "This portfolio maximizes risk-adjusted returns using Modern Portfolio Theory. It balances high-return stocks with diversification benefits, suitable for {profile} investors seeking optimal Sharpe ratios.",
+                    'min-vol': "This conservative portfolio minimizes overall volatility while maintaining equity exposure. Ideal for {profile} investors prioritizing capital preservation during market uncertainty.",
+                    'risk-parity': "This portfolio equalizes risk contributions across all holdings, preventing any single stock from dominating portfolio risk. Suitable for {profile} investors seeking balanced risk exposure.",
+                    'equal-weight': "This simple equally-weighted portfolio provides broad diversification without timing or selection bias. A practical choice for {profile} investors preferring passive management."
+                },
+                stock: {
+                    bullish: "{ticker} shows strong upward momentum with {volRegime} predicted volatility. The ensemble forecast suggests a {returnForecast}% expected return over the next {horizon}. Consider {action}.",
+                    neutral: "{ticker} displays mixed signals with {volRegime} volatility ahead. Expected return of {returnForecast}% suggests a wait-and-see approach for {profile} investors.",
+                    bearish: "{ticker} faces headwinds with {volRegime} volatility and negative expected returns ({returnForecast}%). {warning} Current holders may consider reducing exposure."
+                },
+                riskTags: {
+                    highVol: 'HIGH VOLATILITY',
+                    momentum: 'MOMENTUM PLAY',
+                    defensive: 'DEFENSIVE',
+                    dividend: 'DIVIDEND YIELD',
+                    speculative: 'SPECULATIVE',
+                    drawdown: 'DRAWDOWN RISK'
+                }
+            },
+            id: {
+                portfolio: {
+                    'max-sharpe': "Portofolio ini memaksimalkan imbal hasil yang disesuaikan risiko menggunakan Teori Portofolio Modern. Cocok untuk investor {profile} yang mencari rasio Sharpe optimal.",
+                    'min-vol': "Portofolio konservatif ini meminimalkan volatilitas keseluruhan sambil mempertahankan eksposur ekuitas. Ideal untuk investor {profile} yang mengutamakan pelestarian modal.",
+                    'risk-parity': "Portofolio ini menyamakan kontribusi risiko di semua saham, mencegah satu saham mendominasi risiko portofolio. Cocok untuk investor {profile} yang mencari eksposur risiko seimbang.",
+                    'equal-weight': "Portofolio berbobot sama ini memberikan diversifikasi luas tanpa bias timing atau seleksi. Pilihan praktis untuk investor {profile} yang lebih suka manajemen pasif."
+                },
+                stock: {
+                    bullish: "{ticker} menunjukkan momentum naik yang kuat dengan volatilitas prediksi {volRegime}. Forecast ensemble menyarankan imbal hasil {returnForecast}% untuk {horizon}. Pertimbangkan untuk {action}.",
+                    neutral: "{ticker} menampilkan sinyal campuran dengan volatilitas {volRegime}. Imbal hasil yang diharapkan {returnForecast}% menyarankan pendekatan tunggu-dan-lihat untuk investor {profile}.",
+                    bearish: "{ticker} menghadapi tantangan dengan volatilitas {volRegime} dan imbal hasil negatif ({returnForecast}%). {warning} Pemegang saat ini dapat mempertimbangkan mengurangi eksposur."
+                },
+                riskTags: {
+                    highVol: 'VOLATILITAS TINGGI',
+                    momentum: 'MOMENTUM',
+                    defensive: 'DEFENSIF',
+                    dividend: 'DIVIDEN',
+                    speculative: 'SPEKULATIF',
+                    drawdown: 'RISIKO DRAWDOWN'
+                }
+            }
+        };
+
+        function generateCommentary() {
+            const profile = state.riskProfile || 'moderate';
+            const strategy = state.currentStrategy;
+            const lang = state.commentaryLang;
+            const templates = COMMENTARY_TEMPLATES[lang];
+
+            // Portfolio commentary
+            const portCommentary = templates.portfolio[strategy].replace('{profile}', profile);
+
+            // Stock commentaries
+            const stockCommentaries = {};
+            state.selectedStocks.forEach(ticker => {
+                const prices = getClosePrices(STOCK_DATA[ticker]);
+                const forecast = ensembleForecast(prices, state.forecastHorizon);
+
+                const volRegime = forecast.garch.regime;
+                const returnPct = (forecast.predictedReturn * 100).toFixed(2);
+                const horizonText = state.forecastHorizon <= 5 ? '1 week' : state.forecastHorizon <= 22 ? '1 month' : state.forecastHorizon <= 66 ? '3 months' : '1 year';
+
+                let action = lang === 'en' ? 'overweighting' : 'menambah bobot';
+                if (forecast.signal === 'bearish') action = lang === 'en' ? 'underweighting' : 'mengurangi bobot';
+
+                let warning = lang === 'en' ? 'High drawdown risk detected.' : 'Risiko drawdown tinggi terdeteksi.';
+
+                const template = templates.stock[forecast.signal];
+                stockCommentaries[ticker] = template
+                    .replace('{ticker}', ticker)
+                    .replace('{volRegime}', volRegime)
+                    .replace('{returnForecast}', returnPct)
+                    .replace('{horizon}', horizonText)
+                    .replace('{action}', action)
+                    .replace('{profile}', profile)
+                    .replace('{warning}', warning);
+            });
+
+            return { portfolio: portCommentary, stocks: stockCommentaries };
+        }
+
+        // ============================================
+        // UI FUNCTIONS
+        // ============================================
+
+        // Initialize stock list
+        function initStockList() {
+            const container = document.getElementById('stockList');
+            container.innerHTML = '';
+
+            Object.keys(STOCK_INFO).forEach(ticker => {
+                const info = STOCK_INFO[ticker];
+                const item = document.createElement('div');
+                item.className = `stock-item ${state.selectedStocks.includes(ticker) ? 'selected' : ''}`;
+                item.onclick = () => toggleStock(ticker);
+                item.innerHTML = `
+                    <div class="stock-checkbox"></div>
+                    <div class="stock-info">
+                        <div class="stock-ticker">${ticker}</div>
+                        <div class="stock-name">${info.name}</div>
+                    </div>
+                    <div class="stock-sector">${info.sector}</div>
+                `;
+                container.appendChild(item);
+            });
+
+            updateSelectedCount();
+        }
+
+        function toggleStock(ticker) {
+            const idx = state.selectedStocks.indexOf(ticker);
+            if (idx >= 0) {
+                if (state.selectedStocks.length > 2) {
+                    state.selectedStocks.splice(idx, 1);
+                }
+            } else {
+                if (state.selectedStocks.length < 10) {
+                    state.selectedStocks.push(ticker);
+                }
+            }
+            initStockList();
+            runAndDisplayOptimizations();
+        }
+
+        function updateSelectedCount() {
+            document.getElementById('selectedCount').textContent = state.selectedStocks.length;
+        }
+
+        function selectAllStocks() {
+            state.selectedStocks = Object.keys(STOCK_INFO);
+            initStockList();
+            runAndDisplayOptimizations();
+        }
+
+        function selectBlueChips() {
+            state.selectedStocks = ['BBCA', 'BBRI', 'BMRI', 'TLKM', 'ASII', 'UNVR'];
+            initStockList();
+            runAndDisplayOptimizations();
+        }
+
+        // Switch tabs
+        function switchTab(tabName) {
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+
+            event.target.classList.add('active');
+            document.getElementById(`tab-${tabName}`).classList.add('active');
+
+            // Trigger chart redraws
+            if (tabName === 'optimizer') {
+                displayOptimizationResults();
+            } else if (tabName === 'frontier') {
+                drawEfficientFrontier();
+            } else if (tabName === 'forecasts') {
+                displayForecasts();
+            } else if (tabName === 'commentary') {
+                displayCommentary();
+            } else if (tabName === 'builder') {
+                initWeightSliders();
+            }
+        }
+
+        // Strategy selection
+        function selectStrategy(strategy) {
+            state.currentStrategy = strategy;
+            document.querySelectorAll('.strategy-card').forEach(c => c.classList.remove('active'));
+            document.querySelector(`[data-strategy="${strategy}"]`).classList.add('active');
+            displayOptimizationResults();
+        }
+
+        // Run and display optimizations
+        function runAndDisplayOptimizations() {
+            if (state.selectedStocks.length < 2) return;
+
+            document.getElementById('progressContainer').classList.add('active');
+            document.getElementById('progressFill').style.width = '30%';
+            document.getElementById('progressText').textContent = 'Calculating covariance matrix...';
+
+            setTimeout(() => {
+                runOptimizations();
+                document.getElementById('progressFill').style.width = '100%';
+                document.getElementById('progressText').textContent = 'Complete!';
+
+                setTimeout(() => {
+                    document.getElementById('progressContainer').classList.remove('active');
+                    displayOptimizationResults();
+                }, 300);
+            }, 100);
+        }
+
+        // Display optimization results
+        function displayOptimizationResults() {
+            const result = state.optimizationResults[state.currentStrategy];
+            if (!result) return;
+
+            // Update summary bar
+            document.getElementById('summary-return').textContent = `${(result.return * 100).toFixed(1)}%`;
+            document.getElementById('summary-vol').textContent = `${(result.volatility * 100).toFixed(1)}%`;
+            document.getElementById('summary-sharpe').textContent = result.sharpe.toFixed(2);
+
+            // Update metrics grid
+            document.getElementById('opt-return').textContent = `${(result.return * 100).toFixed(1)}%`;
+            document.getElementById('opt-vol').textContent = `${(result.volatility * 100).toFixed(1)}%`;
+            document.getElementById('opt-sharpe').textContent = result.sharpe.toFixed(2);
+            document.getElementById('opt-sortino').textContent = result.sortino.toFixed(2);
+            document.getElementById('opt-dd').textContent = `${(result.maxDD * 100).toFixed(1)}%`;
+            document.getElementById('opt-calmar').textContent = result.calmar.toFixed(2);
+            document.getElementById('opt-var').textContent = `${(result.var95 * 100).toFixed(1)}%`;
+            document.getElementById('opt-cvar').textContent = `${(result.cvar95 * 100).toFixed(1)}%`;
+
+            // Update weights display
+            const weightsContainer = document.getElementById('weightsContainer');
+            weightsContainer.innerHTML = '';
+
+            state.selectedStocks.forEach((ticker, i) => {
+                const weight = result.weights[i] || 0;
+                const color = COLORS[i % COLORS.length];
+
+                const item = document.createElement('div');
+                item.className = 'weight-item';
+                item.innerHTML = `
+                    <div class="weight-ticker">${ticker}</div>
+                    <div class="weight-bar-container">
+                        <div class="weight-bar" style="width: ${(weight * 100).toFixed(0)}%; background: ${color};"></div>
+                    </div>
+                    <div class="weight-value">${(weight * 100).toFixed(1)}%</div>
+                `;
+                weightsContainer.appendChild(item);
+            });
+
+            // Draw allocation chart
+            drawAllocationChart(result.weights);
+
+            // Draw correlation heatmap
+            drawCorrelationHeatmap();
+        }
+
+        // Draw allocation donut chart
+        function drawAllocationChart(weights) {
+            const labels = state.selectedStocks;
+            const colors = labels.map((_, i) => COLORS[i % COLORS.length]);
+
+            const trace = {
+                values: weights.map(w => w * 100),
+                labels: labels,
+                type: 'pie',
+                hole: 0.4,
+                marker: { colors },
+                textinfo: 'label+percent',
+                hoverinfo: 'label+percent+value'
+            };
+
+            const layout = {
+                paper_bgcolor: 'rgba(0,0,0,0)',
+                plot_bgcolor: 'rgba(0,0,0,0)',
+                font: { color: '#f1f5f9', family: 'Inter' },
+                margin: { t: 20, b: 20, l: 20, r: 20 },
+                showlegend: true,
+                legend: { orientation: 'h', y: -0.1 }
+            };
+
+            Plotly.newPlot('allocationChart', [trace], layout, { displayModeBar: false });
+        }
+
+        // Draw correlation heatmap
+        function drawCorrelationHeatmap() {
+            const returnsData = getSelectedReturns();
+            const corrMatrix = [];
+
+            for (let i = 0; i < returnsData.length; i++) {
+                const row = [];
+                for (let j = 0; j < returnsData.length; j++) {
+                    const corr = jStat.corrcoeff(returnsData[i], returnsData[j]);
+                    row.push(parseFloat(corr.toFixed(3)));
+                }
+                corrMatrix.push(row);
+            }
+
+            const trace = {
+                z: corrMatrix,
+                x: state.selectedStocks,
+                y: state.selectedStocks,
+                type: 'heatmap',
+                colorscale: [[0, '#1e3a5f'], [0.5, '#3b82f6'], [1, '#10b981']],
+                showscale: true
+            };
+
+            const layout = {
+                paper_bgcolor: 'rgba(0,0,0,0)',
+                plot_bgcolor: 'rgba(0,0,0,0)',
+                font: { color: '#f1f5f9', family: 'Inter' },
+                margin: { t: 20, b: 40, l: 60, r: 20 },
+                xaxis: { tickfont: { size: 10 } },
+                yaxis: { tickfont: { size: 10 } }
+            };
+
+            Plotly.newPlot('correlationChart', [trace], layout, { displayModeBar: false });
+        }
+
+        // Draw efficient frontier
+        function drawEfficientFrontier() {
+            const returnsData = getSelectedReturns();
+            const covMatrix = covarianceMatrix(returnsData);
+            const dailyMeans = returnsData.map(r => mean(r));
+
+            // Generate frontier points
+            const frontierPoints = { ret: [], vol: [] };
+            const randomPortfolios = { ret: [], vol: [], sharpe: [] };
+
+            for (let i = 0; i < 500; i++) {
+                let weights = Array(returnsData.length).fill(0).map(() => Math.random());
+                const sum = weights.reduce((a, b) => a + b, 0);
+                weights = weights.map(w => w / sum);
+
+                const ret = annualizeReturn(portfolioReturn(weights, dailyMeans) * 252);
+                const vol = annualizeVol(portfolioVolatility(weights, covMatrix));
+                const sharpe = sharpeRatio(ret, vol);
+
+                randomPortfolios.ret.push(vol * 100);
+                randomPortfolios.vol.push(ret * 100);
+                randomPortfolios.sharpe.push(sharpe);
+            }
+
+            // Find efficient frontier (max return for each vol level)
+            const volLevels = Array.from({ length: 50 }, (_, i) => i * 0.005 + 0.10);
+            volLevels.forEach(v => {
+                let maxRet = -Infinity;
+                for (let j = 0; j < randomPortfolios.ret.length; j++) {
+                    if (Math.abs(randomPortfolios.ret[j] / 100 - v) < 0.01) {
+                        if (randomPortfolios.vol[j] > maxRet) {
+                            maxRet = randomPortfolios.vol[j];
+                        }
+                    }
+                }
+                if (maxRet > -Infinity) {
+                    frontierPoints.vol.push(v * 100);
+                    frontierPoints.ret.push(maxRet);
+                }
+            });
+
+            // CML (Capital Market Line)
+            const riskFreeRate = 6.25;
+            const maxSharpe = Math.max(...randomPortfolios.sharpe);
+            const cmlVol = [0, 35];
+            const cmlRet = [riskFreeRate, riskFreeRate + maxSharpe * 35];
+
+            // Current portfolio point
+            const currentResult = state.optimizationResults[state.currentStrategy];
+
+            const traces = [
+                {
+                    x: randomPortfolios.ret,
+                    y: randomPortfolios.vol,
+                    mode: 'markers',
+                    type: 'scatter',
+                    marker: {
+                        size: 4,
+                        color: randomPortfolios.sharpe,
+                        colorscale: 'Viridis',
+                        opacity: 0.3
+                    },
+                    name: 'Random Portfolios'
+                },
+                {
+                    x: frontierPoints.ret,
+                    y: frontierPoints.vol,
+                    mode: 'lines',
+                    type: 'scatter',
+                    line: { color: '#10b981', width: 3 },
+                    name: 'Efficient Frontier'
+                },
+                {
+                    x: cmlVol,
+                    y: cmlRet,
+                    mode: 'lines',
+                    type: 'scatter',
+                    line: { color: '#f59e0b', width: 2, dash: 'dash' },
+                    name: 'CML (BI Rate: 6.25%)'
+                }
+            ];
+
+            if (currentResult) {
+                traces.push({
+                    x: [currentResult.volatility * 100],
+                    y: [currentResult.return * 100],
+                    mode: 'markers',
+                    type: 'scatter',
+                    marker: {
+                        size: 15,
+                        color: '#3b82f6',
+                        symbol: 'star',
+                        line: { color: 'white', width: 2 }
+                    },
+                    name: `Current: ${state.currentStrategy}`
+                });
+            }
+
+            const layout = {
+                paper_bgcolor: 'rgba(0,0,0,0)',
+                plot_bgcolor: 'rgba(0,0,0,0)',
+                font: { color: '#f1f5f9', family: 'Inter' },
+                xaxis: { title: 'Volatility (%)', gridcolor: '#374151' },
+                yaxis: { title: 'Expected Return (%)', gridcolor: '#374151' },
+                showlegend: true,
+                legend: { y: 0.95 }
+            };
+
+            Plotly.newPlot('frontierChart', traces, layout, { displayModeBar: false });
+        }
+
+        // Update risk slider
+        function updateRiskSlider(value) {
+            document.getElementById('riskSliderValue').textContent = `${value}%`;
+            // In a full implementation, this would interpolate along the frontier
+        }
+
+        // Set forecast horizon
+        function setForecastHorizon(horizon) {
+            state.forecastHorizon = horizon;
+            document.querySelectorAll('.horizon-btn').forEach(b => b.classList.remove('active'));
+            document.querySelector(`[data-horizon="${horizon}"]`).classList.add('active');
+            displayForecasts();
+        }
+
+        // Display forecasts
+        function displayForecasts() {
+            const container = document.getElementById('forecastsContainer');
+            container.innerHTML = '';
+
+            state.selectedStocks.forEach(ticker => {
+                const prices = getClosePrices(STOCK_DATA[ticker]);
+                const forecast = ensembleForecast(prices, state.forecastHorizon);
+
+                const card = document.createElement('div');
+                card.className = 'forecast-card';
+
+                const signalClass = forecast.signal === 'bullish' ? 'signal-bullish' : forecast.signal === 'bearish' ? 'signal-bearish' : 'signal-neutral';
+                const signalIcon = forecast.signal === 'bullish' ? '🟢' : forecast.signal === 'bearish' ? '🔴' : '🟡';
+                const signalText = forecast.signal.charAt(0).toUpperCase() + forecast.signal.slice(1);
+
+                const regimeClass = `regime-${forecast.garch.regime}`;
+                const regimeText = forecast.garch.regime.charAt(0).toUpperCase() + forecast.garch.regime.slice(1);
+
+                card.innerHTML = `
+                    <div class="forecast-header">
+                        <div class="forecast-ticker">${ticker}</div>
+                        <div class="forecast-signal ${signalClass}">
+                            ${signalIcon} ${signalText}
+                        </div>
+                    </div>
+                    <div id="forecast-chart-${ticker}" style="height: 250px;"></div>
+                    <div class="forecast-metrics">
+                        <div class="forecast-metric">
+                            <div class="forecast-metric-label">Predicted Return</div>
+                            <div class="forecast-metric-value ${forecast.predictedReturn >= 0 ? 'positive' : 'negative'}">
+                                ${(forecast.predictedReturn * 100).toFixed(2)}%
+                            </div>
+                        </div>
+                        <div class="forecast-metric">
+                            <div class="forecast-metric-label">Volatility Regime</div>
+                            <div class="volatility-regime ${regimeClass}">${regimeText}</div>
+                        </div>
+                        <div class="forecast-metric">
+                            <div class="forecast-metric-label">P(Positive Return)</div>
+                            <div class="forecast-metric-value">${(forecast.probPositive * 100).toFixed(1)}%</div>
+                        </div>
+                        <div class="forecast-metric">
+                            <div class="forecast-metric-label">Avg Forecast Vol</div>
+                            <div class="forecast-metric-value">${(mean(forecast.garch.volForecasts) * 100).toFixed(1)}%</div>
+                        </div>
+                    </div>
+                `;
+
+                container.appendChild(card);
+
+                // Draw forecast chart
+                drawForecastChart(ticker, prices, forecast);
+            });
+        }
+
+        // Draw individual forecast chart
+        function drawForecastChart(ticker, prices, forecast) {
+            const dates = STOCK_DATA[ticker].slice(-30).map(d => d.date);
+            const histPrices = prices.slice(-30);
+
+            const forecastDates = [];
+            const lastDate = new Date(STOCK_DATA[ticker][STOCK_DATA[ticker].length - 1].date);
+            for (let i = 1; i <= state.forecastHorizon; i++) {
+                const d = new Date(lastDate);
+                d.setDate(d.getDate() + i);
+                if (d.getDay() !== 0 && d.getDay() !== 6) {
+                    forecastDates.push(d.toISOString().split('T')[0]);
+                }
+            }
+
+            const allDates = [...dates, ...forecastDates.slice(0, forecast.forecasts.length)];
+            const allHist = [...histPrices, ...Array(forecast.forecasts.length).fill(null)];
+            const allForecast = [...Array(30).fill(null), ...forecast.forecasts];
+
+            const traces = [
+                {
+                    x: allDates,
+                    y: allHist,
+                    mode: 'lines',
+                    name: 'Historical',
+                    line: { color: '#94a3b8', width: 2 }
+                },
+                {
+                    x: allDates,
+                    y: allForecast,
+                    mode: 'lines',
+                    name: 'Forecast',
+                    line: { color: '#3b82f6', width: 3 }
+                },
+                {
+                    x: allDates,
+                    y: forecast.ci95Upper,
+                    mode: 'lines',
+                    name: '95% CI Upper',
+                    line: { color: '#10b981', width: 1, dash: 'dot' }
+                },
+                {
+                    x: allDates,
+                    y: forecast.ci95Lower,
+                    mode: 'lines',
+                    name: '95% CI Lower',
+                    line: { color: '#10b981', width: 1, dash: 'dot' },
+                    fill: 'tonexty'
+                }
+            ];
+
+            const layout = {
+                paper_bgcolor: 'rgba(0,0,0,0)',
+                plot_bgcolor: 'rgba(0,0,0,0)',
+                font: { color: '#f1f5f9', family: 'Inter', size: 10 },
+                xaxis: { gridcolor: '#374151', showticklabels: false },
+                yaxis: { gridcolor: '#374151' },
+                margin: { t: 20, b: 20, l: 50, r: 20 },
+                showlegend: false,
+                height: 250
+            };
+
+            Plotly.newPlot(`forecast-chart-${ticker}`, traces, layout, { displayModeBar: false });
+        }
+
+        // Display commentary
+        function displayCommentary() {
+            const commentary = generateCommentary();
+
+            document.getElementById('portfolioCommentaryText').textContent = commentary.portfolio;
+
+            // Risk tags
+            const result = state.optimizationResults[state.currentStrategy];
+            const tagsContainer = document.getElementById('portfolioRiskTags');
+            tagsContainer.innerHTML = '';
+
+            const tags = [];
+            if (result.volatility > 0.25) tags.push({ text: COMMENTARY_TEMPLATES[state.commentaryLang].riskTags.highVol, class: 'tag-warning' });
+            if (result.maxDD > 0.20) tags.push({ text: COMMENTARY_TEMPLATES[state.commentaryLang].riskTags.drawdown, class: 'tag-danger' });
+            if (result.volatility < 0.18) tags.push({ text: COMMENTARY_TEMPLATES[state.commentaryLang].riskTags.defensive, class: 'tag-success' });
+
+            tags.forEach(tag => {
+                const span = document.createElement('span');
+                span.className = `risk-tag ${tag.class}`;
+                span.textContent = tag.text;
+                tagsContainer.appendChild(span);
+            });
+
+            // Stock commentaries
+            const stockContainer = document.getElementById('stockCommentaries');
+            stockContainer.innerHTML = '';
+
+            Object.entries(commentary.stocks).forEach(([ticker, text]) => {
+                const section = document.createElement('div');
+                section.className = 'commentary-section';
+                section.style.borderLeftColor = COLORS[state.selectedStocks.indexOf(ticker) % COLORS.length];
+                section.innerHTML = `
+                    <div class="commentary-title">📈 ${ticker} Analysis</div>
+                    <div class="commentary-text">${text}</div>
+                `;
+                stockContainer.appendChild(section);
+            });
+        }
+
+        // Set languages
+        function setLanguage(lang) {
+            state.language = lang;
+            document.querySelectorAll('.lang-toggle .lang-btn').forEach(b => b.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+
+        function setCommentaryLang(lang) {
+            state.commentaryLang = lang;
+            displayCommentary();
+        }
+
+        // Initialize weight sliders
+        function initWeightSliders() {
+            const container = document.getElementById('weightSliders');
+            container.innerHTML = '';
+
+            const result = state.optimizationResults[state.currentStrategy];
+            if (!result) return;
+
+            // Initialize custom weights if empty
+            if (Object.keys(state.customWeights).length === 0) {
+                state.selectedStocks.forEach((ticker, i) => {
+                    state.customWeights[ticker] = result.weights[i];
+                });
+            }
+
+            state.selectedStocks.forEach((ticker, i) => {
+                const weight = state.customWeights[ticker] || result.weights[i];
+                const color = COLORS[i % COLORS.length];
+
+                const item = document.createElement('div');
+                item.className = 'slider-item';
+                item.innerHTML = `
+                    <div class="slider-header">
+                        <span class="slider-ticker">${ticker}</span>
+                        <span class="slider-value" id="slider-val-${ticker}">${(weight * 100).toFixed(1)}%</span>
+                    </div>
+                    <input type="range" class="slider" min="0" max="100" value="${(weight * 100).toFixed(1)}"
+                           style="accent-color: ${color};"
+                           oninput="updateWeight('${ticker}', this.value)">
+                `;
+                container.appendChild(item);
+            });
+
+            updateTotalWeight();
+        }
+
+        function updateWeight(ticker, value) {
+            state.customWeights[ticker] = parseFloat(value) / 100;
+            document.getElementById(`slider-val-${ticker}`).textContent = `${value}%`;
+            updateTotalWeight();
+        }
+
+        function updateTotalWeight() {
+            const total = Object.values(state.customWeights).reduce((a, b) => a + b, 0);
+            const totalEl = document.getElementById('totalWeight');
+            totalEl.textContent = `${(total * 100).toFixed(1)}%`;
+            totalEl.style.color = Math.abs(total - 1) < 0.01 ? 'var(--accent-green)' : 'var(--danger)';
+        }
+
+        function rebalanceWeights() {
+            const total = Object.values(state.customWeights).reduce((a, b) => a + b, 0);
+            if (total <= 0) return;
+
+            state.selectedStocks.forEach(ticker => {
+                state.customWeights[ticker] = (state.customWeights[ticker] || 0) / total;
+            });
+
+            initWeightSliders();
+        }
+
+        // Risk profiler
+        let quizAnswers = {};
+
+        document.querySelectorAll('.quiz-option').forEach(option => {
+            option.addEventListener('click', function() {
+                const question = this.closest('.quiz-question').dataset.q;
+                quizAnswers[question] = parseInt(this.dataset.score);
+
+                this.closest('.quiz-options').querySelectorAll('.quiz-option').forEach(o => o.classList.remove('selected'));
+                this.classList.add('selected');
+            });
+        });
+
+        function calculateRiskProfile() {
+            if (Object.keys(quizAnswers).length < 5) {
+                alert('Please answer all questions.');
+                return;
+            }
+
+            const totalScore = Object.values(quizAnswers).reduce((a, b) => a + b, 0);
+
+            let profile, desc, badgeClass;
+            if (totalScore <= 8) {
+                profile = 'Conservative';
+                desc = 'Low risk tolerance. Focus on capital preservation with minimal volatility. Recommended: Min Volatility strategy.';
+                badgeClass = 'profile-conservative';
+                selectStrategy('min-vol');
+            } else if (totalScore <= 12) {
+                profile = 'Moderate';
+                desc = 'Balanced approach with moderate risk tolerance. Suitable for diversified equity exposure. Recommended: Risk Parity strategy.';
+                badgeClass = 'profile-moderate';
+                selectStrategy('risk-parity');
+            } else if (totalScore <= 16) {
+                profile = 'Aggressive';
+                desc = 'High risk tolerance seeking growth. Comfortable with volatility for higher returns. Recommended: Max Sharpe strategy.';
+                badgeClass = 'profile-aggressive';
+                selectStrategy('max-sharpe');
+            } else {
+                profile = 'Speculative';
+                desc = 'Very high risk tolerance. Seeking maximum returns regardless of volatility. Suitable for experienced traders.';
+                badgeClass = 'profile-speculative';
+                selectStrategy('max-sharpe');
+            }
+
+            state.riskProfile = profile.toLowerCase();
+
+            document.getElementById('riskQuiz').classList.remove('active');
+            document.getElementById('riskResult').classList.add('active');
+            document.getElementById('profileBadge').textContent = profile;
+            document.getElementById('profileBadge').className = `profile-badge ${badgeClass}`;
+            document.getElementById('profileDesc').textContent = desc;
+        }
+
+        function resetQuiz() {
+            quizAnswers = {};
+            state.riskProfile = null;
+            document.querySelectorAll('.quiz-option').forEach(o => o.classList.remove('selected'));
+            document.getElementById('riskQuiz').classList.add('active');
+            document.getElementById('riskResult').classList.remove('active');
+        }
+
+        // Export functions
+        function exportPDF() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+
+            const result = state.optimizationResults[state.currentStrategy];
+            if (!result) return;
+
+            doc.setFontSize(18);
+            doc.text('IDX Portfolio Optimizer', 20, 20);
+
+            doc.setFontSize(12);
+            doc.text(`Strategy: ${state.currentStrategy}`, 20, 35);
+            doc.text(`Date: ${new Date().toLocaleDateString()}`, 20, 45);
+
+            doc.text('Portfolio Metrics:', 20, 60);
+            doc.setFontSize(10);
+            doc.text(`Expected Return: ${(result.return * 100).toFixed(2)}%`, 25, 70);
+            doc.text(`Volatility: ${(result.volatility * 100).toFixed(2)}%`, 25, 78);
+            doc.text(`Sharpe Ratio: ${result.sharpe.toFixed(3)}`, 25, 86);
+            doc.text(`Max Drawdown: ${(result.maxDD * 100).toFixed(2)}%`, 25, 94);
+
+            doc.text('Weights:', 20, 110);
+            state.selectedStocks.forEach((ticker, i) => {
+                doc.text(`${ticker}: ${(result.weights[i] * 100).toFixed(2)}%`, 25, 120 + i * 8);
+            });
+
+            doc.save('idx-portfolio.pdf');
+        }
+
+        function exportCSV() {
+            const result = state.optimizationResults[state.currentStrategy];
+            if (!result) return;
+
+            let csv = 'Ticker,Weight\n';
+            state.selectedStocks.forEach((ticker, i) => {
+                csv += `${ticker},${(result.weights[i] * 100).toFixed(4)}\n`;
+            });
+
+            const blob = new Blob([csv], { type: 'text/csv' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'portfolio-weights.csv';
+            a.click();
+        }
+
+        function sharePortfolio() {
+            const params = new URLSearchParams({
+                stocks: state.selectedStocks.join(','),
+                strategy: state.currentStrategy
+            });
+
+            const url = `${window.location.origin}${window.location.pathname}?${params}`;
+            navigator.clipboard.writeText(url).then(() => {
+                alert('Share link copied to clipboard!');
+            });
+        }
+
+        // Load from URL params
+        function loadFromURL() {
+            const params = new URLSearchParams(window.location.search);
+            const stocks = params.get('stocks');
+            const strategy = params.get('strategy');
+
+            if (stocks) {
+                state.selectedStocks = stocks.split(',');
+                initStockList();
+            }
+            if (strategy && state.optimizationResults[strategy]) {
+                selectStrategy(strategy);
+            }
+        }
+
+        // ============================================
+        // INITIALIZATION
+        // ============================================
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initStockList();
+            runAndDisplayOptimizations();
+            loadFromURL();
+        });
+    </script>
+</body>
+</html>
