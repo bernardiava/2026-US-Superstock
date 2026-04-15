@@ -949,6 +949,7 @@ def main():
                 style_df['Max_Drawdown_Num'] = style_df['Max_Drawdown']
                 
                 # Format as strings for display
+                display_df = superstocks_df.copy()
                 display_df['Return_Multiplier'] = display_df['Return_Multiplier'].apply(lambda x: f"{x:.2f}x")
                 display_df['Annualized_Return'] = display_df['Annualized_Return'].apply(lambda x: f"{x:.2%}")
                 display_df['Sharpe_Ratio'] = display_df['Sharpe_Ratio'].apply(lambda x: f"{x:.2f}")
@@ -957,28 +958,11 @@ def main():
                 display_df.columns = ['Ticker', 'Company', 'Sector', 'Total Return', 'Ann. Return', 
                                       'Sharpe', 'Max DD']
                 
-                # Create a numeric version for styling
-                style_numeric_df = superstocks_df[['Return_Multiplier']].copy()
-                style_numeric_df.columns = ['Total Return']
-                
-                # Apply styling using numeric values, then convert display columns to strings
-                styled_display = display_df.copy()
-                
-                # Create styler from numeric data
-                styler = style_numeric_df.style.background_gradient(
-                    subset=['Total Return'], cmap='Greens'
-                )
-                
-                # Format the numeric values in the styler
-                styler.format({'Total Return': '{:.2f}x'})
-                
-                # Now add the other columns as formatted strings
-                display_df_for_show = display_df.copy()
-                
                 st.dataframe(
-                    display_df_for_show,
+                    display_df,
                     use_container_width=True,
-                    height=500
+                    height=500,
+                    hide_index=True
                 )
             
             with col2:
