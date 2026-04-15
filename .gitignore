@@ -1,1 +1,1 @@
-(superstock_detector.py is a source file, and there are no build artifacts, dependency directories, or other ignorable files in the changes)
+Nothing needs to be added to .gitignore since only a README.md file was added, which is a source/config file and not a build artifact, dependency, or temporary file.
