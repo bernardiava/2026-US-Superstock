@@ -160,7 +160,7 @@ streamlit run superstock_detector.py
 ### 📚 Citation
 If you find this project inspiring or use it as a reference for your own research, portfolio, or academic work, please cite it as follows:
 
-> **Author Name**. (2025). *SuperStock Detector: US Market Alpha Engine*. GitHub Repository. Available at: [Insert Your GitHub URL Here]
+> **Bernardia Vitri Arumsari**. (2025). *SuperStock Detector: US Market Alpha Engine*. GitHub Repository. Available at: [https://github.com/bernardiava/2026-Various-Projects/tree/superstocksusmarketanalysis-9b6fe]
 
 *Acknowledging the original author helps support the open-source community and encourages further development of high-quality financial tools.*
 
