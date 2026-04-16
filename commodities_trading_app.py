@@ -25,6 +25,32 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# ============================================================================
+# COMMODITY PARAMETERS (Module Level)
+# ============================================================================
+
+# Base prices and volatility by commodity - defined at module level for access in main()
+commodity_params = {
+    # Americas/Global Commodities
+    'Corn': {'base': 4.50, 'volatility': 0.02, 'seasonality': 0.15, 'region': 'Americas'},
+    'Wheat': {'base': 6.00, 'volatility': 0.025, 'seasonality': 0.18, 'region': 'Americas'},
+    'Soybeans': {'base': 12.00, 'volatility': 0.022, 'seasonality': 0.16, 'region': 'Americas'},
+    'Coffee': {'base': 1.80, 'volatility': 0.03, 'seasonality': 0.20, 'region': 'Americas'},
+    'Sugar': {'base': 0.20, 'volatility': 0.028, 'seasonality': 0.14, 'region': 'Americas'},
+    'Cotton': {'base': 0.85, 'volatility': 0.024, 'seasonality': 0.13, 'region': 'Americas'},
+    'Live Cattle': {'base': 1.45, 'volatility': 0.015, 'seasonality': 0.08, 'region': 'Americas'},
+    'Lean Hogs': {'base': 0.75, 'volatility': 0.035, 'seasonality': 0.12, 'region': 'Americas'},
+    # APAC Commodities
+    'APAC Rice': {'base': 0.45, 'volatility': 0.025, 'seasonality': 0.18, 'region': 'APAC'},
+    'APAC Palm Oil': {'base': 0.95, 'volatility': 0.032, 'seasonality': 0.22, 'region': 'APAC'},
+    'APAC Rubber': {'base': 1.65, 'volatility': 0.028, 'seasonality': 0.15, 'region': 'APAC'},
+    'APAC Tea': {'base': 2.20, 'volatility': 0.026, 'seasonality': 0.17, 'region': 'APAC'},
+    'APAC Cashew': {'base': 3.80, 'volatility': 0.030, 'seasonality': 0.19, 'region': 'APAC'},
+    'APAC Pepper': {'base': 5.50, 'volatility': 0.035, 'seasonality': 0.21, 'region': 'APAC'},
+    'APAC Coconut Oil': {'base': 1.10, 'volatility': 0.029, 'seasonality': 0.16, 'region': 'APAC'},
+    'APAC Natural Gas (LNG)': {'base': 3.20, 'volatility': 0.040, 'seasonality': 0.25, 'region': 'APAC'}
+}
+
 # Custom CSS for professional look
 st.markdown("""
 <style>
@@ -43,29 +69,6 @@ st.markdown("""
 def generate_commodity_data(commodity: str, days: int = 500) -> pd.DataFrame:
     """Generate realistic commodity price data with seasonal patterns."""
     np.random.seed(42)
-    
-    # Base prices and volatility by commodity - defined at module level for access in main()
-    global commodity_params
-    commodity_params = {
-        # Americas/Global Commodities
-        'Corn': {'base': 4.50, 'volatility': 0.02, 'seasonality': 0.15, 'region': 'Americas'},
-        'Wheat': {'base': 6.00, 'volatility': 0.025, 'seasonality': 0.18, 'region': 'Americas'},
-        'Soybeans': {'base': 12.00, 'volatility': 0.022, 'seasonality': 0.16, 'region': 'Americas'},
-        'Coffee': {'base': 1.80, 'volatility': 0.03, 'seasonality': 0.20, 'region': 'Americas'},
-        'Sugar': {'base': 0.20, 'volatility': 0.028, 'seasonality': 0.14, 'region': 'Americas'},
-        'Cotton': {'base': 0.85, 'volatility': 0.024, 'seasonality': 0.13, 'region': 'Americas'},
-        'Live Cattle': {'base': 1.45, 'volatility': 0.015, 'seasonality': 0.08, 'region': 'Americas'},
-        'Lean Hogs': {'base': 0.75, 'volatility': 0.035, 'seasonality': 0.12, 'region': 'Americas'},
-        # APAC Commodities
-        'APAC Rice': {'base': 0.45, 'volatility': 0.025, 'seasonality': 0.18, 'region': 'APAC'},
-        'APAC Palm Oil': {'base': 0.95, 'volatility': 0.032, 'seasonality': 0.22, 'region': 'APAC'},
-        'APAC Rubber': {'base': 1.65, 'volatility': 0.028, 'seasonality': 0.15, 'region': 'APAC'},
-        'APAC Tea': {'base': 2.20, 'volatility': 0.026, 'seasonality': 0.17, 'region': 'APAC'},
-        'APAC Cashew': {'base': 3.80, 'volatility': 0.030, 'seasonality': 0.19, 'region': 'APAC'},
-        'APAC Pepper': {'base': 5.50, 'volatility': 0.035, 'seasonality': 0.21, 'region': 'APAC'},
-        'APAC Coconut Oil': {'base': 1.10, 'volatility': 0.029, 'seasonality': 0.16, 'region': 'APAC'},
-        'APAC Natural Gas (LNG)': {'base': 3.20, 'volatility': 0.040, 'seasonality': 0.25, 'region': 'APAC'}
-    }
     
     params = commodity_params.get(commodity, commodity_params['Corn'])
     base_price = params['base']
