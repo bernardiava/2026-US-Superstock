@@ -5,15 +5,15 @@ __pycache__/
 *.pyo
 *.pyd
 
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+
 # Environment
 .env
 .env.local
 *.env.*
-
-# Logs and temporary files
-*.log
-*.tmp
-*.swp
 
 # Editors
 .vscode/
