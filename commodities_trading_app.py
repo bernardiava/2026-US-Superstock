@@ -620,6 +620,37 @@ def main():
                     st.error("🔴 **SELL SIGNAL**")
                 else:
                     st.info("🟡 **HOLD**")
+            
+            # Monetization Strategy
+            st.markdown("---")
+            st.subheader("💰 Monetization Strategy")
+            
+            if overall_signal == 'Buy':
+                st.success("""
+                **How to Monetize:**
+                - **Long Position:** Enter a long futures contract or buy call options on this commodity
+                - **Entry Point:** Current price level with stop-loss below recent support
+                - **Target:** Take profits at resistance levels identified by technical indicators
+                - **Leverage:** Use 2-3x leverage for conservative risk tolerance, up to 5x for aggressive traders
+                - **Time Horizon:** Hold for 5-15 trading days based on signal strength
+                """)
+            elif overall_signal == 'Sell':
+                st.error("""
+                **How to Monetize:**
+                - **Short Position:** Enter a short futures contract or buy put options on this commodity
+                - **Entry Point:** Current price level with stop-loss above recent resistance
+                - **Target:** Cover shorts at support levels where buying pressure may emerge
+                - **Leverage:** Use 2-3x leverage for conservative risk tolerance, up to 5x for aggressive traders
+                - **Time Horizon:** Hold for 5-15 trading days based on signal strength
+                """)
+            else:
+                st.info("""
+                **How to Monetize:**
+                - **Wait for Clarity:** No strong directional signal; avoid new positions
+                - **Range Trading:** Consider selling options (straddles/strangles) to collect premium if expecting continued consolidation
+                - **Watch for Breakout:** Set alerts above resistance and below support for potential entry triggers
+                - **Capital Preservation:** Keep capital deployed elsewhere until clearer opportunities emerge
+                """)
         
         elif analysis_type == "ML Forecasting":
             st.subheader(f"🤖 Machine Learning Forecast - {commodity}")
@@ -665,6 +696,44 @@ def main():
             forecast_display = forecast_df.copy()
             forecast_display['Change %'] = forecast_display['Forecast'].pct_change() * 100
             st.dataframe(forecast_display.style.format({"Forecast": "${:.2f}", "Change %": "{:.2f}%"}))
+            
+            # Monetization Strategy
+            st.markdown("---")
+            st.subheader("💰 Monetization Strategy")
+            
+            last_forecast = forecast_display['Forecast'].iloc[-1]
+            current_price_val = df['Close'].iloc[-1]
+            forecast_change = ((last_forecast - current_price_val) / current_price_val) * 100
+            
+            if forecast_change > 2:
+                st.success(f"""
+                **How to Monetize:**
+                - **Bullish Forecast:** Model predicts {forecast_change:.1f}% upside over {forecast_horizon} days
+                - **Long Position:** Enter long futures or buy call options with strike prices near current levels
+                - **Entry Point:** Consider dollar-cost averaging into positions over 2-3 days
+                - **Target:** Take partial profits at model's predicted peak, hold remainder for trend continuation
+                - **Risk Management:** Set stop-loss at 50% of predicted move against you
+                - **Leverage:** Match leverage to your risk tolerance setting ({risk_tolerance.title()})
+                """)
+            elif forecast_change < -2:
+                st.error(f"""
+                **How to Monetize:**
+                - **Bearish Forecast:** Model predicts {abs(forecast_change):.1f}% downside over {forecast_horizon} days
+                - **Short Position:** Enter short futures or buy put options with strike prices near current levels
+                - **Entry Point:** Consider scaling into short positions on any bounces
+                - **Target:** Cover shorts at model's predicted trough, watch for reversal signals
+                - **Risk Management:** Set stop-loss at 50% of predicted move against you
+                - **Leverage:** Match leverage to your risk tolerance setting ({risk_tolerance.title()})
+                """)
+            else:
+                st.info(f"""
+                **How to Monetize:**
+                - **Neutral Forecast:** Model predicts sideways movement ({forecast_change:.1f}%) over {forecast_horizon} days
+                - **Options Strategy:** Sell straddles or strangles to collect premium from low volatility
+                - **Range Trading:** Buy support, sell resistance within the predicted range
+                - **Capital Allocation:** Deploy capital to other commodities with stronger directional signals
+                - **Monitor:** Watch for model updates that may indicate emerging trends
+                """)
         
         elif analysis_type == "Risk Analytics":
             st.subheader(f"⚠️ Risk Analysis - {commodity}")
@@ -708,6 +777,57 @@ def main():
             
             fig.update_layout(height=800, showlegend=False)
             st.plotly_chart(fig, use_container_width=True)
+            
+            # Monetization Strategy
+            st.markdown("---")
+            st.subheader("💰 Monetization Strategy")
+            
+            var_95 = risk_metrics.get('VaR 95%', 0)
+            cvar_95 = risk_metrics.get('CVaR 95%', 0)
+            max_dd = risk_metrics.get('Max Drawdown', 0)
+            
+            if isinstance(var_95, str):
+                var_95 = float(var_95.replace('%', '')) / 100
+            if isinstance(cvar_95, str):
+                cvar_95 = float(cvar_95.replace('%', '')) / 100
+            if isinstance(max_dd, str):
+                max_dd = float(max_dd.replace('%', '')) / 100
+            
+            if abs(var_95) < 0.02:
+                st.success(f"""
+                **How to Monetize:**
+                - **Low Risk Profile:** VaR 95% of {var_95:.2%} indicates relatively stable price movements
+                - **Higher Position Sizing:** Can allocate larger capital portions due to lower tail risk
+                - **Carry Trades:** Ideal for leveraged carry strategies with tight stop-losses
+                - **Options Selling:** Sell out-of-the-money puts/calls to collect premium; low volatility environment
+                - **Risk-Adjusted Returns:** Focus on consistent small gains rather than home runs
+                """)
+            elif abs(var_95) > 0.05:
+                st.error(f"""
+                **How to Monetize:**
+                - **High Risk Profile:** VaR 95% of {var_95:.2%} indicates significant daily risk exposure
+                - **Smaller Position Sizing:** Reduce position size to 25-50% of normal allocation
+                - **Hedging Strategies:** Use protective options (collars, spreads) to limit downside
+                - **Volatility Trading:** Consider long straddles/strangles to profit from large moves
+                - **Event-Driven:** Trade around known catalysts (reports, weather, geopolitics) with defined risk
+                - **Stop-Loss Discipline:** Implement strict 2-3% account risk per trade maximum
+                """)
+            else:
+                st.info(f"""
+                **How to Monetize:**
+                - **Moderate Risk Profile:** VaR 95% of {var_95:.2%} suggests balanced risk-reward opportunities
+                - **Standard Position Sizing:** Use normal position sizing protocols (1-2% account risk)
+                - **Trend Following:** Capture medium-term trends with trailing stops
+                - **Mean Reversion:** Fade extreme moves when RSI/Momentum indicators signal overbought/oversold
+                - **Diversification:** Combine with negatively correlated commodities to reduce portfolio variance
+                """)
+            
+            st.markdown(f"""
+            **Key Risk Metrics to Monitor:**
+            - Daily VaR (95%): {var_95:.2%} - Maximum expected daily loss in normal conditions
+            - CVaR (95%): {cvar_95:.2%} - Expected loss in worst-case scenarios
+            - Max Drawdown: {max_dd:.2%} - Historical peak-to-trough decline
+            """)
         
         elif analysis_type == "Seasonal Patterns":
             st.subheader(f"📅 Seasonal Analysis - {commodity}")
@@ -719,6 +839,54 @@ def main():
             
             st.markdown("#### Monthly Statistics")
             st.dataframe(seasonal_df.style.format({"Avg Return": "{:.2%}", "Std Dev": "{:.2%}"}))
+            
+            # Monetization Strategy
+            st.markdown("---")
+            st.subheader("💰 Monetization Strategy")
+            
+            best_month = seasonal_df['Avg Return'].idxmax()
+            worst_month = seasonal_df['Avg Return'].idxmin()
+            best_return = seasonal_df.loc[best_month, 'Avg Return']
+            worst_return = seasonal_df.loc[worst_month, 'Avg Return']
+            
+            months = ['January', 'February', 'March', 'April', 'May', 'June', 
+                     'July', 'August', 'September', 'October', 'November', 'December']
+            best_month_idx = months.index(best_month) if best_month in months else -1
+            worst_month_idx = months.index(worst_month) if worst_month in months else -1
+            
+            st.info(f"""
+            **Seasonal Pattern Insights:**
+            - **Best Month:** {best_month} with average return of {best_return:.1%}
+            - **Worst Month:** {worst_month} with average return of {worst_return:.1%}
+            - **Seasonal Spread:** {best_return - worst_return:.1%} difference between best and worst periods
+            """)
+            
+            if best_return > 0.03:
+                st.success(f"""
+                **How to Monetize:**
+                - **Seasonal Long Position:** Build long exposure 2-3 weeks before {best_month}
+                - **Calendar Spreads:** Go long the commodity in {best_month}, short in {worst_month}
+                - **Options Strategy:** Buy call options or bull call spreads ahead of strong seasonal period
+                - **Timing:** Enter positions when seasonal momentum aligns with technical signals
+                - **Risk Management:** Exit or reduce exposure as the favorable season concludes
+                """)
+            elif worst_return < -0.03:
+                st.error(f"""
+                **How to Monetize:**
+                - **Seasonal Short Position:** Consider short exposure during {worst_month}
+                - **Protective Hedging:** If holding physical/long positions, hedge with puts during weak seasons
+                - **Calendar Spreads:** Go short {worst_month}, long in stronger months to capture spread
+                - **Avoid New Longs:** Refrain from initiating new long positions during historically weak periods
+                - **Contrarian Opportunity:** Watch for oversold conditions late in the weak season for reversal plays
+                """)
+            else:
+                st.info(f"""
+                **How to Monetize:**
+                - **Moderate Seasonality:** Seasonal patterns are present but not extreme
+                - **Tactical Allocation:** Tilt portfolio weightings based on seasonal biases (±10-20%)
+                - **Combine with Other Signals:** Use seasonality as a confirming factor alongside technicals/fundamentals
+                - **Roll Optimization:** Time futures roll dates to avoid seasonal pressure periods
+                """)
             
             # Agricultural insights
             st.markdown("#### 🌱 Agricultural Cycle Insights")
@@ -776,6 +944,49 @@ def main():
                 st.markdown("#### Correlation Matrix")
                 fig_corr = plot_correlation_matrix(portfolio['correlation_matrix'])
                 st.plotly_chart(fig_corr, use_container_width=True)
+                
+                # Monetization Strategy
+                st.markdown("---")
+                st.subheader("💰 Monetization Strategy")
+                
+                port_vol = portfolio['portfolio_volatility']
+                port_sharpe = portfolio['portfolio_sharpe']
+                
+                if port_sharpe > 1.0:
+                    st.success(f"""
+                    **How to Monetize:**
+                    - **High Risk-Adjusted Returns:** Portfolio Sharpe of {port_sharpe:.2f} indicates excellent risk-adjusted performance
+                    - **Full Allocation:** Consider deploying target allocation across all recommended commodities
+                    - **Leverage Opportunity:** With strong Sharpe ratio, moderate leverage (1.5-2x) can enhance absolute returns
+                    - **Rebalancing:** Rebalance monthly to maintain optimal weights and capture mean reversion
+                    - **Product Selection:** Use low-cost ETFs or futures rolls to implement the strategy efficiently
+                    """)
+                elif port_sharpe > 0.5:
+                    st.info(f"""
+                    **How to Monetize:**
+                    - **Moderate Risk-Adjusted Returns:** Portfolio Sharpe of {port_sharpe:.2f} suggests reasonable compensation for risk taken
+                    - **Standard Allocation:** Implement recommended weights with normal position sizing
+                    - **Tactical Overlays:** Consider modest overweights to highest Sharpe commodities in the portfolio
+                    - **Rebalancing:** Rebalance quarterly or when allocations drift >5% from targets
+                    - **Cost Management:** Monitor transaction costs; avoid over-trading in low-volatility periods
+                    """)
+                else:
+                    st.warning(f"""
+                    **How to Monetize:**
+                    - **Low Risk-Adjusted Returns:** Portfolio Sharpe of {port_sharpe:.2f} indicates challenging environment
+                    - **Reduced Allocation:** Consider 50-70% of target allocation until conditions improve
+                    - **Focus on Best Performers:** Overweight commodities with positive Sharpe ratios, underweight or exclude negative ones
+                    - **Alternative Strategies:** Consider market-neutral or long/short approaches within the commodity basket
+                    - **Patience:** Wait for better entry points or regime changes before full deployment
+                    """)
+                
+                st.markdown(f"""
+                **Portfolio Implementation Tips:**
+                - **Diversification Benefit:** Current portfolio volatility ({port_vol:.1%}) vs individual assets shows diversification working
+                - **Correlation Monitoring:** Watch for correlation breakdowns during stress periods
+                - **Execution:** Scale into positions over 3-5 days to minimize market impact
+                - **Hedging:** Consider tail-risk hedging strategies if holding through uncertain macro events
+                """)
             else:
                 st.error("Insufficient data for portfolio optimization")
         
@@ -807,6 +1018,55 @@ def main():
                 sharpe = calculate_sharpe_ratio(returns)
                 vol = returns.std() * np.sqrt(252)
                 stats_cols[i].markdown(f"**{comm}**\n\n- Volatility: {vol:.1%}\n- Sharpe: {sharpe:.2f}")
+            
+            # Monetization Strategy for Multi-Commodity View
+            st.markdown("---")
+            st.subheader("💰 Monetization Strategy")
+            
+            best_comm = None
+            best_sharpe = -999
+            for comm in selected_commodities:
+                df = commodities_data[comm]
+                returns = calculate_returns(df)
+                sharpe = calculate_sharpe_ratio(returns)
+                if sharpe > best_sharpe:
+                    best_sharpe = sharpe
+                    best_comm = comm
+            
+            if best_sharpe > 0.8:
+                st.success(f"""
+                **How to Monetize:**
+                - **Best Performer:** {best_comm} has the highest Sharpe ratio ({best_sharpe:.2f}) in this basket
+                - **Concentrated Long:** Consider overweighting {best_comm} relative to peers
+                - **Pairs Trading:** Go long {best_comm}, short the weakest commodity in the basket for market-neutral exposure
+                - **Momentum Play:** Strong risk-adjusted performers often continue outperforming in the near term
+                - **Trend Following:** Use moving average crossovers on {best_comm} for entry/exit timing
+                """)
+            elif best_sharpe > 0:
+                st.info(f"""
+                **How to Monetize:**
+                - **Balanced Approach:** {best_comm} leads with Sharpe of {best_sharpe:.2f}, but no dominant winner
+                - **Equal Weight:** Consider equal-weight basket to capture broad commodity exposure
+                - **Factor Tilts:** Tilt toward low volatility or momentum factors based on current market regime
+                - **Sector Rotation:** Rotate between energy, metals, and agriculture based on macro outlook
+                """)
+            else:
+                st.warning(f"""
+                **How to Monetize:**
+                - **Challenging Environment:** All commodities showing negative or weak risk-adjusted returns
+                - **Defensive Stance:** Reduce overall commodity exposure; focus on capital preservation
+                - **Long Volatility:** Consider long straddle strategies to profit from potential regime change
+                - **Selective Opportunities:** Wait for individual commodities to show improvement before committing capital
+                - **Alternative Assets:** Consider reallocating to other asset classes until commodity signals improve
+                """)
+            
+            st.markdown("""
+            **Multi-Commodity Implementation Tips:**
+            - **Diversification:** Spread capital across uncorrelated commodities to reduce portfolio variance
+            - **Liquidity Management:** Prioritize liquid futures contracts for easier entry/exit
+            - **Roll Schedule:** Stagger contract rolls to avoid concentration of roll costs
+            - **Monitoring:** Track inter-commodity spreads for relative value opportunities
+            """)
 
 if __name__ == "__main__":
     main()
