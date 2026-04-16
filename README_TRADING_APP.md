@@ -1,7 +1,3 @@
---- README_TRADING_APP.md (原始)
-
-
-+++ README_TRADING_APP.md (修改后)
 # AgriTrade Pro - Elite Commodities Trading Intelligence Platform
 
 🌾 **Professional-grade agricultural commodities trading application** combining machine learning forecasting, economic indicators, seasonal analysis, and risk management tools.
