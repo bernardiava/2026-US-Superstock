@@ -1,4 +1,5 @@
-+++ commodities_trading_app.py (修改后)
+--- commodities_trading_app.py (原始)
+        ^^^^^^^^^^^^^^^^^^^^^^^
 """
 AgriTrade Pro - Elite Commodities Trading Intelligence Platform
 ===============================================================
