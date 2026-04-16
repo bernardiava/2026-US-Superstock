@@ -1,4 +1,3 @@
---- commodities_trading_app.py (原始)
 """
 AgriTrade Pro - Elite Commodities Trading Intelligence Platform
 A professional-grade interactive application for agricultural commodities trading,
