@@ -130,7 +130,13 @@ def calculate_sharpe_ratio(returns, risk_free_rate=0.02):
     """Calculate Sharpe Ratio."""
     excess_returns = returns - risk_free_rate / 252
     std_val = returns.std()
-    if std_val == 0 or pd.isna(std_val) or std_val is None:
+    # Handle case where std_val might be a Series or NaN
+    if pd.isna(std_val) or std_val is None or (hasattr(std_val, '__len__') and len(std_val) == 0) or (not isinstance(std_val, (int, float)) and std_val == 0):
+        return 0
+    try:
+        if float(std_val) == 0:
+            return 0
+    except (TypeError, ValueError):
         return 0
     return np.sqrt(252) * excess_returns.mean() / returns.std()
 
