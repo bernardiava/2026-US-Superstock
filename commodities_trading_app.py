@@ -44,16 +44,27 @@ def generate_commodity_data(commodity: str, days: int = 500) -> pd.DataFrame:
     """Generate realistic commodity price data with seasonal patterns."""
     np.random.seed(42)
     
-    # Base prices and volatility by commodity
+    # Base prices and volatility by commodity - defined at module level for access in main()
+    global commodity_params
     commodity_params = {
-        'Corn': {'base': 4.50, 'volatility': 0.02, 'seasonality': 0.15},
-        'Wheat': {'base': 6.00, 'volatility': 0.025, 'seasonality': 0.18},
-        'Soybeans': {'base': 12.00, 'volatility': 0.022, 'seasonality': 0.16},
-        'Coffee': {'base': 1.80, 'volatility': 0.03, 'seasonality': 0.20},
-        'Sugar': {'base': 0.20, 'volatility': 0.028, 'seasonality': 0.14},
-        'Cotton': {'base': 0.85, 'volatility': 0.024, 'seasonality': 0.13},
-        'Live Cattle': {'base': 1.45, 'volatility': 0.015, 'seasonality': 0.08},
-        'Lean Hogs': {'base': 0.75, 'volatility': 0.035, 'seasonality': 0.12}
+        # Americas/Global Commodities
+        'Corn': {'base': 4.50, 'volatility': 0.02, 'seasonality': 0.15, 'region': 'Americas'},
+        'Wheat': {'base': 6.00, 'volatility': 0.025, 'seasonality': 0.18, 'region': 'Americas'},
+        'Soybeans': {'base': 12.00, 'volatility': 0.022, 'seasonality': 0.16, 'region': 'Americas'},
+        'Coffee': {'base': 1.80, 'volatility': 0.03, 'seasonality': 0.20, 'region': 'Americas'},
+        'Sugar': {'base': 0.20, 'volatility': 0.028, 'seasonality': 0.14, 'region': 'Americas'},
+        'Cotton': {'base': 0.85, 'volatility': 0.024, 'seasonality': 0.13, 'region': 'Americas'},
+        'Live Cattle': {'base': 1.45, 'volatility': 0.015, 'seasonality': 0.08, 'region': 'Americas'},
+        'Lean Hogs': {'base': 0.75, 'volatility': 0.035, 'seasonality': 0.12, 'region': 'Americas'},
+        # APAC Commodities
+        'APAC Rice': {'base': 0.45, 'volatility': 0.025, 'seasonality': 0.18, 'region': 'APAC'},
+        'APAC Palm Oil': {'base': 0.95, 'volatility': 0.032, 'seasonality': 0.22, 'region': 'APAC'},
+        'APAC Rubber': {'base': 1.65, 'volatility': 0.028, 'seasonality': 0.15, 'region': 'APAC'},
+        'APAC Tea': {'base': 2.20, 'volatility': 0.026, 'seasonality': 0.17, 'region': 'APAC'},
+        'APAC Cashew': {'base': 3.80, 'volatility': 0.030, 'seasonality': 0.19, 'region': 'APAC'},
+        'APAC Pepper': {'base': 5.50, 'volatility': 0.035, 'seasonality': 0.21, 'region': 'APAC'},
+        'APAC Coconut Oil': {'base': 1.10, 'volatility': 0.029, 'seasonality': 0.16, 'region': 'APAC'},
+        'APAC Natural Gas (LNG)': {'base': 3.20, 'volatility': 0.040, 'seasonality': 0.25, 'region': 'APAC'}
     }
     
     params = commodity_params.get(commodity, commodity_params['Corn'])
@@ -532,26 +543,195 @@ def plot_correlation_matrix(corr_matrix: pd.DataFrame) -> go.Figure:
     
     return fig
 
+def generate_event_study_data(commodity: str, base_days: int = 90) -> dict:
+    """Generate simulated event study data for the past year with global/regional/national shocks."""
+    np.random.seed(hash(commodity) % 2**32)
+    
+    # Generate price data for the past year
+    df = generate_commodity_data(commodity, days=365)
+    df = calculate_technical_indicators(df)
+    
+    # Define major shock events from the past year (simulated based on real-world patterns)
+    events = [
+        # Geopolitical Events
+        {'date': pd.Timestamp('2024-01-15'), 'type': 'Geopolitical', 'name': 'Middle East Tension Escalation', 
+         'scope': 'Global', 'base_impact': 0.08},
+        {'date': pd.Timestamp('2024-03-22'), 'type': 'Geopolitical', 'name': 'Trade Dispute: US-China Tariffs', 
+         'scope': 'Global', 'base_impact': -0.05},
+        {'date': pd.Timestamp('2024-06-10'), 'type': 'Geopolitical', 'name': 'Black Sea Grain Deal Uncertainty', 
+         'scope': 'Regional', 'base_impact': 0.06},
+        
+        # Climate/Weather Events
+        {'date': pd.Timestamp('2024-02-08'), 'type': 'Climate', 'name': 'El Niño Drought Alert (APAC)', 
+         'scope': 'Regional', 'base_impact': 0.10},
+        {'date': pd.Timestamp('2024-04-18'), 'type': 'Climate', 'name': 'Brazil Frost Warning', 
+         'scope': 'National', 'base_impact': 0.07},
+        {'date': pd.Timestamp('2024-07-25'), 'type': 'Climate', 'name': 'US Midwest Floods', 
+         'scope': 'National', 'base_impact': 0.09},
+        {'date': pd.Timestamp('2024-09-05'), 'type': 'Climate', 'name': 'Southeast Asia Monsoon Delays', 
+         'scope': 'Regional', 'base_impact': 0.05},
+        
+        # Regulatory Events
+        {'date': pd.Timestamp('2024-02-28'), 'type': 'Regulatory', 'name': 'EU Deforestation Regulation Announcement', 
+         'scope': 'Regional', 'base_impact': -0.04},
+        {'date': pd.Timestamp('2024-05-12'), 'type': 'Regulatory', 'name': 'India Rice Export Ban', 
+         'scope': 'National', 'base_impact': 0.12},
+        {'date': pd.Timestamp('2024-08-20'), 'type': 'Regulatory', 'name': 'Indonesia Palm Oil Export Levy Change', 
+         'scope': 'National', 'base_impact': -0.03},
+        {'date': pd.Timestamp('2024-10-15'), 'type': 'Regulatory', 'name': 'China Biofuel Mandate Expansion', 
+         'scope': 'National', 'base_impact': 0.06},
+        
+        # Economic Events
+        {'date': pd.Timestamp('2024-03-05'), 'type': 'Economic', 'name': 'Fed Rate Decision (Hawkish)', 
+         'scope': 'Global', 'base_impact': -0.04},
+        {'date': pd.Timestamp('2024-06-28'), 'type': 'Economic', 'name': 'China GDP Growth Slowdown', 
+         'scope': 'Global', 'base_impact': -0.06},
+        {'date': pd.Timestamp('2024-09-18'), 'type': 'Economic', 'name': 'USD Strength Surge', 
+         'scope': 'Global', 'base_impact': -0.05},
+        {'date': pd.Timestamp('2024-11-08'), 'type': 'Economic', 'name': 'Inflation Data Beat Expectations', 
+         'scope': 'Global', 'base_impact': 0.03},
+    ]
+    
+    # Adjust impact based on commodity type
+    commodity_sensitivity = {
+        'Corn': {'Geopolitical': 0.7, 'Climate': 1.3, 'Regulatory': 1.1, 'Economic': 0.9},
+        'Wheat': {'Geopolitical': 1.2, 'Climate': 1.2, 'Regulatory': 1.0, 'Economic': 0.8},
+        'Soybeans': {'Geopolitical': 0.8, 'Climate': 1.1, 'Regulatory': 1.3, 'Economic': 0.9},
+        'Coffee': {'Geopolitical': 0.6, 'Climate': 1.4, 'Regulatory': 1.0, 'Economic': 0.7},
+        'Sugar': {'Geopolitical': 0.5, 'Climate': 1.2, 'Regulatory': 1.1, 'Economic': 0.8},
+        'Cotton': {'Geopolitical': 0.7, 'Climate': 1.1, 'Regulatory': 0.9, 'Economic': 0.8},
+        'Live Cattle': {'Geopolitical': 0.4, 'Climate': 0.8, 'Regulatory': 1.2, 'Economic': 1.0},
+        'Lean Hogs': {'Geopolitical': 0.4, 'Climate': 0.7, 'Regulatory': 1.1, 'Economic': 1.0},
+        'APAC Rice': {'Geopolitical': 0.9, 'Climate': 1.5, 'Regulatory': 1.4, 'Economic': 0.7},
+        'APAC Palm Oil': {'Geopolitical': 0.7, 'Climate': 1.2, 'Regulatory': 1.5, 'Economic': 0.8},
+        'APAC Rubber': {'Geopolitical': 0.8, 'Climate': 1.0, 'Regulatory': 1.1, 'Economic': 0.9},
+        'APAC Tea': {'Geopolitical': 0.5, 'Climate': 1.3, 'Regulatory': 1.0, 'Economic': 0.6},
+        'APAC Cashew': {'Geopolitical': 0.6, 'Climate': 1.1, 'Regulatory': 1.2, 'Economic': 0.7},
+        'APAC Pepper': {'Geopolitical': 0.5, 'Climate': 1.2, 'Regulatory': 1.0, 'Economic': 0.6},
+        'APAC Coconut Oil': {'Geopolitical': 0.6, 'Climate': 1.1, 'Regulatory': 1.3, 'Economic': 0.7},
+        'APAC Natural Gas (LNG)': {'Geopolitical': 1.4, 'Climate': 0.9, 'Regulatory': 1.0, 'Economic': 1.2},
+    }
+    
+    sensitivity = commodity_sensitivity.get(commodity, {'Geopolitical': 0.8, 'Climate': 1.2, 'Regulatory': 1.1, 'Economic': 0.9})
+    
+    # Calculate actual impacts and filter events within data range
+    processed_events = []
+    min_date = df.index.min()
+    max_date = df.index.max()
+    
+    for event in events:
+        if min_date <= event['date'] <= max_date:
+            # Find closest price data point
+            closest_idx = df.index.get_indexer([event['date']], method='nearest')[0]
+            if closest_idx >= 0:
+                actual_date = df.index[closest_idx]
+                price_at_event = df['Close'].iloc[closest_idx]
+                
+                # Apply commodity-specific sensitivity
+                impact_multiplier = sensitivity.get(event['type'], 1.0)
+                actual_impact = event['base_impact'] * impact_multiplier * (1 + np.random.uniform(-0.3, 0.3))
+                
+                # Determine recovery days based on event type and scope
+                base_recovery = {'Global': 30, 'Regional': 21, 'National': 14}
+                recovery_days = base_recovery.get(event['scope'], 21) + np.random.randint(-5, 10)
+                
+                processed_events.append({
+                    'date': actual_date,
+                    'type': event['type'],
+                    'name': event['name'],
+                    'scope': event['scope'],
+                    'impact': actual_impact * 100,  # Convert to percentage
+                    'price_at_event': price_at_event,
+                    'recovery_days': max(5, recovery_days)
+                })
+    
+    events_df = pd.DataFrame(processed_events)
+    
+    # Calculate summary statistics
+    if len(events_df) > 0:
+        max_negative_idx = events_df['impact'].idxmin()
+        max_positive_idx = events_df['impact'].idxmax()
+        
+        max_negative_event = events_df.loc[max_negative_idx, 'name'][:25] + "..." if len(events_df.loc[max_negative_idx, 'name']) > 25 else events_df.loc[max_negative_idx, 'name']
+        max_positive_event = events_df.loc[max_positive_idx, 'name'][:25] + "..." if len(events_df.loc[max_positive_idx, 'name']) > 25 else events_df.loc[max_positive_idx, 'name']
+        
+        max_negative_impact = events_df['impact'].min()
+        max_positive_impact = events_df['impact'].max()
+        avg_impact = events_df['impact'].mean()
+        avg_recovery_days = events_df['recovery_days'].mean()
+    else:
+        max_negative_event = "N/A"
+        max_positive_event = "N/A"
+        max_negative_impact = 0
+        max_positive_impact = 0
+        avg_impact = 0
+        avg_recovery_days = 21
+    
+    # Calculate volatility spike during events
+    pre_event_vol = df['Close'].pct_change().std()
+    event_window_returns = []
+    for _, event in events_df.iterrows():
+        event_idx = df.index.get_loc(event['date'])
+        if event_idx + 5 < len(df):
+            window_returns = df['Close'].iloc[event_idx:event_idx+5].pct_change()
+            event_window_returns.extend(window_returns.dropna().tolist())
+    
+    if event_window_returns:
+        event_vol = pd.Series(event_window_returns).std()
+        volatility_spike = (event_vol / pre_event_vol - 1) * 100 if pre_event_vol > 0 else 50
+    else:
+        volatility_spike = 50
+    
+    return {
+        'price_data': df,
+        'events': events_df,
+        'max_negative_impact': max_negative_impact,
+        'max_positive_impact': max_positive_impact,
+        'avg_impact': avg_impact,
+        'max_negative_event': max_negative_event,
+        'max_positive_event': max_positive_event,
+        'avg_recovery_days': avg_recovery_days,
+        'volatility_spike': volatility_spike
+    }
+
 # ============================================================================
 # MAIN APPLICATION
 # ============================================================================
 
 def main():
-    st.markdown('<p class="main-header">🌾 AgriTrade Pro</p>', unsafe_allow_html=True)
-    st.markdown("### Elite Commodities Trading Intelligence Platform")
+    st.markdown('<p class="main-header">🌾 AgriTrade Pro | APAC Commodities Trading Intelligence</p>', unsafe_allow_html=True)
+    st.markdown("### Elite Commodities Trading Intelligence Platform - APAC Edition")
     st.markdown("---")
     
     # Sidebar controls
     st.sidebar.header("⚙️ Control Panel")
     
-    commodities = ['Corn', 'Wheat', 'Soybeans', 'Coffee', 'Sugar', 'Cotton', 'Live Cattle', 'Lean Hogs']
-    selected_commodities = st.sidebar.multiselect("Select Commodities", commodities, default=['Corn', 'Wheat'])
+    # Separate commodities by region
+    all_commodities = list(commodity_params.keys())
+    americas_commodities = [c for c in all_commodities if commodity_params[c]['region'] == 'Americas']
+    apac_commodities = [c for c in all_commodities if commodity_params[c]['region'] == 'APAC']
+    
+    # Region selection
+    st.sidebar.subheader("🌍 Region Filter")
+    selected_regions = st.sidebar.multiselect("Select Regions", ['Americas', 'APAC'], default=['Americas', 'APAC'])
+    
+    # Build commodity list based on selected regions
+    available_commodities = []
+    if 'Americas' in selected_regions:
+        available_commodities.extend(americas_commodities)
+    if 'APAC' in selected_regions:
+        available_commodities.extend(apac_commodities)
+    
+    selected_commodities = st.sidebar.multiselect("Select Commodities", available_commodities, default=[available_commodities[0]] if available_commodities else [])
     
     analysis_type = st.sidebar.selectbox(
         "Analysis Type",
-        ["Technical Analysis", "ML Forecasting", "Risk Analytics", "Seasonal Patterns", "Portfolio Optimization"]
+        ["Technical Analysis", "ML Forecasting", "Risk Analytics", "Seasonal Patterns", "Portfolio Optimization", "Event Study Analysis"]
     )
     
+    # Forecast base days as option
+    st.sidebar.subheader("📅 Forecast Settings")
+    forecast_base_days = st.sidebar.selectbox("Forecast Base Days", [30, 60, 90, 180, 365], index=2)
     forecast_horizon = st.sidebar.slider("Forecast Horizon (days)", 1, 30, 5)
     risk_tolerance = st.sidebar.selectbox("Risk Tolerance", ["conservative", "moderate", "aggressive"])
     
@@ -911,6 +1091,124 @@ def main():
         
         elif analysis_type == "Portfolio Optimization":
             st.info("Please select multiple commodities for portfolio analysis.")
+        
+        elif analysis_type == "Event Study Analysis":
+            st.subheader(f"📉 Event Study Analysis: Global/Regional Shocks Impact on {commodity}")
+            
+            # Simulate event study data for the past year
+            events_data = generate_event_study_data(commodity, forecast_base_days)
+            
+            # Display event impact summary
+            st.markdown("#### Recent Shock Events (Past 12 Months)")
+            
+            event_cols = st.columns(3)
+            with event_cols[0]:
+                st.metric("Largest Negative Shock", f"{events_data['max_negative_impact']:.1f}%", 
+                         events_data['max_negative_event'])
+            with event_cols[1]:
+                st.metric("Largest Positive Shock", f"+{events_data['max_positive_impact']:.1f}%", 
+                         events_data['max_positive_event'])
+            with event_cols[2]:
+                st.metric("Average Event Impact", f"{events_data['avg_impact']:+.1f}%")
+            
+            # Event timeline chart
+            st.markdown("#### Price Impact Timeline")
+            fig_events = go.Figure()
+            
+            # Add price line
+            fig_events.add_trace(go.Scatter(
+                x=events_data['price_data'].index,
+                y=events_data['price_data']['Close'],
+                mode='lines',
+                name='Price',
+                line=dict(color='#1e3a5f', width=2)
+            ))
+            
+            # Add event markers
+            for idx, event in events_data['events'].iterrows():
+                marker_color = 'red' if event['impact'] < 0 else 'green'
+                fig_events.add_trace(go.Scatter(
+                    x=[event['date']],
+                    y=[event['price_at_event']],
+                    mode='markers+text',
+                    name=f"{event['type']}: {event['name']}",
+                    marker=dict(color=marker_color, size=12, symbol='diamond'),
+                    text=[f"⚡ {event['name']}"],
+                    textposition="top center"
+                ))
+            
+            fig_events.update_layout(
+                title=f"{commodity} Price Response to Shock Events",
+                xaxis_title="Date",
+                yaxis_title="Price ($)",
+                height=600,
+                showlegend=True
+            )
+            st.plotly_chart(fig_events, use_container_width=True)
+            
+            # Detailed event table
+            st.markdown("#### Event Details & Impact Analysis")
+            events_display = events_data['events'][['date', 'type', 'name', 'scope', 'impact', 'recovery_days']].copy()
+            events_display.columns = ['Date', 'Event Type', 'Event Name', 'Scope', 'Price Impact (%)', 'Recovery Days']
+            st.dataframe(events_display.style.format({'Date': '{:%Y-%m-%d}', 'Price Impact (%)': '{:+.1f}%'}))
+            
+            # Monetization Strategy for Event Study
+            st.markdown("---")
+            st.subheader("💰 Monetization Strategy Based on Event Analysis")
+            
+            avg_recovery = events_data['avg_recovery_days']
+            volatility_spike = events_data['volatility_spike']
+            
+            st.info(f"""
+            **How to Monetize Event-Driven Opportunities:**
+            
+            **Pre-Event Positioning:**
+            - **Anticipatory Trades:** Monitor geopolitical calendars and weather forecasts for predictable events
+            - **Options Strategies:** Use straddles/strangles before high-uncertainty events (earnings, USDA reports)
+            - **Volatility Premium:** Sell premium when implied volatility is elevated pre-event
+            
+            **During-Event Response:**
+            - **Rapid Assessment:** Evaluate whether shock is temporary or structural
+            - **Liquidity Provision:** Provide liquidity during panic selling if fundamentals remain intact
+            - **Stop-Loss Adjustment:** Tighten stops during high-volatility periods ({volatility_spike:.0f}% vol spike typical)
+            
+            **Post-Event Recovery:**
+            - **Mean Reversion:** {commodity} typically recovers in ~{avg_recovery:.0f} days; consider counter-trend positions
+            - **Overshoot Trades:** If price moves >2 standard deviations, expect partial retracement
+            - **Supply Chain Plays:** For climate/regulatory shocks, position along the value chain (substitutes, alternatives)
+            
+            **Risk Management:**
+            - **Position Sizing:** Reduce exposure by 30-50% during active crisis periods
+            - **Correlation Breakdown:** Diversification may fail during systemic shocks; monitor cross-asset correlations
+            - **Tail Hedging:** Maintain 2-5% portfolio allocation to tail-risk hedges (OTM options, VIX products)
+            """)
+            
+            # Specific recommendations by event type
+            st.markdown("#### Tactical Recommendations by Event Type")
+            
+            event_types_present = events_data['events']['type'].unique()
+            
+            for etype in event_types_present:
+                if etype == 'Geopolitical':
+                    st.warning("**Geopolitical Shocks (War, Trade Disputes):**")
+                    st.markdown("- Go long safe-haven commodities (gold, silver) during escalation")
+                    st.markdown("- Short demand-sensitive commodities if conflict threatens global growth")
+                    st.markdown("- Monitor shipping routes for supply disruption opportunities")
+                elif etype == 'Climate':
+                    st.error("**Climate/Weather Shocks (Drought, Floods, El Niño):**")
+                    st.markdown("- Long affected agricultural commodities pre-harvest")
+                    st.markdown("- Consider geographic diversification; regions unaffected by same weather pattern")
+                    st.markdown("- Weather derivatives as hedging instruments")
+                elif etype == 'Regulatory':
+                    st.info("**Regulatory Shocks (Export Bans, Tariffs, ESG Rules):**")
+                    st.markdown("- Arbitrage between regulated/unregulated markets")
+                    st.markdown("- Position for substitution effects (e.g., palm oil → soybean oil)")
+                    st.markdown("- Monitor policy announcement calendars for alpha generation")
+                elif etype == 'Economic':
+                    st.success("**Economic Shocks (Inflation, Rate Changes, Currency Crises):**")
+                    st.markdown("- Commodities as inflation hedge; increase allocation during monetary easing")
+                    st.markdown("- Currency-sensitive commodities benefit from USD weakness")
+                    st.markdown("- Industrial metals sensitive to China stimulus announcements")
     
     # Multi-commodity analysis
     else:
