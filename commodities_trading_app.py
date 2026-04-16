@@ -578,7 +578,7 @@ def main():
         df = commodities_data[commodity]
         
         # Key metrics
-        col1, col2, col3, col4 = st.columns(4)
+        col1, col2, col3, col4, col5, col6 = st.columns(6)
         current_price = df['Close'].iloc[-1]
         price_change = ((current_price - df['Close'].iloc[-1]) / df['Close'].iloc[-1]) * 100
         volatility = df['Close'].pct_change().std() * np.sqrt(252) * 100
@@ -588,6 +588,8 @@ def main():
         col2.metric("Volatility (Ann.)", f"{volatility:.1f}%")
         col3.metric("Avg Volume (20d)", f"{avg_volume:,.0f}")
         col4.metric("Data Points", f"{len(df)}")
+        col5.metric("Analysis Type", analysis_type)
+        col6.metric("Risk Tolerance", risk_tolerance.title())
         
         st.markdown("---")
         
@@ -739,6 +741,11 @@ def main():
     # Multi-commodity analysis
     else:
         st.subheader(f"📊 Multi-Commodity Analysis ({len(selected_commodities)} commodities)")
+        
+        # Show selected parameters at the top of multi-commodity view
+        param_col1, param_col2 = st.columns(2)
+        param_col1.metric("Analysis Type", analysis_type)
+        param_col2.metric("Risk Tolerance", risk_tolerance.title())
         
         if analysis_type == "Portfolio Optimization":
             with st.spinner("Optimizing portfolio..."):
