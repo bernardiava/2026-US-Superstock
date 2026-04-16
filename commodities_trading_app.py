@@ -577,8 +577,16 @@ def main():
         commodity = selected_commodities[0]
         df = commodities_data[commodity]
         
-        # Key metrics
-        col1, col2, col3, col4, col5, col6 = st.columns(6)
+        # Key metrics - Display Analysis Type and Risk Tolerance prominently at the top
+        st.markdown("#### 📊 Analysis Parameters")
+        param_cols = st.columns(2)
+        param_cols[0].metric("Analysis Type", analysis_type)
+        param_cols[1].metric("Risk Tolerance", risk_tolerance.title())
+        
+        st.markdown("---")
+        
+        # Market metrics
+        col1, col2, col3, col4 = st.columns(4)
         current_price = df['Close'].iloc[-1]
         price_change = ((current_price - df['Close'].iloc[-1]) / df['Close'].iloc[-1]) * 100
         volatility = df['Close'].pct_change().std() * np.sqrt(252) * 100
@@ -588,8 +596,6 @@ def main():
         col2.metric("Volatility (Ann.)", f"{volatility:.1f}%")
         col3.metric("Avg Volume (20d)", f"{avg_volume:,.0f}")
         col4.metric("Data Points", f"{len(df)}")
-        col5.metric("Analysis Type", analysis_type)
-        col6.metric("Risk Tolerance", risk_tolerance.title())
         
         st.markdown("---")
         
