@@ -278,12 +278,17 @@ def forecast_prices(model, scaler, df: pd.DataFrame, forecast_horizon: int = 5) 
         # Update features for next prediction (simplified)
         current_row = current_features.copy()
         current_row['Close'] = pred
-        for lag in [1, 2, 3, 5, 10]:
+        
+        # Create a mapping of current lag to previous lag
+        lag_sequence = [1, 2, 3, 5, 10]
+        for i, lag in enumerate(lag_sequence):
             if f'lag_{lag}' in current_row.columns:
                 if lag == 1:
                     current_row[f'lag_{lag}'] = pred
                 else:
-                    current_row[f'lag_{lag}'] = current_features[f'lag_{lag-1}'].iloc[0] if lag > 1 else pred
+                    # Get the previous lag in the sequence
+                    prev_lag = lag_sequence[i - 1]
+                    current_row[f'lag_{lag}'] = current_features[f'lag_{prev_lag}'].iloc[0]
         
         current_features = current_row
     
