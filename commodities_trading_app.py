@@ -288,7 +288,10 @@ def forecast_prices(model, scaler, df: pd.DataFrame, forecast_horizon: int = 5) 
                 else:
                     # Get the previous lag in the sequence
                     prev_lag = lag_sequence[i - 1]
-                    current_row[f'lag_{lag}'] = current_features[f'lag_{prev_lag}'].iloc[0]
+                    if f'lag_{prev_lag}' in current_features.columns:
+                        current_row[f'lag_{lag}'] = current_features[f'lag_{prev_lag}'].iloc[0]
+                    else:
+                        current_row[f'lag_{lag}'] = pred
         
         current_features = current_row
     
