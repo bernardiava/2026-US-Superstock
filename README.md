@@ -1,169 +1,148 @@
-# 🚀 SuperStock Detector: US Market Alpha Engine (2015-Present)
+# MDB Project & Loan Portfolio Monitor
 
-> **A professional-grade quantitative dashboard for detecting, analyzing, and forecasting "Superstocks" in the US equity market.**  
-> *Built with the precision of a CFA charterholder, the rigor of a quant researcher, and the polish of a top-tier fintech designer.*
+An interactive Streamlit dashboard simulating a multilateral development bank's project and loan data ecosystem. This portfolio piece demonstrates working knowledge of project and loan products for the AIIB Digital Program Associate – Data Analysis role.
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![Streamlit](https://img.shields.io/badge/Streamlit-1.30+-red.svg)
-![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-lightgrey.svg)
+## 🏦 Overview
 
----
+This dashboard provides comprehensive monitoring capabilities for:
+- **Project Portfolio**: Track infrastructure projects across sectors and countries
+- **Loan Book**: Monitor commitments, disbursements, and outstanding balances
+- **Disbursement Tracking**: Schedule and monitor loan disbursements
+- **Data Quality**: Identify and resolve data quality issues
+- **Business Intelligence**: Build custom reports and visualizations
+- **Risk Analytics**: Portfolio risk metrics and stress testing
 
-## 📖 Table of Contents
-- [Overview](#overview)
-- [Key Features](#key-features)
-- [Tech Stack & Skills Demonstrated](#tech-stack--skills-demonstrated)
-- [Target Roles](#target-roles)
-- [Installation & Usage](#installation--usage)
-- [Methodology](#methodology)
-- [Disclaimer](#disclaimer)
-- [Copyright & Citation](#copyright--citation)
+## 🚀 Quick Start
 
----
+### Running in GitHub Codespaces
 
-## 🌟 Overview
+1. Open this repository in a GitHub Codespace
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run the application:
+   ```bash
+   streamlit run app.py
+   ```
+4. The dashboard will open automatically in your browser
 
-The **SuperStock Detector** is an interactive financial analytics tool designed to identify US stocks that have delivered exponential returns (300%+) since 2015. It goes beyond simple price charts by decomposing stock performance into distinct **lifecycle phases** (Rapid Growth, Stagnation, Decline) and correlating these phases with fundamental events like earnings announcements, stock splits, and macro news.
+### Running Locally
 
-This project simulates a professional institutional research workflow, combining:
-1.  **Fundamental Screening**: Identifying high-growth candidates based on market cap and return thresholds.
-2.  **Quantitative Phase Analysis**: Using statistical regimes to detect when a stock is accelerating or stagnating.
-3.  **Event-Driven Timeline**: Mapping price action against real-world catalysts.
-4.  **Risk Management**: Calculating Sharpe ratios, maximum drawdowns, and volatility regimes.
+1. Clone this repository
+2. Create a virtual environment (recommended):
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Run the application:
+   ```bash
+   streamlit run app.py
+   ```
 
----
+## 📊 Features
 
-## 🔥 Key Features
+### 1. Project Overview Tab
+- View all infrastructure projects with key details
+- Filter by sector, country, and status
+- KPI cards showing portfolio value, active projects, and disbursement ratio
+- Visual breakdowns by sector, country, and project status
 
-### 1. Intelligent SuperStock Detection
-- Scans a curated universe of high-growth US equities (e.g., NVDA, TSLA, META, AMD).
-- Filters for **300%+ total returns** since 2015.
-- Ranks candidates by risk-adjusted returns (Sharpe Ratio) and volatility.
+### 2. Loan Portfolio Tab
+- Complete loan book with commitment, disbursed, and outstanding amounts
+- Classification breakdowns by loan type, risk rating, and covenant status
+- Portfolio concentration analysis by country and sector
+- Non-performing loan (NPL) tracker
 
-### 2. Lifecycle Phase Decomposition
-Automatically segments historical price data into four distinct regimes:
-- 🟢 **Rapid Growth**: Annualized returns > 50%.
-- 🔵 **Moderate Growth**: Annualized returns 10–50%.
-- 🟡 **Stagnation**: Annualized returns -10% to 10% (consolidation phases).
-- 🔴 **Decline**: Annualized returns < -10%.
+### 3. Disbursement Monitoring Tab
+- Disbursement schedule with status tracking
+- Delayed disbursement alerts with delay metrics
+- Progress bars showing disbursed vs. committed amounts
+- Monthly disbursement trend analysis
 
-### 3. Interactive Event Timeline
-- Visualizes price action overlaid with key corporate events:
-  - Earnings Reports (with EPS surprise data).
-  - Stock Splits & Dividends.
-  - Major News Headlines (via Yahoo Finance integration).
-- Allows users to pinpoint exactly *why* a stock moved at a specific time.
+### 4. Data Quality & Reconciliation Tab
+- Automated detection of common data quality issues:
+  - Mismatched project cost vs. loan amounts
+  - Missing covenant data
+  - Duplicate project entries
+  - Classification inconsistencies
+- Severity-based issue flagging (High/Medium/Low)
+- Data completeness scores per project
+- Reconciliation log with resolution actions
 
-### 4. Institutional-Grade UI/UX
-- **Dark Mode Interface**: Designed with a Bloomberg Terminal/Two Sigma aesthetic.
-- **Real-time Interactivity**: Dynamic filtering, hover tooltips, and cross-linked charts.
-- **Performance Optimized**: Parallel processing and caching ensure sub-minute load times for deep historical analysis.
+### 5. Business Intelligence & Self-Service Tab
+- Custom report builder with selectable dimensions and metrics
+- Dynamic chart generation (bar, pie, line charts)
+- CSV export functionality
+- Simulated natural language query interface
 
-### 5. Quantitative Metrics Dashboard
-- **Risk Stats**: Volatility, Max Drawdown, Beta, Skewness, Kurtosis.
-- **Trend Indicators**: SMA50/200 crossovers (Golden/Death Cross detection).
-- **Return Distribution**: Histograms showing the frequency of daily returns.
+### 6. Portfolio Risk Dashboard Tab
+- Value at Risk (VaR) calculations at 95% and 99% confidence
+- Credit risk heatmap by country and sector
+- Loan maturity profile with upcoming maturities alert
+- Stress testing scenarios:
+  - 10% currency depreciation
+  - 2% interest rate increase
+  - Combined stress scenario
 
----
+## 🎨 Design
 
-## 🛠 Tech Stack & Skills Demonstrated
+The dashboard uses a professional color scheme aligned with financial institution branding:
+- **Primary Color**: Dark Blue (#1a3a5c)
+- **Accent Color**: Gold (#d4a843)
+- **Background**: Light Gray (#f5f5f5)
 
-This project showcases a rare hybrid of **Finance**, **Data Science**, and **Software Engineering** skills:
+## 📁 File Structure
 
-### 💼 Financial Expertise (CFA Level)
-- **Equity Research**: Deep understanding of growth drivers, market cycles, and fundamental catalysts.
-- **Portfolio Construction**: Selection bias mitigation, sector diversification analysis.
-- **Risk Management**: Value at Risk (VaR) concepts, drawdown analysis, and volatility clustering.
-- **Market Microstructure**: Understanding of stock splits, dividend impacts, and earnings seasonality.
-
-### 📊 Quantitative Research & Data Science
-- **Time Series Analysis**: Regime switching detection, rolling window statistics.
-- **Statistical Modeling**: Calculation of higher-order moments (skewness, kurtosis) for return distributions.
-- **Data Engineering**: Efficient ETL pipelines using `yfinance`, handling missing data, and normalizing multi-asset time series.
-- **Forecasting Readiness**: Architecture designed to integrate ARIMA, GARCH, LSTM, or Prophet models for future price projection.
-
-### 💻 Full-Stack Development & UI/UX
-- **Python Proficiency**: Advanced use of `pandas`, `numpy`, `scipy`, and `parallel processing`.
-- **Interactive Dashboards**: Expert-level `Streamlit` development (session state management, caching strategies, custom layouts).
-- **Data Visualization**: Mastery of `Plotly` for creating publication-quality financial charts (candlesticks, area charts, histograms).
-- **UX Design**: Intuitive user flows, responsive layout design, and professional color theory application for financial data.
-
----
-
-## 🎯 Target Roles
-
-This portfolio project is tailored to demonstrate competency for the following roles:
-
-| Role | Relevance |
-| :--- | :--- |
-| **Quantitative Researcher** | Demonstrates ability to handle large time-series datasets, define alpha factors, and analyze market regimes statistically. |
-| **Equity Research Analyst** | Shows capability to link price action to fundamental events (earnings, news) and perform deep-dive due diligence. |
-| **Financial Data Scientist** | Highlights end-to-end pipeline creation: from raw data ingestion to interactive visualization and statistical inference. |
-| **Portfolio Manager / Strategist** | Illustrates risk-aware investment thinking, drawdown control, and sector rotation analysis. |
-| **FinTech Product Engineer** | Proves ability to build user-centric, high-performance financial tools with professional-grade UI/UX. |
-
----
-
-## 🚀 Installation & Usage
-
-### Prerequisites
-- Python 3.8+
-- pip package manager
-
-### 1. Clone the Repository
-```bash
-git clone <your-repo-url>
-cd <your-repo-directory>
+```
+├── app.py                 # Main Streamlit application
+├── data_generator.py      # Synthetic data generation module
+├── requirements.txt       # Python dependencies
+└── README.md             # This file
 ```
 
-### 2. Install Dependencies
-```bash
-pip install streamlit pandas numpy plotly yfinance scipy tqdm
-```
+## 🔧 Technical Stack
 
-### 3. Run the Application
-```bash
-streamlit run superstock_detector.py
-```
-*The dashboard will automatically open in your default browser at `http://localhost:8501`.*
+- **Frontend**: Streamlit
+- **Data Manipulation**: pandas, numpy
+- **Visualization**: Plotly
+- **Data Generation**: Custom synthetic data generator with seed 42 for reproducibility
 
-### 4. How to Use
-1.  **Sidebar**: Select a specific stock ticker or analyze the "Top Superstocks" list.
-2.  **Overview Tab**: View the ranking table and sector distribution.
-3.  **Deep Dive Tab**: Analyze specific growth phases and stagnation periods.
-4.  **Timeline Tab**: Explore the interactive chart with event markers (earnings, splits, news).
-5.  **Metrics Tab**: Review detailed statistical properties and risk metrics.
+## 📈 Data Specifications
 
----
+The dashboard generates realistic MDB data following these rules:
+- **25 projects** across 8 Asian countries
+- **Sectors**: Energy (8), Transport (7), Water (5), Digital Infrastructure (5)
+- **Status Distribution**: Concept (5), Appraisal (5), Implementation (10), Completion (5)
+- **Loan Types**: 60% Sovereign, 40% Non-Sovereign
+- **Risk Ratings**: 50% AA or above, 30% A-BBB, 15% BB-B, 5% CCC or below
+- **Deliberate Data Quality Issues**: 6 issues for demonstration purposes
 
-## 🧠 Methodology
+## 💼 Job Application Context
 
-1.  **Data Ingestion**: Historical daily OHLCV data is fetched via `yfinance` from Jan 1, 2015, to present.
-2.  **Screening**: Stocks are filtered for minimum market cap and total return thresholds.
-3.  **Regime Detection**: A rolling annualized return calculation classifies each day into a specific phase (Growth/Stagnation/Decline).
-4.  **Event Correlation**: Earnings dates and split events are merged with price data to identify catalysts.
-5.  **Visualization**: Data is rendered using Plotly with custom themes to ensure clarity and professional presentation.
+This dashboard was created to demonstrate competencies for the **AIIB Digital Program Associate – Data Analysis** role, specifically addressing:
 
----
+1. **Project and Loan Product Knowledge**: Understanding of MDB financing instruments
+2. **Data Analysis Skills**: Filtering, aggregation, and visualization
+3. **Data Quality Management**: Root cause analysis of data issues
+4. **Risk Analytics**: Portfolio risk assessment and stress testing
+5. **Business Intelligence**: Self-service reporting capabilities
 
-## ⚠️ Disclaimer
+## 📝 Notes
 
-*This application is for **educational and research purposes only**. It does not constitute financial advice, investment recommendations, or an offer to sell or buy any securities. Past performance is not indicative of future results. The author makes no representations as to the accuracy, completeness, or timeliness of the data. Always conduct your own due diligence before making investment decisions.*
+- All data is synthetically generated for demonstration purposes
+- No external data files are required
+- The application runs entirely in a browser with no backend server needed
+- Data is reproducible using seed 42
 
----
+## 📄 License
 
-## © Copyright & Citation
-
-**All Rights Reserved.**  
-© 2024-2025. This codebase, design, and analytical methodology are the exclusive property of the author. Unauthorized commercial use, redistribution, or claiming of this work as your own is strictly prohibited.
-
-### 📚 Citation
-If you find this project inspiring or use it as a reference for your own research, portfolio, or academic work, please cite it as follows:
-
-> **Bernardia Vitri Arumsari**. (2025). *SuperStock Detector: US Market Alpha Engine*. GitHub Repository. Available at: [https://github.com/bernardiava/2026-Various-Projects/tree/superstocksusmarketanalysis-9b6fe]
-
-*Acknowledging the original author helps support the open-source community and encourages further development of high-quality financial tools.*
+This project is provided as-is for portfolio demonstration purposes.
 
 ---
 
-*Built with ❤️ by a team of Finance, Quant, and Design experts.*
+*Built with ❤️ for AIIB Digital Program Associate application*
