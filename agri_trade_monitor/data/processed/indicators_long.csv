@@ -1,0 +1,1652 @@
+iso3,country,year,indicator_code,indicator,value
+ARG,Argentina,2010,AG.LND.AGRI.ZS,Agricultural land (% of land area),46.1512264816256
+ARG,Argentina,2011,AG.LND.AGRI.ZS,Agricultural land (% of land area),45.8058128615225
+ARG,Argentina,2012,AG.LND.AGRI.ZS,Agricultural land (% of land area),45.5966989319214
+ARG,Argentina,2013,AG.LND.AGRI.ZS,Agricultural land (% of land area),44.9388641022549
+ARG,Argentina,2014,AG.LND.AGRI.ZS,Agricultural land (% of land area),44.5636663268401
+ARG,Argentina,2015,AG.LND.AGRI.ZS,Agricultural land (% of land area),44.1884685514253
+ARG,Argentina,2016,AG.LND.AGRI.ZS,Agricultural land (% of land area),43.8132707760104
+ARG,Argentina,2017,AG.LND.AGRI.ZS,Agricultural land (% of land area),43.4380730005956
+ARG,Argentina,2018,AG.LND.AGRI.ZS,Agricultural land (% of land area),43.0627656037037
+ARG,Argentina,2019,AG.LND.AGRI.ZS,Agricultural land (% of land area),38.0359010337305
+ARG,Argentina,2020,AG.LND.AGRI.ZS,Agricultural land (% of land area),33.0090328097081
+ARG,Argentina,2021,AG.LND.AGRI.ZS,Agricultural land (% of land area),27.9821667781152
+ARG,Argentina,2022,AG.LND.AGRI.ZS,Agricultural land (% of land area),27.1234177053302
+ARG,Argentina,2023,AG.LND.AGRI.ZS,Agricultural land (% of land area),29.4264998958596
+ARG,Argentina,2024,AG.LND.AGRI.ZS,Agricultural land (% of land area),29.5243695851558
+ARG,Argentina,2010,AG.PRD.CREL.MT,Cereal production (metric tons),46628492.0
+ARG,Argentina,2011,AG.PRD.CREL.MT,Cereal production (metric tons),49349166.0
+ARG,Argentina,2012,AG.PRD.CREL.MT,Cereal production (metric tons),40712638.0
+ARG,Argentina,2013,AG.PRD.CREL.MT,Cereal production (metric tons),51796533.0
+ARG,Argentina,2014,AG.PRD.CREL.MT,Cereal production (metric tons),55535814.58
+ARG,Argentina,2015,AG.PRD.CREL.MT,Cereal production (metric tons),53364962.03
+ARG,Argentina,2016,AG.PRD.CREL.MT,Cereal production (metric tons),68228186.97
+ARG,Argentina,2017,AG.PRD.CREL.MT,Cereal production (metric tons),76520391.56
+ARG,Argentina,2018,AG.PRD.CREL.MT,Cereal production (metric tons),71533692.0
+ARG,Argentina,2019,AG.PRD.CREL.MT,Cereal production (metric tons),83934093.63
+ARG,Argentina,2020,AG.PRD.CREL.MT,Cereal production (metric tons),83569977.83
+ARG,Argentina,2021,AG.PRD.CREL.MT,Cereal production (metric tons),92198347.34
+ARG,Argentina,2022,AG.PRD.CREL.MT,Cereal production (metric tons),81989897.27
+ARG,Argentina,2023,AG.PRD.CREL.MT,Cereal production (metric tons),65403921.54
+ARG,Argentina,2024,AG.PRD.CREL.MT,Cereal production (metric tons),85727345.71
+ARG,Argentina,2010,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",37.02270227
+ARG,Argentina,2011,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",37.69
+ARG,Argentina,2012,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",37.69
+ARG,Argentina,2013,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",37.69
+ARG,Argentina,2014,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",37.69
+ARG,Argentina,2015,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",37.69
+ARG,Argentina,2016,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",37.69
+ARG,Argentina,2017,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",37.69
+ARG,Argentina,2018,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",37.69
+ARG,Argentina,2019,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",37.69
+ARG,Argentina,2020,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",37.69
+ARG,Argentina,2021,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",37.69
+ARG,Argentina,2022,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",37.69
+ARG,Argentina,2010,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,34.9710132635696
+ARG,Argentina,2011,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,35.2061549999644
+ARG,Argentina,2012,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,30.5265423717108
+ARG,Argentina,2013,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,29.3339290021037
+ARG,Argentina,2014,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,28.4067936452275
+ARG,Argentina,2015,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,22.4862260889792
+ARG,Argentina,2016,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,26.0938878488799
+ARG,Argentina,2017,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,25.2896011376779
+ARG,Argentina,2018,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,30.7625359549926
+ARG,Argentina,2019,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,32.6306150458499
+ARG,Argentina,2020,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,30.203698807416
+ARG,Argentina,2021,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,33.078689567466
+ARG,Argentina,2022,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,31.5801792606256
+ARG,Argentina,2023,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,26.6769512482215
+ARG,Argentina,2024,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,27.929760849367
+ARG,Argentina,2010,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",7.13216744789716
+ARG,Argentina,2011,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",6.99873377085717
+ARG,Argentina,2012,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",5.78174420692637
+ARG,Argentina,2013,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",6.05291843703277
+ARG,Argentina,2014,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",6.7127035133689
+ARG,Argentina,2015,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",5.15668590274786
+ARG,Argentina,2016,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",6.2645658204639
+ARG,Argentina,2017,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",5.23162237679509
+ARG,Argentina,2018,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",4.53787889696835
+ARG,Argentina,2019,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",5.31855599661392
+ARG,Argentina,2020,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",6.35703367590492
+ARG,Argentina,2021,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",7.29128249619051
+ARG,Argentina,2022,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",6.5415694049027
+ARG,Argentina,2023,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",5.8467786039042
+ARG,Argentina,2024,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",5.80601710916249
+AUS,Australia,2010,AG.LND.AGRI.ZS,Agricultural land (% of land area),48.9920987204353
+AUS,Australia,2011,AG.LND.AGRI.ZS,Agricultural land (% of land area),51.5628132199992
+AUS,Australia,2012,AG.LND.AGRI.ZS,Agricultural land (% of land area),50.3854314463116
+AUS,Australia,2013,AG.LND.AGRI.ZS,Agricultural land (% of land area),48.3937102169923
+AUS,Australia,2014,AG.LND.AGRI.ZS,Agricultural land (% of land area),48.7383986566523
+AUS,Australia,2015,AG.LND.AGRI.ZS,Agricultural land (% of land area),45.3144240657095
+AUS,Australia,2016,AG.LND.AGRI.ZS,Agricultural land (% of land area),44.5399257932247
+AUS,Australia,2017,AG.LND.AGRI.ZS,Agricultural land (% of land area),48.3406179391109
+AUS,Australia,2018,AG.LND.AGRI.ZS,Agricultural land (% of land area),46.6580950127535
+AUS,Australia,2019,AG.LND.AGRI.ZS,Agricultural land (% of land area),47.1237724290889
+AUS,Australia,2020,AG.LND.AGRI.ZS,Agricultural land (% of land area),46.2524798427461
+AUS,Australia,2021,AG.LND.AGRI.ZS,Agricultural land (% of land area),47.2592374954823
+AUS,Australia,2022,AG.LND.AGRI.ZS,Agricultural land (% of land area),47.2592374954823
+AUS,Australia,2023,AG.LND.AGRI.ZS,Agricultural land (% of land area),47.2592374954823
+AUS,Australia,2024,AG.LND.AGRI.ZS,Agricultural land (% of land area),47.2821839247156
+AUS,Australia,2010,AG.PRD.CREL.MT,Cereal production (metric tons),39137185.64
+AUS,Australia,2011,AG.PRD.CREL.MT,Cereal production (metric tons),42828506.87
+AUS,Australia,2012,AG.PRD.CREL.MT,Cereal production (metric tons),35422825.46
+AUS,Australia,2013,AG.PRD.CREL.MT,Cereal production (metric tons),39873045.54
+AUS,Australia,2014,AG.PRD.CREL.MT,Cereal production (metric tons),36275175.88
+AUS,Australia,2015,AG.PRD.CREL.MT,Cereal production (metric tons),36175495.48
+AUS,Australia,2016,AG.PRD.CREL.MT,Cereal production (metric tons),50253593.71
+AUS,Australia,2017,AG.PRD.CREL.MT,Cereal production (metric tons),33882044.51
+AUS,Australia,2018,AG.PRD.CREL.MT,Cereal production (metric tons),29989113.0
+AUS,Australia,2019,AG.PRD.CREL.MT,Cereal production (metric tons),27435471.58
+AUS,Australia,2020,AG.PRD.CREL.MT,Cereal production (metric tons),49332133.0
+AUS,Australia,2021,AG.PRD.CREL.MT,Cereal production (metric tons),54958515.44
+AUS,Australia,2022,AG.PRD.CREL.MT,Cereal production (metric tons),59607882.55
+AUS,Australia,2023,AG.PRD.CREL.MT,Cereal production (metric tons),43120957.25
+AUS,Australia,2024,AG.PRD.CREL.MT,Cereal production (metric tons),52350446.71
+AUS,Australia,2010,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",13.175
+AUS,Australia,2011,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",13.215
+AUS,Australia,2012,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",15.868
+AUS,Australia,2013,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",19.148
+AUS,Australia,2014,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",18.463
+AUS,Australia,2015,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",9.22
+AUS,Australia,2016,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",10.623
+AUS,Australia,2017,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",12.05864137
+AUS,Australia,2018,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",12.33
+AUS,Australia,2019,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",10.56
+AUS,Australia,2020,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",8.38
+AUS,Australia,2021,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",11.06
+AUS,Australia,2022,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",11.62
+AUS,Australia,2010,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,40.3905070860606
+AUS,Australia,2011,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,41.7219860149689
+AUS,Australia,2012,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,43.0198495527558
+AUS,Australia,2013,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,41.100511881056
+AUS,Australia,2014,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,42.2993095385282
+AUS,Australia,2015,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,41.4947506939901
+AUS,Australia,2016,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,40.813402217321
+AUS,Australia,2017,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,42.0354135251854
+AUS,Australia,2018,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,43.5732253645218
+AUS,Australia,2019,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,46.0016827052171
+AUS,Australia,2020,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,44.499564103879
+AUS,Australia,2021,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,40.2022359390595
+AUS,Australia,2022,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,45.6946418805752
+AUS,Australia,2023,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,49.044339318428
+AUS,Australia,2024,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,47.1453811065195
+AUS,Australia,2010,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",2.21824837320556
+AUS,Australia,2011,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",2.30485962261499
+AUS,Australia,2012,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",2.27317856495351
+AUS,Australia,2013,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",2.29076813252161
+AUS,Australia,2014,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",2.22695769265967
+AUS,Australia,2015,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",2.37664391487055
+AUS,Australia,2016,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",2.41300232330254
+AUS,Australia,2017,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",2.72098319651067
+AUS,Australia,2018,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",2.47191752630847
+AUS,Australia,2019,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",2.12424911197662
+AUS,Australia,2020,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",2.01512715396535
+AUS,Australia,2021,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",2.30537875480088
+AUS,Australia,2022,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",2.67242699950618
+AUS,Australia,2023,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",2.57169831894523
+AUS,Australia,2024,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",2.03565265249391
+BGD,Bangladesh,2010,AG.LND.AGRI.ZS,Agricultural land (% of land area),70.9917799800261
+BGD,Bangladesh,2011,AG.LND.AGRI.ZS,Agricultural land (% of land area),70.1236844126911
+BGD,Bangladesh,2012,AG.LND.AGRI.ZS,Agricultural land (% of land area),70.0622263194284
+BGD,Bangladesh,2013,AG.LND.AGRI.ZS,Agricultural land (% of land area),69.9700391795345
+BGD,Bangladesh,2014,AG.LND.AGRI.ZS,Agricultural land (% of land area),69.900898824614
+BGD,Bangladesh,2015,AG.LND.AGRI.ZS,Agricultural land (% of land area),70.3867250518553
+BGD,Bangladesh,2016,AG.LND.AGRI.ZS,Agricultural land (% of land area),70.6323269570562
+BGD,Bangladesh,2017,AG.LND.AGRI.ZS,Agricultural land (% of land area),70.5794729968503
+BGD,Bangladesh,2018,AG.LND.AGRI.ZS,Agricultural land (% of land area),70.694476453868
+BGD,Bangladesh,2019,AG.LND.AGRI.ZS,Agricultural land (% of land area),72.1902127986479
+BGD,Bangladesh,2020,AG.LND.AGRI.ZS,Agricultural land (% of land area),72.4437274333564
+BGD,Bangladesh,2021,AG.LND.AGRI.ZS,Agricultural land (% of land area),72.3515402934624
+BGD,Bangladesh,2022,AG.LND.AGRI.ZS,Agricultural land (% of land area),72.4206806483829
+BGD,Bangladesh,2023,AG.LND.AGRI.ZS,Agricultural land (% of land area),72.2055773219636
+BGD,Bangladesh,2024,AG.LND.AGRI.ZS,Agricultural land (% of land area),72.2055773219636
+BGD,Bangladesh,2010,AG.PRD.CREL.MT,Cereal production (metric tons),51282598.09
+BGD,Bangladesh,2011,AG.PRD.CREL.MT,Cereal production (metric tons),52627376.6
+BGD,Bangladesh,2012,AG.PRD.CREL.MT,Cereal production (metric tons),53030386.64
+BGD,Bangladesh,2013,AG.PRD.CREL.MT,Cereal production (metric tons),54019096.56
+BGD,Bangladesh,2014,AG.PRD.CREL.MT,Cereal production (metric tons),55227209.27
+BGD,Bangladesh,2015,AG.PRD.CREL.MT,Cereal production (metric tons),56084460.15
+BGD,Bangladesh,2016,AG.PRD.CREL.MT,Cereal production (metric tons),55905547.11
+BGD,Bangladesh,2017,AG.PRD.CREL.MT,Cereal production (metric tons),56427230.96
+BGD,Bangladesh,2018,AG.PRD.CREL.MT,Cereal production (metric tons),59015234.3
+BGD,Bangladesh,2019,AG.PRD.CREL.MT,Cereal production (metric tons),59383344.03
+BGD,Bangladesh,2020,AG.PRD.CREL.MT,Cereal production (metric tons),61113280.33
+BGD,Bangladesh,2021,AG.PRD.CREL.MT,Cereal production (metric tons),61986999.44
+BGD,Bangladesh,2022,AG.PRD.CREL.MT,Cereal production (metric tons),63136360.42
+BGD,Bangladesh,2023,AG.PRD.CREL.MT,Cereal production (metric tons),66313385.01
+BGD,Bangladesh,2024,AG.PRD.CREL.MT,Cereal production (metric tons),66347850.85
+BGD,Bangladesh,2010,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",35.87
+BGD,Bangladesh,2011,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",35.87
+BGD,Bangladesh,2012,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",35.87
+BGD,Bangladesh,2013,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",35.87
+BGD,Bangladesh,2014,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",35.87
+BGD,Bangladesh,2015,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",35.87
+BGD,Bangladesh,2016,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",35.87
+BGD,Bangladesh,2017,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",35.87
+BGD,Bangladesh,2018,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",35.87
+BGD,Bangladesh,2019,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",35.87
+BGD,Bangladesh,2020,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",35.87
+BGD,Bangladesh,2021,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",35.87
+BGD,Bangladesh,2022,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",35.87
+BGD,Bangladesh,2010,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,37.8028426708321
+BGD,Bangladesh,2011,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,47.4208498356898
+BGD,Bangladesh,2012,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,48.1109227490467
+BGD,Bangladesh,2013,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,46.2964027228174
+BGD,Bangladesh,2014,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,44.5140801968096
+BGD,Bangladesh,2015,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,42.0859963070382
+BGD,Bangladesh,2016,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,31.3341501346142
+BGD,Bangladesh,2017,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,29.9997306724343
+BGD,Bangladesh,2018,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,32.5146317240884
+BGD,Bangladesh,2019,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,31.5780544912404
+BGD,Bangladesh,2020,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,26.271447376215
+BGD,Bangladesh,2021,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,27.7240047036631
+BGD,Bangladesh,2022,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,33.7799672705735
+BGD,Bangladesh,2023,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,30.9829714104596
+BGD,Bangladesh,2024,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,26.7780758040478
+BGD,Bangladesh,2010,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",17.0011812592919
+BGD,Bangladesh,2011,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",16.8099867573503
+BGD,Bangladesh,2012,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",16.1775631732753
+BGD,Bangladesh,2013,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",15.4932779975908
+BGD,Bangladesh,2014,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",15.3516208986344
+BGD,Bangladesh,2015,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",14.7829964369364
+BGD,Bangladesh,2016,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",13.4647923176039
+BGD,Bangladesh,2017,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",12.9572760433733
+BGD,Bangladesh,2018,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",12.4800771856196
+BGD,Bangladesh,2019,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",11.9753231358984
+BGD,Bangladesh,2020,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",11.9996868602485
+BGD,Bangladesh,2021,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",11.6328584271282
+BGD,Bangladesh,2022,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",11.2176010351595
+BGD,Bangladesh,2023,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",11.0036900209598
+BGD,Bangladesh,2024,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",11.1648014276903
+BRA,Brazil,2010,AG.LND.AGRI.ZS,Agricultural land (% of land area),27.7375349060916
+BRA,Brazil,2011,AG.LND.AGRI.ZS,Agricultural land (% of land area),27.8237741889942
+BRA,Brazil,2012,AG.LND.AGRI.ZS,Agricultural land (% of land area),27.9100134718969
+BRA,Brazil,2013,AG.LND.AGRI.ZS,Agricultural land (% of land area),27.9962527547995
+BRA,Brazil,2014,AG.LND.AGRI.ZS,Agricultural land (% of land area),28.0824920377022
+BRA,Brazil,2015,AG.LND.AGRI.ZS,Agricultural land (% of land area),28.168707391836
+BRA,Brazil,2016,AG.LND.AGRI.ZS,Agricultural land (% of land area),28.2549706035075
+BRA,Brazil,2017,AG.LND.AGRI.ZS,Agricultural land (% of land area),28.3411141713348
+BRA,Brazil,2018,AG.LND.AGRI.ZS,Agricultural land (% of land area),28.338218790305
+BRA,Brazil,2019,AG.LND.AGRI.ZS,Agricultural land (% of land area),28.3353473380441
+BRA,Brazil,2020,AG.LND.AGRI.ZS,Agricultural land (% of land area),28.3324758857832
+BRA,Brazil,2021,AG.LND.AGRI.ZS,Agricultural land (% of land area),28.3296044335223
+BRA,Brazil,2022,AG.LND.AGRI.ZS,Agricultural land (% of land area),28.3267329812614
+BRA,Brazil,2023,AG.LND.AGRI.ZS,Agricultural land (% of land area),28.3466644492674
+BRA,Brazil,2024,AG.LND.AGRI.ZS,Agricultural land (% of land area),28.3664427731529
+BRA,Brazil,2010,AG.PRD.CREL.MT,Cereal production (metric tons),75160152.06
+BRA,Brazil,2011,AG.PRD.CREL.MT,Cereal production (metric tons),77586276.0
+BRA,Brazil,2012,AG.PRD.CREL.MT,Cereal production (metric tons),89908244.0
+BRA,Brazil,2013,AG.PRD.CREL.MT,Cereal production (metric tons),100901726.0
+BRA,Brazil,2014,AG.PRD.CREL.MT,Cereal production (metric tons),101402184.0
+BRA,Brazil,2015,AG.PRD.CREL.MT,Cereal production (metric tons),106026684.77
+BRA,Brazil,2016,AG.PRD.CREL.MT,Cereal production (metric tons),84166681.6
+BRA,Brazil,2017,AG.PRD.CREL.MT,Cereal production (metric tons),117977043.93
+BRA,Brazil,2018,AG.PRD.CREL.MT,Cereal production (metric tons),103259697.62
+BRA,Brazil,2019,AG.PRD.CREL.MT,Cereal production (metric tons),121202029.78
+BRA,Brazil,2020,AG.PRD.CREL.MT,Cereal production (metric tons),125585148.34
+BRA,Brazil,2021,AG.PRD.CREL.MT,Cereal production (metric tons),111985318.13
+BRA,Brazil,2022,AG.PRD.CREL.MT,Cereal production (metric tons),135743835.43
+BRA,Brazil,2023,AG.PRD.CREL.MT,Cereal production (metric tons),155877081.97
+BRA,Brazil,2024,AG.PRD.CREL.MT,Cereal production (metric tons),138980898.51
+BRA,Brazil,2010,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",74.77075
+BRA,Brazil,2011,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",72.315625
+BRA,Brazil,2012,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",69.8605
+BRA,Brazil,2013,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",67.405375
+BRA,Brazil,2014,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",65.022
+BRA,Brazil,2015,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",63.86
+BRA,Brazil,2016,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",66.31
+BRA,Brazil,2017,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",65.68
+BRA,Brazil,2018,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",66.5
+BRA,Brazil,2019,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",67.44
+BRA,Brazil,2020,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",67.07997
+BRA,Brazil,2021,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",67.31
+BRA,Brazil,2022,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",67.94
+BRA,Brazil,2010,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,22.772178113177
+BRA,Brazil,2011,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,23.9344051758721
+BRA,Brazil,2012,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,25.1142736107398
+BRA,Brazil,2013,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,25.7859573274674
+BRA,Brazil,2014,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,24.6854058131291
+BRA,Brazil,2015,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,26.95362593736
+BRA,Brazil,2016,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,24.5336820777006
+BRA,Brazil,2017,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,24.3197343743057
+BRA,Brazil,2018,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,28.8762033763866
+BRA,Brazil,2019,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,28.8902578698964
+BRA,Brazil,2020,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,32.3020785437939
+BRA,Brazil,2021,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,37.6563307598082
+BRA,Brazil,2022,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,38.8160659763397
+BRA,Brazil,2023,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,33.6662298301438
+BRA,Brazil,2024,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,35.5845239386244
+BRA,Brazil,2010,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",4.11575648779356
+BRA,Brazil,2011,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",4.34203412783304
+BRA,Brazil,2012,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",4.16832822439069
+BRA,Brazil,2013,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",4.50688618256533
+BRA,Brazil,2014,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",4.32561053879483
+BRA,Brazil,2015,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",4.31914942964047
+BRA,Brazil,2016,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",4.89135358790863
+BRA,Brazil,2017,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",4.60059169568986
+BRA,Brazil,2018,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",4.4203993038464
+BRA,Brazil,2019,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",4.20501409463474
+BRA,Brazil,2020,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",5.71148511499007
+BRA,Brazil,2021,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",6.5587626121061
+BRA,Brazil,2022,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",5.76747490819457
+BRA,Brazil,2023,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",6.02306023526246
+BRA,Brazil,2024,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",5.75227640931944
+CAN,Canada,2010,AG.LND.AGRI.ZS,Agricultural land (% of land area),6.50030728596779
+CAN,Canada,2011,AG.LND.AGRI.ZS,Agricultural land (% of land area),6.43568354118357
+CAN,Canada,2012,AG.LND.AGRI.ZS,Agricultural land (% of land area),6.44358709242783
+CAN,Canada,2013,AG.LND.AGRI.ZS,Agricultural land (% of land area),6.45149064367208
+CAN,Canada,2014,AG.LND.AGRI.ZS,Agricultural land (% of land area),6.45939419491634
+CAN,Canada,2015,AG.LND.AGRI.ZS,Agricultural land (% of land area),6.46740928371697
+CAN,Canada,2016,AG.LND.AGRI.ZS,Agricultural land (% of land area),6.47475514717938
+CAN,Canada,2017,AG.LND.AGRI.ZS,Agricultural land (% of land area),6.45441069689781
+CAN,Canada,2018,AG.LND.AGRI.ZS,Agricultural land (% of land area),6.45681990811536
+CAN,Canada,2019,AG.LND.AGRI.ZS,Agricultural land (% of land area),6.43435624426279
+CAN,Canada,2020,AG.LND.AGRI.ZS,Agricultural land (% of land area),6.37073522211031
+CAN,Canada,2021,AG.LND.AGRI.ZS,Agricultural land (% of land area),6.48457678610033
+CAN,Canada,2022,AG.LND.AGRI.ZS,Agricultural land (% of land area),6.49436207857817
+CAN,Canada,2023,AG.LND.AGRI.ZS,Agricultural land (% of land area),6.47137801950231
+CAN,Canada,2024,AG.LND.AGRI.ZS,Agricultural land (% of land area),6.46238920431918
+CAN,Canada,2010,AG.PRD.CREL.MT,Cereal production (metric tons),46122200.0
+CAN,Canada,2011,AG.PRD.CREL.MT,Cereal production (metric tons),48337200.0
+CAN,Canada,2012,AG.PRD.CREL.MT,Cereal production (metric tons),51846500.0
+CAN,Canada,2013,AG.PRD.CREL.MT,Cereal production (metric tons),66535401.0
+CAN,Canada,2014,AG.PRD.CREL.MT,Cereal production (metric tons),51683501.0
+CAN,Canada,2015,AG.PRD.CREL.MT,Cereal production (metric tons),53563000.0
+CAN,Canada,2016,AG.PRD.CREL.MT,Cereal production (metric tons),58905767.63
+CAN,Canada,2017,AG.PRD.CREL.MT,Cereal production (metric tons),56770935.0
+CAN,Canada,2018,AG.PRD.CREL.MT,Cereal production (metric tons),58726900.0
+CAN,Canada,2019,AG.PRD.CREL.MT,Cereal production (metric tons),61473900.0
+CAN,Canada,2020,AG.PRD.CREL.MT,Cereal production (metric tons),65314300.0
+CAN,Canada,2021,AG.PRD.CREL.MT,Cereal production (metric tons),47546138.0
+CAN,Canada,2022,AG.PRD.CREL.MT,Cereal production (metric tons),65578427.0
+CAN,Canada,2023,AG.PRD.CREL.MT,Cereal production (metric tons),61062324.86
+CAN,Canada,2024,AG.PRD.CREL.MT,Cereal production (metric tons),63660405.0
+CAN,Canada,2010,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",37.19865
+CAN,Canada,2011,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",35.6
+CAN,Canada,2012,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",36.44
+CAN,Canada,2013,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",37.28
+CAN,Canada,2014,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",36.505
+CAN,Canada,2015,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",35.73
+CAN,Canada,2016,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",35.9915
+CAN,Canada,2017,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",36.253
+CAN,Canada,2018,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",36.253
+CAN,Canada,2019,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",36.253
+CAN,Canada,2020,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",36.253
+CAN,Canada,2021,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",36.128
+CAN,Canada,2022,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",36.128
+CAN,Canada,2010,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,60.2079046752442
+CAN,Canada,2011,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,62.4984217100546
+CAN,Canada,2012,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,62.5957887432013
+CAN,Canada,2013,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,62.2315329073432
+CAN,Canada,2014,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,64.3785976132125
+CAN,Canada,2015,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,66.1648355844224
+CAN,Canada,2016,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,65.3636199818813
+CAN,Canada,2017,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,65.1009087910845
+CAN,Canada,2018,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,66.59982627163
+CAN,Canada,2019,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,66.1713422730605
+CAN,Canada,2020,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,61.1566883386797
+CAN,Canada,2021,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,62.2468612630348
+CAN,Canada,2022,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,66.9531620692051
+CAN,Canada,2023,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,66.5745425015033
+CAN,Canada,2024,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,65.1214987304374
+CAN,Canada,2010,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.49323070348344
+CAN,Canada,2011,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.76565550890832
+CAN,Canada,2012,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.81135268317938
+CAN,Canada,2013,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.89424545337458
+CAN,Canada,2014,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.58654648681462
+CAN,Canada,2015,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.86983406717295
+CAN,Canada,2016,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.86222405438563
+CAN,Canada,2017,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.88999021790618
+CAN,Canada,2018,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.69989005552688
+CAN,Canada,2019,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.69707568569413
+CAN,Canada,2020,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.83978682557174
+CAN,Canada,2021,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.59798849520844
+CAN,Canada,2022,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.93275289413659
+CHN,China,2010,AG.LND.AGRI.ZS,Agricultural land (% of land area),44.9806571241315
+CHN,China,2011,AG.LND.AGRI.ZS,Agricultural land (% of land area),44.6268303939909
+CHN,China,2012,AG.LND.AGRI.ZS,Agricultural land (% of land area),44.2730036638503
+CHN,China,2013,AG.LND.AGRI.ZS,Agricultural land (% of land area),43.9191769337097
+CHN,China,2014,AG.LND.AGRI.ZS,Agricultural land (% of land area),43.5653502035691
+CHN,China,2015,AG.LND.AGRI.ZS,Agricultural land (% of land area),43.2115234734285
+CHN,China,2016,AG.LND.AGRI.ZS,Agricultural land (% of land area),42.857754566632
+CHN,China,2017,AG.LND.AGRI.ZS,Agricultural land (% of land area),42.5038532371986
+CHN,China,2018,AG.LND.AGRI.ZS,Agricultural land (% of land area),42.1500584243429
+CHN,China,2019,AG.LND.AGRI.ZS,Agricultural land (% of land area),41.7962636114872
+CHN,China,2020,AG.LND.AGRI.ZS,Agricultural land (% of land area),41.6363715766903
+CHN,China,2021,AG.LND.AGRI.ZS,Agricultural land (% of land area),41.7578111269347
+CHN,China,2022,AG.LND.AGRI.ZS,Agricultural land (% of land area),41.7401187233775
+CHN,China,2023,AG.LND.AGRI.ZS,Agricultural land (% of land area),41.7356450271138
+CHN,China,2024,AG.LND.AGRI.ZS,Agricultural land (% of land area),41.7356450271138
+CHN,China,2010,AG.PRD.CREL.MT,Cereal production (metric tons),497787400.0
+CHN,China,2011,AG.PRD.CREL.MT,Cereal production (metric tons),521522100.0
+CHN,China,2012,AG.PRD.CREL.MT,Cereal production (metric tons),541702000.0
+CHN,China,2013,AG.PRD.CREL.MT,Cereal production (metric tons),555201400.0
+CHN,China,2014,AG.PRD.CREL.MT,Cereal production (metric tons),560168400.0
+CHN,China,2015,AG.PRD.CREL.MT,Cereal production (metric tons),617708713.27
+CHN,China,2016,AG.PRD.CREL.MT,Cereal production (metric tons),614565270.76
+CHN,China,2017,AG.PRD.CREL.MT,Cereal production (metric tons),614070169.03
+CHN,China,2018,AG.PRD.CREL.MT,Cereal production (metric tons),608882194.21
+CHN,China,2019,AG.PRD.CREL.MT,Cereal production (metric tons),612711473.47
+CHN,China,2020,AG.PRD.CREL.MT,Cereal production (metric tons),615323961.68
+CHN,China,2021,AG.PRD.CREL.MT,Cereal production (metric tons),631548529.7
+CHN,China,2022,AG.PRD.CREL.MT,Cereal production (metric tons),632097501.8
+CHN,China,2023,AG.PRD.CREL.MT,Cereal production (metric tons),640582735.05
+CHN,China,2024,AG.PRD.CREL.MT,Cereal production (metric tons),651355743.38
+CHN,China,2010,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",586.83
+CHN,China,2011,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",595.0
+CHN,China,2012,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",598.8
+CHN,China,2013,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",602.8
+CHN,China,2014,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",593.4
+CHN,China,2015,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",591.8
+CHN,China,2016,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",604.02
+CHN,China,2017,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",596.22
+CHN,China,2018,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",592.91
+CHN,China,2019,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",591.67
+CHN,China,2020,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",568.48
+CHN,China,2021,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",568.48
+CHN,China,2022,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",568.48
+CHN,China,2010,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,49.8540722338977
+CHN,China,2011,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,49.9458272253643
+CHN,China,2012,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,47.4802130784317
+CHN,China,2013,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,45.9160413795571
+CHN,China,2014,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,44.0684564812532
+CHN,China,2015,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,38.6971848362625
+CHN,China,2016,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,36.177170692978
+CHN,China,2017,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,36.95085261586
+CHN,China,2018,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,36.8943843914718
+CHN,China,2019,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,35.4544350281407
+CHN,China,2020,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,34.337778473884
+CHN,China,2021,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,36.6428789643754
+CHN,China,2022,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,37.512555678171
+CHN,China,2023,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,36.7391496938394
+CHN,China,2024,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,37.9560601372544
+CHN,China,2010,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",9.16649906130733
+CHN,China,2011,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",9.0338458593332
+CHN,China,2012,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",8.96505673533992
+CHN,China,2013,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",8.78442131602471
+CHN,China,2014,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",8.48242940933654
+CHN,China,2015,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",8.22401359479525
+CHN,China,2016,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",7.90065017505416
+CHN,China,2017,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",7.32839239286042
+CHN,China,2018,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",6.91714289236836
+CHN,China,2019,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",7.00621575788341
+CHN,China,2020,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",7.54018198521241
+CHN,China,2021,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",7.08935251618004
+CHN,China,2022,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",7.14788692830171
+CHN,China,2023,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",6.88951941080068
+CHN,China,2024,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",6.7975741844132
+COL,Colombia,2010,AG.LND.AGRI.ZS,Agricultural land (% of land area),38.3082469580892
+COL,Colombia,2011,AG.LND.AGRI.ZS,Agricultural land (% of land area),37.603424966201
+COL,Colombia,2012,AG.LND.AGRI.ZS,Agricultural land (% of land area),38.411536728256
+COL,Colombia,2013,AG.LND.AGRI.ZS,Agricultural land (% of land area),40.392609283461
+COL,Colombia,2014,AG.LND.AGRI.ZS,Agricultural land (% of land area),40.3785488958991
+COL,Colombia,2015,AG.LND.AGRI.ZS,Agricultural land (% of land area),40.3644885083371
+COL,Colombia,2016,AG.LND.AGRI.ZS,Agricultural land (% of land area),40.3504281207751
+COL,Colombia,2017,AG.LND.AGRI.ZS,Agricultural land (% of land area),39.195132942767
+COL,Colombia,2018,AG.LND.AGRI.ZS,Agricultural land (% of land area),39.7007661108607
+COL,Colombia,2019,AG.LND.AGRI.ZS,Agricultural land (% of land area),39.9765660207301
+COL,Colombia,2020,AG.LND.AGRI.ZS,Agricultural land (% of land area),39.8467237494367
+COL,Colombia,2021,AG.LND.AGRI.ZS,Agricultural land (% of land area),38.7691122127084
+COL,Colombia,2022,AG.LND.AGRI.ZS,Agricultural land (% of land area),37.6412798557909
+COL,Colombia,2023,AG.LND.AGRI.ZS,Agricultural land (% of land area),36.4876070301938
+COL,Colombia,2024,AG.LND.AGRI.ZS,Agricultural land (% of land area),36.5443893645786
+COL,Colombia,2010,AG.PRD.CREL.MT,Cereal production (metric tons),3535917.0
+COL,Colombia,2011,AG.PRD.CREL.MT,Cereal production (metric tons),3798448.71
+COL,Colombia,2012,AG.PRD.CREL.MT,Cereal production (metric tons),3898180.03
+COL,Colombia,2013,AG.PRD.CREL.MT,Cereal production (metric tons),3864355.74
+COL,Colombia,2014,AG.PRD.CREL.MT,Cereal production (metric tons),3698781.08
+COL,Colombia,2015,AG.PRD.CREL.MT,Cereal production (metric tons),3603471.59
+COL,Colombia,2016,AG.PRD.CREL.MT,Cereal production (metric tons),3982827.07
+COL,Colombia,2017,AG.PRD.CREL.MT,Cereal production (metric tons),4057766.61
+COL,Colombia,2018,AG.PRD.CREL.MT,Cereal production (metric tons),3995557.73
+COL,Colombia,2019,AG.PRD.CREL.MT,Cereal production (metric tons),4061519.21
+COL,Colombia,2020,AG.PRD.CREL.MT,Cereal production (metric tons),4458460.35
+COL,Colombia,2021,AG.PRD.CREL.MT,Cereal production (metric tons),4556233.19
+COL,Colombia,2022,AG.PRD.CREL.MT,Cereal production (metric tons),4558570.46
+COL,Colombia,2023,AG.PRD.CREL.MT,Cereal production (metric tons),4765426.0
+COL,Colombia,2024,AG.PRD.CREL.MT,Cereal production (metric tons),4342473.35
+COL,Colombia,2010,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",16.73842
+COL,Colombia,2011,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",17.43368
+COL,Colombia,2012,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",17.71669
+COL,Colombia,2013,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",18.53769
+COL,Colombia,2014,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",19.02606
+COL,Colombia,2015,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",19.7529
+COL,Colombia,2016,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",20.05921
+COL,Colombia,2017,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",21.07282
+COL,Colombia,2018,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",21.40809
+COL,Colombia,2019,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",21.85745
+COL,Colombia,2020,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",22.66227
+COL,Colombia,2021,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",23.54209
+COL,Colombia,2022,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",24.26364
+COL,Colombia,2010,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,34.2646031687681
+COL,Colombia,2011,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,39.4704235545367
+COL,Colombia,2012,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,38.835151018669
+COL,Colombia,2013,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,37.9866487978457
+COL,Colombia,2014,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,37.4874656411103
+COL,Colombia,2015,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,38.3607641184453
+COL,Colombia,2016,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,36.202652984202
+COL,Colombia,2017,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,35.2829149424588
+COL,Colombia,2018,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,36.5347527968973
+COL,Colombia,2019,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,37.558533980839
+COL,Colombia,2020,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,34.0555709680101
+COL,Colombia,2021,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,40.0591463936128
+COL,Colombia,2022,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,48.2826551123359
+COL,Colombia,2023,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,40.1333165322581
+COL,Colombia,2024,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,36.3179938785373
+COL,Colombia,2010,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",6.32485387641069
+COL,Colombia,2011,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",6.09169610822215
+COL,Colombia,2012,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",5.58268705354932
+COL,Colombia,2013,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",5.39271495449472
+COL,Colombia,2014,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",5.44695721474421
+COL,Colombia,2015,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",5.98042480849816
+COL,Colombia,2016,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",6.60641226605787
+COL,Colombia,2017,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",6.38966355268118
+COL,Colombia,2018,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",6.22570968960033
+COL,Colombia,2019,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",6.41072082168314
+COL,Colombia,2020,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",7.50848046663348
+COL,Colombia,2021,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",7.77187301385002
+COL,Colombia,2022,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",8.83154473689041
+COL,Colombia,2023,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",8.79586693548387
+COL,Colombia,2024,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",9.49567972282988
+CRI,Costa Rica,2010,AG.LND.AGRI.ZS,Agricultural land (% of land area),34.0579710144928
+CRI,Costa Rica,2011,AG.LND.AGRI.ZS,Agricultural land (% of land area),34.0579710144928
+CRI,Costa Rica,2012,AG.LND.AGRI.ZS,Agricultural land (% of land area),33.9208773991383
+CRI,Costa Rica,2013,AG.LND.AGRI.ZS,Agricultural land (% of land area),35.2722287504896
+CRI,Costa Rica,2014,AG.LND.AGRI.ZS,Agricultural land (% of land area),34.9588719153937
+CRI,Costa Rica,2015,AG.LND.AGRI.ZS,Agricultural land (% of land area),34.4533881707795
+CRI,Costa Rica,2016,AG.LND.AGRI.ZS,Agricultural land (% of land area),34.3296122209166
+CRI,Costa Rica,2017,AG.LND.AGRI.ZS,Agricultural land (% of land area),34.2060321190756
+CRI,Costa Rica,2018,AG.LND.AGRI.ZS,Agricultural land (% of land area),34.3155111633372
+CRI,Costa Rica,2019,AG.LND.AGRI.ZS,Agricultural land (% of land area),34.4249902075989
+CRI,Costa Rica,2020,AG.LND.AGRI.ZS,Agricultural land (% of land area),34.5344692518606
+CRI,Costa Rica,2021,AG.LND.AGRI.ZS,Agricultural land (% of land area),31.4330933544304
+CRI,Costa Rica,2022,AG.LND.AGRI.ZS,Agricultural land (% of land area),31.4330933544304
+CRI,Costa Rica,2023,AG.LND.AGRI.ZS,Agricultural land (% of land area),31.4330933544304
+CRI,Costa Rica,2024,AG.LND.AGRI.ZS,Agricultural land (% of land area),31.4330933544304
+CRI,Costa Rica,2010,AG.PRD.CREL.MT,Cereal production (metric tons),286537.0
+CRI,Costa Rica,2011,AG.PRD.CREL.MT,Cereal production (metric tons),297476.0
+CRI,Costa Rica,2012,AG.PRD.CREL.MT,Cereal production (metric tons),231741.0
+CRI,Costa Rica,2013,AG.PRD.CREL.MT,Cereal production (metric tons),238539.0
+CRI,Costa Rica,2014,AG.PRD.CREL.MT,Cereal production (metric tons),234587.0
+CRI,Costa Rica,2015,AG.PRD.CREL.MT,Cereal production (metric tons),203816.0
+CRI,Costa Rica,2016,AG.PRD.CREL.MT,Cereal production (metric tons),213880.0
+CRI,Costa Rica,2017,AG.PRD.CREL.MT,Cereal production (metric tons),159571.0
+CRI,Costa Rica,2018,AG.PRD.CREL.MT,Cereal production (metric tons),197700.9
+CRI,Costa Rica,2019,AG.PRD.CREL.MT,Cereal production (metric tons),170321.2
+CRI,Costa Rica,2020,AG.PRD.CREL.MT,Cereal production (metric tons),151685.0
+CRI,Costa Rica,2021,AG.PRD.CREL.MT,Cereal production (metric tons),157044.0
+CRI,Costa Rica,2022,AG.PRD.CREL.MT,Cereal production (metric tons),121049.0
+CRI,Costa Rica,2023,AG.PRD.CREL.MT,Cereal production (metric tons),83440.0
+CRI,Costa Rica,2024,AG.PRD.CREL.MT,Cereal production (metric tons),72255.75
+CRI,Costa Rica,2012,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",2.338321
+CRI,Costa Rica,2013,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",2.466121
+CRI,Costa Rica,2014,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",2.74369
+CRI,Costa Rica,2015,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",3.194018
+CRI,Costa Rica,2016,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",2.92271
+CRI,Costa Rica,2017,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",2.44
+CRI,Costa Rica,2018,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",3.05366
+CRI,Costa Rica,2019,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",3.13813
+CRI,Costa Rica,2020,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",3.13608
+CRI,Costa Rica,2021,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",3.44683
+CRI,Costa Rica,2022,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",3.44683
+CRI,Costa Rica,2010,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,67.5120894036891
+CRI,Costa Rica,2011,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,68.6391459050112
+CRI,Costa Rica,2012,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,67.0485391393947
+CRI,Costa Rica,2013,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,64.0664108162845
+CRI,Costa Rica,2014,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,65.1912422181011
+CRI,Costa Rica,2015,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,60.7535621474841
+CRI,Costa Rica,2016,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,62.178478293067
+CRI,Costa Rica,2017,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,65.0719536997344
+CRI,Costa Rica,2018,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,66.7874137887726
+CRI,Costa Rica,2019,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,65.4194732486775
+CRI,Costa Rica,2020,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,59.7463550719484
+CRI,Costa Rica,2021,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,70.103693305909
+CRI,Costa Rica,2022,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,79.0523903153884
+CRI,Costa Rica,2023,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,71.4380310340536
+CRI,Costa Rica,2024,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,69.8533786394509
+CRI,Costa Rica,2010,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",6.48518943828866
+CRI,Costa Rica,2011,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",5.59987200236542
+CRI,Costa Rica,2012,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",5.13084175441445
+CRI,Costa Rica,2013,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",4.78335102557187
+CRI,Costa Rica,2014,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",4.88788395875916
+CRI,Costa Rica,2015,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",4.74911027286369
+CRI,Costa Rica,2016,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",4.91435592970492
+CRI,Costa Rica,2017,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",4.69977628322676
+CRI,Costa Rica,2018,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",4.47325083104707
+CRI,Costa Rica,2019,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",4.18025788974533
+CRI,Costa Rica,2020,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",4.31579869146708
+CRI,Costa Rica,2021,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",4.34558711185467
+CRI,Costa Rica,2022,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",4.02952141180054
+CRI,Costa Rica,2023,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",3.73326442310783
+CRI,Costa Rica,2024,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",3.42503373726182
+EU,European Union,2010,AG.LND.AGRI.ZS,Agricultural land (% of land area),42.4953256659804
+EU,European Union,2011,AG.LND.AGRI.ZS,Agricultural land (% of land area),42.2531647599187
+EU,European Union,2012,AG.LND.AGRI.ZS,Agricultural land (% of land area),42.0204645857074
+EU,European Union,2013,AG.LND.AGRI.ZS,Agricultural land (% of land area),41.9064752224123
+EU,European Union,2014,AG.LND.AGRI.ZS,Agricultural land (% of land area),41.4836717679817
+EU,European Union,2015,AG.LND.AGRI.ZS,Agricultural land (% of land area),41.4382367036087
+EU,European Union,2016,AG.LND.AGRI.ZS,Agricultural land (% of land area),41.1918482423318
+EU,European Union,2017,AG.LND.AGRI.ZS,Agricultural land (% of land area),41.182274592069
+EU,European Union,2018,AG.LND.AGRI.ZS,Agricultural land (% of land area),41.0537392738522
+EU,European Union,2019,AG.LND.AGRI.ZS,Agricultural land (% of land area),41.3634336445269
+EU,European Union,2020,AG.LND.AGRI.ZS,Agricultural land (% of land area),40.8412386713647
+EU,European Union,2021,AG.LND.AGRI.ZS,Agricultural land (% of land area),40.7774734266518
+EU,European Union,2022,AG.LND.AGRI.ZS,Agricultural land (% of land area),40.7349975415071
+EU,European Union,2023,AG.LND.AGRI.ZS,Agricultural land (% of land area),40.3260601692906
+EU,European Union,2010,AG.PRD.CREL.MT,Cereal production (metric tons),263420029.96
+EU,European Union,2011,AG.PRD.CREL.MT,Cereal production (metric tons),273333535.96
+EU,European Union,2012,AG.PRD.CREL.MT,Cereal production (metric tons),265402639.42
+EU,European Union,2013,AG.PRD.CREL.MT,Cereal production (metric tons),289480200.46
+EU,European Union,2014,AG.PRD.CREL.MT,Cereal production (metric tons),309340290.39
+EU,European Union,2015,AG.PRD.CREL.MT,Cereal production (metric tons),293917753.28
+EU,European Union,2016,AG.PRD.CREL.MT,Cereal production (metric tons),280777758.93
+EU,European Union,2017,AG.PRD.CREL.MT,Cereal production (metric tons),288817332.77
+EU,European Union,2018,AG.PRD.CREL.MT,Cereal production (metric tons),273941920.0
+EU,European Union,2019,AG.PRD.CREL.MT,Cereal production (metric tons),299266180.0
+EU,European Union,2020,AG.PRD.CREL.MT,Cereal production (metric tons),285527350.0
+EU,European Union,2021,AG.PRD.CREL.MT,Cereal production (metric tons),297509060.0
+EU,European Union,2022,AG.PRD.CREL.MT,Cereal production (metric tons),270745580.0
+EU,European Union,2023,AG.PRD.CREL.MT,Cereal production (metric tons),271519300.0
+EU,European Union,2024,AG.PRD.CREL.MT,Cereal production (metric tons),257540720.0
+EU,European Union,2014,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",201.655615108
+EU,European Union,2015,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",197.520739644
+EU,European Union,2016,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",189.55929308
+EU,European Union,2017,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",190.927002105
+EU,European Union,2018,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",188.888175314
+EU,European Union,2019,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",186.343630917
+EU,European Union,2020,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",184.071393407
+EU,European Union,2021,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",184.800117705
+EU,European Union,2022,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",186.138875157
+EU,European Union,2010,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,78.2822047070773
+EU,European Union,2011,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,83.4716467909952
+EU,European Union,2012,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,85.0873053879509
+EU,European Union,2013,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,84.7802574446217
+EU,European Union,2014,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,85.4945619031171
+EU,European Union,2015,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,86.6784730245276
+EU,European Union,2016,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,85.7843525287716
+EU,European Union,2017,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,88.7153593417555
+EU,European Union,2018,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,90.4287934541118
+EU,European Union,2019,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,90.5535167755498
+EU,European Union,2020,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,83.8178435756324
+EU,European Union,2021,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,91.2027987709932
+EU,European Union,2022,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,103.704297824246
+EU,European Union,2023,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,95.2184322373871
+EU,European Union,2024,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,91.6412129770423
+EU,European Union,2010,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.60596985799261
+EU,European Union,2011,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.6851908602296
+EU,European Union,2012,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.67064931522173
+EU,European Union,2013,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.69518127078257
+EU,European Union,2014,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.66939466437924
+EU,European Union,2015,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.60459753374033
+EU,European Union,2016,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.56450313555158
+EU,European Union,2017,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.66294834511547
+EU,European Union,2018,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.58229937584076
+EU,European Union,2019,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.56726218342388
+EU,European Union,2020,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.59114669036535
+EU,European Union,2021,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.57355749501237
+EU,European Union,2022,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.68287485066608
+EU,European Union,2023,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.63173483606995
+EU,European Union,2024,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.61555987494979
+GBR,United Kingdom,2010,AG.LND.AGRI.ZS,Agricultural land (% of land area),71.1941470673335
+GBR,United Kingdom,2011,AG.LND.AGRI.ZS,Agricultural land (% of land area),70.9461414458728
+GBR,United Kingdom,2012,AG.LND.AGRI.ZS,Agricultural land (% of land area),71.020543132311
+GBR,United Kingdom,2013,AG.LND.AGRI.ZS,Agricultural land (% of land area),71.3024428553714
+GBR,United Kingdom,2014,AG.LND.AGRI.ZS,Agricultural land (% of land area),71.2272144835283
+GBR,United Kingdom,2015,AG.LND.AGRI.ZS,Agricultural land (% of land area),70.8386723432398
+GBR,United Kingdom,2016,AG.LND.AGRI.ZS,Agricultural land (% of land area),71.7148836440293
+GBR,United Kingdom,2017,AG.LND.AGRI.ZS,Agricultural land (% of land area),72.1950667548465
+GBR,United Kingdom,2018,AG.LND.AGRI.ZS,Agricultural land (% of land area),71.7185202331253
+GBR,United Kingdom,2019,AG.LND.AGRI.ZS,Agricultural land (% of land area),72.4229988013062
+GBR,United Kingdom,2020,AG.LND.AGRI.ZS,Agricultural land (% of land area),71.3400491877816
+GBR,United Kingdom,2021,AG.LND.AGRI.ZS,Agricultural land (% of land area),71.1575290373248
+GBR,United Kingdom,2022,AG.LND.AGRI.ZS,Agricultural land (% of land area),71.9816417972141
+GBR,United Kingdom,2023,AG.LND.AGRI.ZS,Agricultural land (% of land area),70.3073227793163
+GBR,United Kingdom,2024,AG.LND.AGRI.ZS,Agricultural land (% of land area),69.2119146033977
+GBR,United Kingdom,2010,AG.PRD.CREL.MT,Cereal production (metric tons),20946145.0
+GBR,United Kingdom,2011,AG.PRD.CREL.MT,Cereal production (metric tons),21484952.0
+GBR,United Kingdom,2012,AG.PRD.CREL.MT,Cereal production (metric tons),19515045.0
+GBR,United Kingdom,2013,AG.PRD.CREL.MT,Cereal production (metric tons),20083467.0
+GBR,United Kingdom,2014,AG.PRD.CREL.MT,Cereal production (metric tons),24468841.0
+GBR,United Kingdom,2015,AG.PRD.CREL.MT,Cereal production (metric tons),24734564.0
+GBR,United Kingdom,2016,AG.PRD.CREL.MT,Cereal production (metric tons),21964131.0
+GBR,United Kingdom,2017,AG.PRD.CREL.MT,Cereal production (metric tons),23000066.0
+GBR,United Kingdom,2018,AG.PRD.CREL.MT,Cereal production (metric tons),21084346.0
+GBR,United Kingdom,2019,AG.PRD.CREL.MT,Cereal production (metric tons),25517303.0
+GBR,United Kingdom,2020,AG.PRD.CREL.MT,Cereal production (metric tons),18961989.0
+GBR,United Kingdom,2021,AG.PRD.CREL.MT,Cereal production (metric tons),22369109.0
+GBR,United Kingdom,2022,AG.PRD.CREL.MT,Cereal production (metric tons),24362311.0
+GBR,United Kingdom,2023,AG.PRD.CREL.MT,Cereal production (metric tons),22047420.0
+GBR,United Kingdom,2024,AG.PRD.CREL.MT,Cereal production (metric tons),19441252.0
+GBR,United Kingdom,2010,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",8.264
+GBR,United Kingdom,2011,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",7.685
+GBR,United Kingdom,2012,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",8.017
+GBR,United Kingdom,2013,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",7.651
+GBR,United Kingdom,2014,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",7.285
+GBR,United Kingdom,2015,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",8.16
+GBR,United Kingdom,2016,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",8.419
+GBR,United Kingdom,2017,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",8.419
+GBR,United Kingdom,2018,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",8.419
+GBR,United Kingdom,2019,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",8.419
+GBR,United Kingdom,2020,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",8.419
+GBR,United Kingdom,2021,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",8.419
+GBR,United Kingdom,2022,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",8.419
+GBR,United Kingdom,2010,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,59.0511802227821
+GBR,United Kingdom,2011,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,63.3240615708901
+GBR,United Kingdom,2012,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,61.9688704472535
+GBR,United Kingdom,2013,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,61.7195395154583
+GBR,United Kingdom,2014,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,58.8210228333296
+GBR,United Kingdom,2015,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,57.125044605439
+GBR,United Kingdom,2016,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,59.8395315138259
+GBR,United Kingdom,2017,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,63.1899245764158
+GBR,United Kingdom,2018,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,64.9097721959201
+GBR,United Kingdom,2019,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,65.0035664177054
+GBR,United Kingdom,2020,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,59.1598893030611
+GBR,United Kingdom,2021,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,58.53838629291
+GBR,United Kingdom,2022,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,69.1989264413981
+GBR,United Kingdom,2023,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,64.9923841747803
+GBR,United Kingdom,2024,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,62.839052044584
+GBR,United Kingdom,2010,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.565712301782542
+GBR,United Kingdom,2011,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.704214809469773
+GBR,United Kingdom,2012,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.62478654917094
+GBR,United Kingdom,2013,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.640890919985333
+GBR,United Kingdom,2014,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.737947357586346
+GBR,United Kingdom,2015,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.633552833586443
+GBR,United Kingdom,2016,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.590496095532871
+GBR,United Kingdom,2017,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.606135163563991
+GBR,United Kingdom,2018,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.563097756036101
+GBR,United Kingdom,2019,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.576929649470186
+GBR,United Kingdom,2020,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.683760683760684
+GBR,United Kingdom,2021,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.698210493866494
+GBR,United Kingdom,2022,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.681106058275464
+GBR,United Kingdom,2023,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.648180849687737
+GBR,United Kingdom,2024,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.640268322678911
+IDN,Indonesia,2010,AG.LND.AGRI.ZS,Agricultural land (% of land area),26.5682584304074
+IDN,Indonesia,2011,AG.LND.AGRI.ZS,Agricultural land (% of land area),27.0964181986973
+IDN,Indonesia,2012,AG.LND.AGRI.ZS,Agricultural land (% of land area),27.091965514064
+IDN,Indonesia,2013,AG.LND.AGRI.ZS,Agricultural land (% of land area),27.3538163928035
+IDN,Indonesia,2014,AG.LND.AGRI.ZS,Agricultural land (% of land area),27.5091437157227
+IDN,Indonesia,2015,AG.LND.AGRI.ZS,Agricultural land (% of land area),27.6112092607319
+IDN,Indonesia,2016,AG.LND.AGRI.ZS,Agricultural land (% of land area),27.8730601394713
+IDN,Indonesia,2017,AG.LND.AGRI.ZS,Agricultural land (% of land area),27.7598948399457
+IDN,Indonesia,2018,AG.LND.AGRI.ZS,Agricultural land (% of land area),28.4118349800987
+IDN,Indonesia,2019,AG.LND.AGRI.ZS,Agricultural land (% of land area),28.7503295572508
+IDN,Indonesia,2020,AG.LND.AGRI.ZS,Agricultural land (% of land area),28.9649905007619
+IDN,Indonesia,2021,AG.LND.AGRI.ZS,Agricultural land (% of land area),28.9558487815419
+IDN,Indonesia,2022,AG.LND.AGRI.ZS,Agricultural land (% of land area),29.0073818178648
+IDN,Indonesia,2023,AG.LND.AGRI.ZS,Agricultural land (% of land area),28.9051724512841
+IDN,Indonesia,2024,AG.LND.AGRI.ZS,Agricultural land (% of land area),28.9333744308382
+IDN,Indonesia,2010,AG.PRD.CREL.MT,Cereal production (metric tons),77610636.0
+IDN,Indonesia,2011,AG.PRD.CREL.MT,Cereal production (metric tons),75902250.0
+IDN,Indonesia,2012,AG.PRD.CREL.MT,Cereal production (metric tons),79092022.0
+IDN,Indonesia,2013,AG.PRD.CREL.MT,Cereal production (metric tons),78606853.0
+IDN,Indonesia,2014,AG.PRD.CREL.MT,Cereal production (metric tons),78067426.0
+IDN,Indonesia,2015,AG.PRD.CREL.MT,Cereal production (metric tons),80643435.0
+IDN,Indonesia,2016,AG.PRD.CREL.MT,Cereal production (metric tons),77609413.0
+IDN,Indonesia,2017,AG.PRD.CREL.MT,Cereal production (metric tons),80416000.0
+IDN,Indonesia,2018,AG.PRD.CREL.MT,Cereal production (metric tons),78040534.0
+IDN,Indonesia,2019,AG.PRD.CREL.MT,Cereal production (metric tons),74254033.0
+IDN,Indonesia,2020,AG.PRD.CREL.MT,Cereal production (metric tons),67578143.24
+IDN,Indonesia,2021,AG.PRD.CREL.MT,Cereal production (metric tons),67830216.22
+IDN,Indonesia,2022,AG.PRD.CREL.MT,Cereal production (metric tons),71276250.08
+IDN,Indonesia,2023,AG.PRD.CREL.MT,Cereal production (metric tons),68755426.0
+IDN,Indonesia,2024,AG.PRD.CREL.MT,Cereal production (metric tons),68281639.0
+IDN,Indonesia,2010,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",181.623125
+IDN,Indonesia,2011,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",188.4584375
+IDN,Indonesia,2012,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",195.29375
+IDN,Indonesia,2013,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",202.1290625
+IDN,Indonesia,2014,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",208.964375
+IDN,Indonesia,2015,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",215.7996875
+IDN,Indonesia,2016,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",222.635
+IDN,Indonesia,2017,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",222.635
+IDN,Indonesia,2018,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",222.635
+IDN,Indonesia,2019,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",222.635
+IDN,Indonesia,2020,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",222.635
+IDN,Indonesia,2021,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",222.635
+IDN,Indonesia,2022,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",222.635
+IDN,Indonesia,2010,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,46.7012738758737
+IDN,Indonesia,2011,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,50.1800131841104
+IDN,Indonesia,2012,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,49.5828982992627
+IDN,Indonesia,2013,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,48.6373726752893
+IDN,Indonesia,2014,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,48.0801755855227
+IDN,Indonesia,2015,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,41.9376402415294
+IDN,Indonesia,2016,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,37.4213418023318
+IDN,Indonesia,2017,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,39.3554970704606
+IDN,Indonesia,2018,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,43.0743089552002
+IDN,Indonesia,2019,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,37.6277775357108
+IDN,Indonesia,2020,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,32.9721754002427
+IDN,Indonesia,2021,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,40.2047582749671
+IDN,Indonesia,2022,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,45.4646701959453
+IDN,Indonesia,2023,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,41.4604765447233
+IDN,Indonesia,2024,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,42.809937870822
+IDN,Indonesia,2010,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",13.929212707137
+IDN,Indonesia,2011,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",13.5122870743946
+IDN,Indonesia,2012,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",13.3739742350727
+IDN,Indonesia,2013,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",13.3566991621949
+IDN,Indonesia,2014,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",13.3367549992146
+IDN,Indonesia,2015,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",13.4926435578886
+IDN,Indonesia,2016,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",13.4787485470271
+IDN,Indonesia,2017,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",13.1566308462661
+IDN,Indonesia,2018,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",12.8084975586902
+IDN,Indonesia,2019,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",12.7126026577522
+IDN,Indonesia,2020,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",13.6984142796138
+IDN,Indonesia,2021,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",13.2801691376596
+IDN,Indonesia,2022,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",12.3996501634108
+IDN,Indonesia,2023,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",12.5294431866213
+IDN,Indonesia,2024,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",12.6097220294251
+IND,India,2010,AG.LND.AGRI.ZS,Agricultural land (% of land area),60.3974182611942
+IND,India,2011,AG.LND.AGRI.ZS,Agricultural land (% of land area),60.4300431523044
+IND,India,2012,AG.LND.AGRI.ZS,Agricultural land (% of land area),60.4206256579633
+IND,India,2013,AG.LND.AGRI.ZS,Agricultural land (% of land area),60.4394606466455
+IND,India,2014,AG.LND.AGRI.ZS,Agricultural land (% of land area),60.4495508191538
+IND,India,2015,AG.LND.AGRI.ZS,Agricultural land (% of land area),60.4317248477225
+IND,India,2016,AG.LND.AGRI.ZS,Agricultural land (% of land area),60.3990999566123
+IND,India,2017,AG.LND.AGRI.ZS,Agricultural land (% of land area),60.2840719900175
+IND,India,2018,AG.LND.AGRI.ZS,Agricultural land (% of land area),60.2437112999842
+IND,India,2019,AG.LND.AGRI.ZS,Agricultural land (% of land area),60.2198312250478
+IND,India,2020,AG.LND.AGRI.ZS,Agricultural land (% of land area),60.0459439188212
+IND,India,2021,AG.LND.AGRI.ZS,Agricultural land (% of land area),60.0507636578893
+IND,India,2022,AG.LND.AGRI.ZS,Agricultural land (% of land area),60.0555867603483
+IND,India,2023,AG.LND.AGRI.ZS,Agricultural land (% of land area),60.0604064994165
+IND,India,2024,AG.LND.AGRI.ZS,Agricultural land (% of land area),59.9423514810692
+IND,India,2010,AG.PRD.CREL.MT,Cereal production (metric tons),263964188.06
+IND,India,2011,AG.PRD.CREL.MT,Cereal production (metric tons),291776685.45
+IND,India,2012,AG.PRD.CREL.MT,Cereal production (metric tons),292416126.14
+IND,India,2013,AG.PRD.CREL.MT,Cereal production (metric tons),291510218.44
+IND,India,2014,AG.PRD.CREL.MT,Cereal production (metric tons),298698863.38
+IND,India,2015,AG.PRD.CREL.MT,Cereal production (metric tons),284850922.0
+IND,India,2016,AG.PRD.CREL.MT,Cereal production (metric tons),299053838.96
+IND,India,2017,AG.PRD.CREL.MT,Cereal production (metric tons),309663380.51
+IND,India,2018,AG.PRD.CREL.MT,Cereal production (metric tons),320692531.88
+IND,India,2019,AG.PRD.CREL.MT,Cereal production (metric tons),323957437.96
+IND,India,2020,AG.PRD.CREL.MT,Cereal production (metric tons),341446939.74
+IND,India,2021,AG.PRD.CREL.MT,Cereal production (metric tons),355529808.53
+IND,India,2022,AG.PRD.CREL.MT,Cereal production (metric tons),353766052.45
+IND,India,2023,AG.PRD.CREL.MT,Cereal production (metric tons),373583926.89
+IND,India,2024,AG.PRD.CREL.MT,Cereal production (metric tons),391123857.84
+IND,India,2010,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",647.5
+IND,India,2011,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",647.5
+IND,India,2012,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",647.5
+IND,India,2013,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",647.5
+IND,India,2014,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",647.5
+IND,India,2015,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",647.5
+IND,India,2016,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",647.5
+IND,India,2017,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",647.5
+IND,India,2018,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",647.5
+IND,India,2019,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",647.5
+IND,India,2020,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",647.5
+IND,India,2021,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",647.5
+IND,India,2022,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",647.5
+IND,India,2010,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,49.2552064974161
+IND,India,2011,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,55.6238800135298
+IND,India,2012,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,55.7937217287511
+IND,India,2013,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,53.8441319466777
+IND,India,2014,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,48.9221857470669
+IND,India,2015,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,41.9229138658647
+IND,India,2016,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,40.082485713276
+IND,India,2017,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,40.7424969545225
+IND,India,2018,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,43.6169693323889
+IND,India,2019,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,39.9054035306442
+IND,India,2020,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,37.7581053292768
+IND,India,2021,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,45.4230887840446
+IND,India,2022,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,50.6979382758042
+IND,India,2023,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,46.3229520582338
+IND,India,2024,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,45.9166907678748
+IND,India,2010,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",17.0265090136912
+IND,India,2011,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",17.191973558015
+IND,India,2012,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",16.8453770661356
+IND,India,2013,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",17.1484235433697
+IND,India,2014,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",16.7919345145039
+IND,India,2015,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",16.1745081068401
+IND,India,2016,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",16.3638005616331
+IND,India,2017,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",16.5583314049368
+IND,India,2018,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",16.031630686449
+IND,India,2019,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",16.7555683032837
+IND,India,2020,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",18.6685376603727
+IND,India,2021,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",17.3725615260314
+IND,India,2022,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",18.2106659929942
+IND,India,2023,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",17.6565389328245
+IND,India,2024,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",17.5735799524173
+JPN,Japan,2010,AG.LND.AGRI.ZS,Agricultural land (% of land area),13.5884773662551
+JPN,Japan,2011,AG.LND.AGRI.ZS,Agricultural land (% of land area),13.4951989026063
+JPN,Japan,2012,AG.LND.AGRI.ZS,Agricultural land (% of land area),13.4567901234568
+JPN,Japan,2013,AG.LND.AGRI.ZS,Agricultural land (% of land area),13.4211248285322
+JPN,Japan,2014,AG.LND.AGRI.ZS,Agricultural land (% of land area),13.360768175583
+JPN,Japan,2015,AG.LND.AGRI.ZS,Agricultural land (% of land area),13.2949245541838
+JPN,Japan,2016,AG.LND.AGRI.ZS,Agricultural land (% of land area),13.2043895747599
+JPN,Japan,2017,AG.LND.AGRI.ZS,Agricultural land (% of land area),13.1083676268861
+JPN,Japan,2018,AG.LND.AGRI.ZS,Agricultural land (% of land area),13.0205761316872
+JPN,Japan,2019,AG.LND.AGRI.ZS,Agricultural land (% of land area),12.9355281207133
+JPN,Japan,2020,AG.LND.AGRI.ZS,Agricultural land (% of land area),12.8449931412894
+JPN,Japan,2021,AG.LND.AGRI.ZS,Agricultural land (% of land area),12.7818930041152
+JPN,Japan,2022,AG.LND.AGRI.ZS,Agricultural land (% of land area),12.716049382716
+JPN,Japan,2023,AG.LND.AGRI.ZS,Agricultural land (% of land area),12.639231824417
+JPN,Japan,2024,AG.LND.AGRI.ZS,Agricultural land (% of land area),12.5706447187929
+JPN,Japan,2010,AG.PRD.CREL.MT,Cereal production (metric tons),11454614.23
+JPN,Japan,2011,AG.PRD.CREL.MT,Cereal production (metric tons),11657491.61
+JPN,Japan,2012,AG.PRD.CREL.MT,Cereal production (metric tons),12166480.7
+JPN,Japan,2013,AG.PRD.CREL.MT,Cereal production (metric tons),12264625.46
+JPN,Japan,2014,AG.PRD.CREL.MT,Cereal production (metric tons),12285001.04
+JPN,Japan,2015,AG.PRD.CREL.MT,Cereal production (metric tons),12141378.23
+JPN,Japan,2016,AG.PRD.CREL.MT,Cereal production (metric tons),11924734.91
+JPN,Japan,2017,AG.PRD.CREL.MT,Cereal production (metric tons),11903650.57
+JPN,Japan,2018,AG.PRD.CREL.MT,Cereal production (metric tons),11575323.38
+JPN,Japan,2019,AG.PRD.CREL.MT,Cereal production (metric tons),11843136.29
+JPN,Japan,2020,AG.PRD.CREL.MT,Cereal production (metric tons),11692640.87
+JPN,Japan,2021,AG.PRD.CREL.MT,Cereal production (metric tons),11989633.51
+JPN,Japan,2022,AG.PRD.CREL.MT,Cereal production (metric tons),11718522.75
+JPN,Japan,2023,AG.PRD.CREL.MT,Cereal production (metric tons),11498640.62
+JPN,Japan,2024,AG.PRD.CREL.MT,Cereal production (metric tons),11397732.3
+JPN,Japan,2010,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",81.00457143
+JPN,Japan,2011,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",80.78714286
+JPN,Japan,2012,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",80.56971429
+JPN,Japan,2013,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",80.35228571
+JPN,Japan,2014,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",80.13485714
+JPN,Japan,2015,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",79.91742857
+JPN,Japan,2016,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",79.7
+JPN,Japan,2017,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",79.3
+JPN,Japan,2018,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",79.1
+JPN,Japan,2019,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",78.4
+JPN,Japan,2020,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",79.7
+JPN,Japan,2021,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",79.7
+JPN,Japan,2022,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",79.7
+JPN,Japan,2010,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,28.2400150860666
+JPN,Japan,2011,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,29.9713853558472
+JPN,Japan,2012,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,30.174299547803
+JPN,Japan,2013,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,33.5913694460807
+JPN,Japan,2014,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,36.7643250218282
+JPN,Japan,2015,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,34.7276305886293
+JPN,Japan,2016,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,30.6562793068554
+JPN,Japan,2017,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,33.6888336792782
+JPN,Japan,2018,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,35.8035749582494
+JPN,Japan,2019,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,34.3582972799989
+JPN,Japan,2020,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,30.5192226892273
+JPN,Japan,2021,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,35.4253927340539
+JPN,Japan,2022,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,44.86063102004
+JPN,Japan,2023,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,43.5950833802735
+JPN,Japan,2024,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,44.8529388577573
+JPN,Japan,2010,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.11140166338783
+JPN,Japan,2011,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.10595400106158
+JPN,Japan,2012,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.13661659778411
+JPN,Japan,2013,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.07559314069116
+JPN,Japan,2014,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.991053653091654
+JPN,Japan,2015,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.0203205987902
+JPN,Japan,2016,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.10437494356716
+JPN,Japan,2017,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.10813828591854
+JPN,Japan,2018,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.01125619011391
+JPN,Japan,2019,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.981152004588712
+JPN,Japan,2020,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.00457628073053
+JPN,Japan,2021,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.938649382602401
+JPN,Japan,2022,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.848657019671377
+JPN,Japan,2023,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.825345395457711
+JPN,Japan,2024,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.958270395726444
+KOR,"Korea, Rep.",2010,AG.LND.AGRI.ZS,Agricultural land (% of land area),18.2407407407407
+KOR,"Korea, Rep.",2011,AG.LND.AGRI.ZS,Agricultural land (% of land area),18.068731350962
+KOR,"Korea, Rep.",2012,AG.LND.AGRI.ZS,Agricultural land (% of land area),18.3742678039256
+KOR,"Korea, Rep.",2013,AG.LND.AGRI.ZS,Agricultural land (% of land area),18.154291462238
+KOR,"Korea, Rep.",2014,AG.LND.AGRI.ZS,Agricultural land (% of land area),17.9441650415683
+KOR,"Korea, Rep.",2015,AG.LND.AGRI.ZS,Agricultural land (% of land area),17.815177792601
+KOR,"Korea, Rep.",2016,AG.LND.AGRI.ZS,Agricultural land (% of land area),17.4460708387613
+KOR,"Korea, Rep.",2017,AG.LND.AGRI.ZS,Agricultural land (% of land area),17.1951594708235
+KOR,"Korea, Rep.",2018,AG.LND.AGRI.ZS,Agricultural land (% of land area),16.9401148482363
+KOR,"Korea, Rep.",2019,AG.LND.AGRI.ZS,Agricultural land (% of land area),16.7725409836066
+KOR,"Korea, Rep.",2020,AG.LND.AGRI.ZS,Agricultural land (% of land area),16.608606557377
+KOR,"Korea, Rep.",2021,AG.LND.AGRI.ZS,Agricultural land (% of land area),16.4241803278689
+KOR,"Korea, Rep.",2022,AG.LND.AGRI.ZS,Agricultural land (% of land area),16.2295081967213
+KOR,"Korea, Rep.",2023,AG.LND.AGRI.ZS,Agricultural land (% of land area),16.0655737704918
+KOR,"Korea, Rep.",2024,AG.LND.AGRI.ZS,Agricultural land (% of land area),15.9938524590164
+KOR,"Korea, Rep.",2010,AG.PRD.CREL.MT,Cereal production (metric tons),6020702.01
+KOR,"Korea, Rep.",2011,AG.PRD.CREL.MT,Cereal production (metric tons),5825775.77
+KOR,"Korea, Rep.",2012,AG.PRD.CREL.MT,Cereal production (metric tons),5604303.9
+KOR,"Korea, Rep.",2013,AG.PRD.CREL.MT,Cereal production (metric tons),5810450.68
+KOR,"Korea, Rep.",2014,AG.PRD.CREL.MT,Cereal production (metric tons),5852499.19
+KOR,"Korea, Rep.",2015,AG.PRD.CREL.MT,Cereal production (metric tons),5976258.87
+KOR,"Korea, Rep.",2016,AG.PRD.CREL.MT,Cereal production (metric tons),5831045.8
+KOR,"Korea, Rep.",2017,AG.PRD.CREL.MT,Cereal production (metric tons),5487987.7
+KOR,"Korea, Rep.",2018,AG.PRD.CREL.MT,Cereal production (metric tons),5418712.13
+KOR,"Korea, Rep.",2019,AG.PRD.CREL.MT,Cereal production (metric tons),5272979.18
+KOR,"Korea, Rep.",2020,AG.PRD.CREL.MT,Cereal production (metric tons),4945457.62
+KOR,"Korea, Rep.",2021,AG.PRD.CREL.MT,Cereal production (metric tons),5443076.16
+KOR,"Korea, Rep.",2022,AG.PRD.CREL.MT,Cereal production (metric tons),5219729.36
+KOR,"Korea, Rep.",2023,AG.PRD.CREL.MT,Cereal production (metric tons),5134359.45
+KOR,"Korea, Rep.",2024,AG.PRD.CREL.MT,Cereal production (metric tons),4984350.77
+KOR,"Korea, Rep.",2010,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",29.197
+KOR,"Korea, Rep.",2011,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",29.197
+KOR,"Korea, Rep.",2012,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",29.197
+KOR,"Korea, Rep.",2013,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",29.197
+KOR,"Korea, Rep.",2014,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",29.197
+KOR,"Korea, Rep.",2015,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",29.197
+KOR,"Korea, Rep.",2016,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",29.197
+KOR,"Korea, Rep.",2017,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",29.197
+KOR,"Korea, Rep.",2018,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",29.197
+KOR,"Korea, Rep.",2019,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",29.197
+KOR,"Korea, Rep.",2020,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",29.197
+KOR,"Korea, Rep.",2021,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",29.197
+KOR,"Korea, Rep.",2022,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",29.197
+KOR,"Korea, Rep.",2010,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,88.0278677123124
+KOR,"Korea, Rep.",2011,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,101.68061646213
+KOR,"Korea, Rep.",2012,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,101.51727207905
+KOR,"Korea, Rep.",2013,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,94.1675235855873
+KOR,"Korea, Rep.",2014,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,86.9342577972039
+KOR,"Korea, Rep.",2015,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,75.3881774564907
+KOR,"Korea, Rep.",2016,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,69.8997221316919
+KOR,"Korea, Rep.",2017,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,73.1921408264016
+KOR,"Korea, Rep.",2018,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,74.7075162140824
+KOR,"Korea, Rep.",2019,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,71.4470632403511
+KOR,"Korea, Rep.",2020,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,65.544957860621
+KOR,"Korea, Rep.",2021,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,75.3063047610912
+KOR,"Korea, Rep.",2022,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,90.5851475278549
+KOR,"Korea, Rep.",2023,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,82.2580090716629
+KOR,"Korea, Rep.",2024,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,84.6424951192038
+KOR,"Korea, Rep.",2010,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",2.0444228836758
+KOR,"Korea, Rep.",2011,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",2.10765665250747
+KOR,"Korea, Rep.",2012,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",2.08215187594443
+KOR,"Korea, Rep.",2013,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.99508166521127
+KOR,"Korea, Rep.",2014,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.95176665660859
+KOR,"Korea, Rep.",2015,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.89858430952633
+KOR,"Korea, Rep.",2016,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.73945648142804
+KOR,"Korea, Rep.",2017,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.71494254133381
+KOR,"Korea, Rep.",2018,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.59932774432361
+KOR,"Korea, Rep.",2019,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.50689433955588
+KOR,"Korea, Rep.",2020,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.57795135359259
+KOR,"Korea, Rep.",2021,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.66515978191584
+KOR,"Korea, Rep.",2022,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.4483461547482
+KOR,"Korea, Rep.",2023,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.44773871445502
+KOR,"Korea, Rep.",2024,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.45825105459538
+MEX,Mexico,2010,AG.LND.AGRI.ZS,Agricultural land (% of land area),52.3712029630392
+MEX,Mexico,2011,AG.LND.AGRI.ZS,Agricultural land (% of land area),52.1217109493557
+MEX,Mexico,2012,AG.LND.AGRI.ZS,Agricultural land (% of land area),51.7050335656781
+MEX,Mexico,2013,AG.LND.AGRI.ZS,Agricultural land (% of land area),51.1772422130199
+MEX,Mexico,2014,AG.LND.AGRI.ZS,Agricultural land (% of land area),50.7976028190025
+MEX,Mexico,2015,AG.LND.AGRI.ZS,Agricultural land (% of land area),50.7626224954345
+MEX,Mexico,2016,AG.LND.AGRI.ZS,Agricultural land (% of land area),50.5866920445485
+MEX,Mexico,2017,AG.LND.AGRI.ZS,Agricultural land (% of land area),49.8706242444507
+MEX,Mexico,2018,AG.LND.AGRI.ZS,Agricultural land (% of land area),49.6494251395355
+MEX,Mexico,2019,AG.LND.AGRI.ZS,Agricultural land (% of land area),49.4385143650814
+MEX,Mexico,2020,AG.LND.AGRI.ZS,Agricultural land (% of land area),51.5149441086448
+MEX,Mexico,2021,AG.LND.AGRI.ZS,Agricultural land (% of land area),51.5064078294195
+MEX,Mexico,2022,AG.LND.AGRI.ZS,Agricultural land (% of land area),50.8701226883407
+MEX,Mexico,2023,AG.LND.AGRI.ZS,Agricultural land (% of land area),50.6933879986625
+MEX,Mexico,2024,AG.LND.AGRI.ZS,Agricultural land (% of land area),50.633799377556
+MEX,Mexico,2010,AG.PRD.CREL.MT,Cereal production (metric tons),34925200.0
+MEX,Mexico,2011,AG.PRD.CREL.MT,Cereal production (metric tons),28408737.0
+MEX,Mexico,2012,AG.PRD.CREL.MT,Cereal production (metric tons),33614212.0
+MEX,Mexico,2013,AG.PRD.CREL.MT,Cereal production (metric tons),33210301.0
+MEX,Mexico,2014,AG.PRD.CREL.MT,Cereal production (metric tons),36526602.49
+MEX,Mexico,2015,AG.PRD.CREL.MT,Cereal production (metric tons),34704514.12
+MEX,Mexico,2016,AG.PRD.CREL.MT,Cereal production (metric tons),38464938.31
+MEX,Mexico,2017,AG.PRD.CREL.MT,Cereal production (metric tons),37487835.84
+MEX,Mexico,2018,AG.PRD.CREL.MT,Cereal production (metric tons),36068401.88
+MEX,Mexico,2019,AG.PRD.CREL.MT,Cereal production (metric tons),36164102.48
+MEX,Mexico,2020,AG.PRD.CREL.MT,Cereal production (metric tons),36374789.68
+MEX,Mexico,2021,AG.PRD.CREL.MT,Cereal production (metric tons),36582135.17
+MEX,Mexico,2022,AG.PRD.CREL.MT,Cereal production (metric tons),36330006.75
+MEX,Mexico,2023,AG.PRD.CREL.MT,Cereal production (metric tons),37015878.83
+MEX,Mexico,2024,AG.PRD.CREL.MT,Cereal production (metric tons),32642051.28
+MEX,Mexico,2010,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",79.63
+MEX,Mexico,2011,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",79.48
+MEX,Mexico,2012,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",82.73
+MEX,Mexico,2013,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",81.65
+MEX,Mexico,2014,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",84.93
+MEX,Mexico,2015,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",85.66
+MEX,Mexico,2016,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",86.577
+MEX,Mexico,2017,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",87.84
+MEX,Mexico,2018,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",88.84
+MEX,Mexico,2019,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",89.351
+MEX,Mexico,2020,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",89.548
+MEX,Mexico,2021,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",89.944
+MEX,Mexico,2022,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",89.804
+MEX,Mexico,2010,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,59.2733845336286
+MEX,Mexico,2011,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,62.1623872764498
+MEX,Mexico,2012,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,64.2579318938989
+MEX,Mexico,2013,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,62.6916747661852
+MEX,Mexico,2014,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,64.0984090315875
+MEX,Mexico,2015,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,70.4129746799259
+MEX,Mexico,2016,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,75.6903034088551
+MEX,Mexico,2017,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,76.95212604414
+MEX,Mexico,2018,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,80.212661650262
+MEX,Mexico,2019,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,77.4619722509459
+MEX,Mexico,2020,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,76.8545557151738
+MEX,Mexico,2021,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,83.0692976264524
+MEX,Mexico,2022,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,88.7984855897261
+MEX,Mexico,2023,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,73.7390758255664
+MEX,Mexico,2024,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,75.4259015415068
+MEX,Mexico,2010,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",3.09200838871919
+MEX,Mexico,2011,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",2.97569483968178
+MEX,Mexico,2012,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",3.04872937167333
+MEX,Mexico,2013,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",3.02454277542456
+MEX,Mexico,2014,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",3.02713651699048
+MEX,Mexico,2015,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",3.08518633863416
+MEX,Mexico,2016,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",3.2462890783797
+MEX,Mexico,2017,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",3.29751177589907
+MEX,Mexico,2018,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",3.29695945141921
+MEX,Mexico,2019,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",3.31502440257968
+MEX,Mexico,2020,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",3.71114888178603
+MEX,Mexico,2021,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",3.78266528622109
+MEX,Mexico,2022,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",3.89806571238006
+MEX,Mexico,2023,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",3.84569758598285
+MEX,Mexico,2024,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",3.86944846371998
+MYS,Malaysia,2010,AG.LND.AGRI.ZS,Agricultural land (% of land area),24.0723481966215
+MYS,Malaysia,2011,AG.LND.AGRI.ZS,Agricultural land (% of land area),24.3075330999848
+MYS,Malaysia,2012,AG.LND.AGRI.ZS,Agricultural land (% of land area),24.5168771876427
+MYS,Malaysia,2013,AG.LND.AGRI.ZS,Agricultural land (% of land area),24.5177294171359
+MYS,Malaysia,2014,AG.LND.AGRI.ZS,Agricultural land (% of land area),25.2949018414244
+MYS,Malaysia,2015,AG.LND.AGRI.ZS,Agricultural land (% of land area),26.0720438289454
+MYS,Malaysia,2016,AG.LND.AGRI.ZS,Agricultural land (% of land area),26.124212448638
+MYS,Malaysia,2017,AG.LND.AGRI.ZS,Agricultural land (% of land area),26.1763810683305
+MYS,Malaysia,2018,AG.LND.AGRI.ZS,Agricultural land (% of land area),26.2285192512555
+MYS,Malaysia,2019,AG.LND.AGRI.ZS,Agricultural land (% of land area),26.2806878709481
+MYS,Malaysia,2020,AG.LND.AGRI.ZS,Agricultural land (% of land area),25.7058286409983
+MYS,Malaysia,2021,AG.LND.AGRI.ZS,Agricultural land (% of land area),25.3473748287932
+MYS,Malaysia,2022,AG.LND.AGRI.ZS,Agricultural land (% of land area),25.1399482574951
+MYS,Malaysia,2023,AG.LND.AGRI.ZS,Agricultural land (% of land area),24.9771115507533
+MYS,Malaysia,2024,AG.LND.AGRI.ZS,Agricultural land (% of land area),24.7929386699133
+MYS,Malaysia,2010,AG.PRD.CREL.MT,Cereal production (metric tons),2464830.0
+MYS,Malaysia,2011,AG.PRD.CREL.MT,Cereal production (metric tons),2575988.0
+MYS,Malaysia,2012,AG.PRD.CREL.MT,Cereal production (metric tons),2599382.0
+MYS,Malaysia,2013,AG.PRD.CREL.MT,Cereal production (metric tons),2603654.0
+MYS,Malaysia,2014,AG.PRD.CREL.MT,Cereal production (metric tons),2844983.0
+MYS,Malaysia,2015,AG.PRD.CREL.MT,Cereal production (metric tons),2741404.0
+MYS,Malaysia,2016,AG.PRD.CREL.MT,Cereal production (metric tons),2739606.0
+MYS,Malaysia,2017,AG.PRD.CREL.MT,Cereal production (metric tons),2570513.0
+MYS,Malaysia,2018,AG.PRD.CREL.MT,Cereal production (metric tons),2639202.0
+MYS,Malaysia,2019,AG.PRD.CREL.MT,Cereal production (metric tons),2352870.0
+MYS,Malaysia,2020,AG.PRD.CREL.MT,Cereal production (metric tons),2356391.9
+MYS,Malaysia,2021,AG.PRD.CREL.MT,Cereal production (metric tons),2442070.8
+MYS,Malaysia,2022,AG.PRD.CREL.MT,Cereal production (metric tons),2282576.0
+MYS,Malaysia,2023,AG.PRD.CREL.MT,Cereal production (metric tons),2175717.0
+MYS,Malaysia,2024,AG.PRD.CREL.MT,Cereal production (metric tons),2104277.23
+MYS,Malaysia,2010,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",6.030736842
+MYS,Malaysia,2011,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",6.069789474
+MYS,Malaysia,2012,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",6.108842105
+MYS,Malaysia,2013,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",6.147894737
+MYS,Malaysia,2014,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",6.186947368
+MYS,Malaysia,2015,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",6.226
+MYS,Malaysia,2016,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",6.552
+MYS,Malaysia,2017,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",6.707
+MYS,Malaysia,2018,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",6.707
+MYS,Malaysia,2019,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",6.707
+MYS,Malaysia,2020,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",6.707
+MYS,Malaysia,2021,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",6.707
+MYS,Malaysia,2022,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",6.707
+MYS,Malaysia,2010,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,157.944764886771
+MYS,Malaysia,2011,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,154.937684607226
+MYS,Malaysia,2012,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,147.841754766013
+MYS,Malaysia,2013,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,142.720991464873
+MYS,Malaysia,2014,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,138.312231176843
+MYS,Malaysia,2015,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,131.37007244526
+MYS,Malaysia,2016,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,126.8990100257
+MYS,Malaysia,2017,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,133.155173371956
+MYS,Malaysia,2018,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,130.402625502126
+MYS,Malaysia,2019,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,123.028562027943
+MYS,Malaysia,2020,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,116.788182437638
+MYS,Malaysia,2021,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,134.035994690727
+MYS,Malaysia,2022,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,146.424604753908
+MYS,Malaysia,2023,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,132.593461641599
+MYS,Malaysia,2024,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,137.362571161559
+MYS,Malaysia,2010,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",10.0899159275121
+MYS,Malaysia,2011,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",11.4533531198278
+MYS,Malaysia,2012,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",9.79375074645921
+MYS,Malaysia,2013,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",9.11336384538206
+MYS,Malaysia,2014,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",8.87320901302643
+MYS,Malaysia,2015,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",8.2874950827938
+MYS,Malaysia,2016,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",8.46251885618027
+MYS,Malaysia,2017,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",8.59827753533139
+MYS,Malaysia,2018,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",7.51205693063821
+MYS,Malaysia,2019,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",7.24131401562151
+MYS,Malaysia,2020,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",8.16597089919598
+MYS,Malaysia,2021,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",9.56621458844467
+MYS,Malaysia,2022,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",8.96184922741417
+MYS,Malaysia,2023,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",7.76530932127302
+MYS,Malaysia,2024,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",8.12846782241948
+NZL,New Zealand,2010,AG.LND.AGRI.ZS,Agricultural land (% of land area),43.3253579431089
+NZL,New Zealand,2011,AG.LND.AGRI.ZS,Agricultural land (% of land area),43.1848391629638
+NZL,New Zealand,2012,AG.LND.AGRI.ZS,Agricultural land (% of land area),42.571113896168
+NZL,New Zealand,2013,AG.LND.AGRI.ZS,Agricultural land (% of land area),42.1784208727356
+NZL,New Zealand,2014,AG.LND.AGRI.ZS,Agricultural land (% of land area),42.2163989214234
+NZL,New Zealand,2015,AG.LND.AGRI.ZS,Agricultural land (% of land area),40.6820857544339
+NZL,New Zealand,2016,AG.LND.AGRI.ZS,Agricultural land (% of land area),40.3099008772929
+NZL,New Zealand,2017,AG.LND.AGRI.ZS,Agricultural land (% of land area),40.4238350233565
+NZL,New Zealand,2018,AG.LND.AGRI.ZS,Agricultural land (% of land area),39.8693555125138
+NZL,New Zealand,2019,AG.LND.AGRI.ZS,Agricultural land (% of land area),39.2882913675895
+NZL,New Zealand,2020,AG.LND.AGRI.ZS,Agricultural land (% of land area),38.5629106376514
+NZL,New Zealand,2021,AG.LND.AGRI.ZS,Agricultural land (% of land area),38.6426645398959
+NZL,New Zealand,2022,AG.LND.AGRI.ZS,Agricultural land (% of land area),37.0172040560556
+NZL,New Zealand,2023,AG.LND.AGRI.ZS,Agricultural land (% of land area),36.8804830807793
+NZL,New Zealand,2024,AG.LND.AGRI.ZS,Agricultural land (% of land area),36.8121225931412
+NZL,New Zealand,2010,AG.PRD.CREL.MT,Cereal production (metric tons),1001296.0
+NZL,New Zealand,2011,AG.PRD.CREL.MT,Cereal production (metric tons),999389.0
+NZL,New Zealand,2012,AG.PRD.CREL.MT,Cereal production (metric tons),1168496.0
+NZL,New Zealand,2013,AG.PRD.CREL.MT,Cereal production (metric tons),1103220.91
+NZL,New Zealand,2014,AG.PRD.CREL.MT,Cereal production (metric tons),1097943.0
+NZL,New Zealand,2015,AG.PRD.CREL.MT,Cereal production (metric tons),1114618.0
+NZL,New Zealand,2016,AG.PRD.CREL.MT,Cereal production (metric tons),1096490.0
+NZL,New Zealand,2017,AG.PRD.CREL.MT,Cereal production (metric tons),936995.3
+NZL,New Zealand,2018,AG.PRD.CREL.MT,Cereal production (metric tons),977780.71
+NZL,New Zealand,2019,AG.PRD.CREL.MT,Cereal production (metric tons),1021321.72
+NZL,New Zealand,2020,AG.PRD.CREL.MT,Cereal production (metric tons),1021848.29
+NZL,New Zealand,2021,AG.PRD.CREL.MT,Cereal production (metric tons),996842.96
+NZL,New Zealand,2022,AG.PRD.CREL.MT,Cereal production (metric tons),968265.4
+NZL,New Zealand,2023,AG.PRD.CREL.MT,Cereal production (metric tons),987124.0
+NZL,New Zealand,2024,AG.PRD.CREL.MT,Cereal production (metric tons),1102880.6
+NZL,New Zealand,2010,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",5.201
+NZL,New Zealand,2011,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",6.3695
+NZL,New Zealand,2012,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",7.538
+NZL,New Zealand,2013,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",8.7065
+NZL,New Zealand,2014,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",9.875
+NZL,New Zealand,2015,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",9.875
+NZL,New Zealand,2016,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",9.875
+NZL,New Zealand,2017,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",9.875
+NZL,New Zealand,2018,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",9.875
+NZL,New Zealand,2019,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",9.875
+NZL,New Zealand,2020,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",9.875
+NZL,New Zealand,2021,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",9.875
+NZL,New Zealand,2022,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",9.875
+NZL,New Zealand,2010,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,58.1047406012087
+NZL,New Zealand,2011,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,59.1815679267669
+NZL,New Zealand,2012,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,56.9257462326897
+NZL,New Zealand,2013,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,56.0063219921147
+NZL,New Zealand,2014,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,55.1213465284556
+NZL,New Zealand,2015,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,54.8749505791536
+NZL,New Zealand,2016,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,52.4796021733125
+NZL,New Zealand,2017,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,54.2775276299632
+NZL,New Zealand,2018,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,55.9063918509538
+NZL,New Zealand,2019,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,54.4612464097007
+NZL,New Zealand,2020,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,43.8262466218168
+NZL,New Zealand,2021,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,48.4315370741539
+NZL,New Zealand,2022,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,53.2091433736439
+NZL,New Zealand,2023,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,49.8655041498497
+NZL,New Zealand,2024,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,50.6607664427853
+NZL,New Zealand,2010,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",6.57130523506789
+NZL,New Zealand,2011,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",6.2779911553811
+NZL,New Zealand,2012,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",5.50809920086661
+NZL,New Zealand,2013,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",7.03235726127178
+NZL,New Zealand,2014,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",4.77478924457513
+NZL,New Zealand,2015,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",4.4696017756274
+NZL,New Zealand,2016,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",5.54820885901096
+NZL,New Zealand,2017,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",5.91537474588689
+NZL,New Zealand,2018,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",5.66864597596724
+NZL,New Zealand,2019,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",5.68759062703863
+NZL,New Zealand,2020,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",5.69753974020289
+NZL,New Zealand,2021,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",5.77486500876711
+NZL,New Zealand,2022,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",4.57625698536786
+NZL,New Zealand,2023,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",4.00852725247614
+PAK,Pakistan,2010,AG.LND.AGRI.ZS,Agricultural land (% of land area),45.7165836446658
+PAK,Pakistan,2011,AG.LND.AGRI.ZS,Agricultural land (% of land area),46.6168534661685
+PAK,Pakistan,2012,AG.LND.AGRI.ZS,Agricultural land (% of land area),46.781600249066
+PAK,Pakistan,2013,AG.LND.AGRI.ZS,Agricultural land (% of land area),47.063096720631
+PAK,Pakistan,2014,AG.LND.AGRI.ZS,Agricultural land (% of land area),47.0267745952677
+PAK,Pakistan,2015,AG.LND.AGRI.ZS,Agricultural land (% of land area),46.9619136571191
+PAK,Pakistan,2016,AG.LND.AGRI.ZS,Agricultural land (% of land area),47.7298671647987
+PAK,Pakistan,2017,AG.LND.AGRI.ZS,Agricultural land (% of land area),48.0009858862599
+PAK,Pakistan,2018,AG.LND.AGRI.ZS,Agricultural land (% of land area),47.9043430884184
+PAK,Pakistan,2019,AG.LND.AGRI.ZS,Agricultural land (% of land area),47.0553134080531
+PAK,Pakistan,2020,AG.LND.AGRI.ZS,Agricultural land (% of land area),47.572903694479
+PAK,Pakistan,2021,AG.LND.AGRI.ZS,Agricultural land (% of land area),46.7180365296804
+PAK,Pakistan,2022,AG.LND.AGRI.ZS,Agricultural land (% of land area),46.6311228725612
+PAK,Pakistan,2023,AG.LND.AGRI.ZS,Agricultural land (% of land area),46.6933893731839
+PAK,Pakistan,2024,AG.LND.AGRI.ZS,Agricultural land (% of land area),47.2044935657949
+PAK,Pakistan,2010,AG.PRD.CREL.MT,Cereal production (metric tons),34811258.0
+PAK,Pakistan,2011,AG.PRD.CREL.MT,Cereal production (metric tons),39304580.0
+PAK,Pakistan,2012,AG.PRD.CREL.MT,Cereal production (metric tons),36496350.0
+PAK,Pakistan,2013,AG.PRD.CREL.MT,Cereal production (metric tons),40109711.0
+PAK,Pakistan,2014,AG.PRD.CREL.MT,Cereal production (metric tons),41895811.0
+PAK,Pakistan,2015,AG.PRD.CREL.MT,Cereal production (metric tons),41081682.0
+PAK,Pakistan,2016,AG.PRD.CREL.MT,Cereal production (metric tons),42555022.0
+PAK,Pakistan,2017,AG.PRD.CREL.MT,Cereal production (metric tons),44299994.5
+PAK,Pakistan,2018,AG.PRD.CREL.MT,Cereal production (metric tons),43254398.0
+PAK,Pakistan,2019,AG.PRD.CREL.MT,Cereal production (metric tons),43912063.0
+PAK,Pakistan,2020,AG.PRD.CREL.MT,Cereal production (metric tons),47226053.0
+PAK,Pakistan,2021,AG.PRD.CREL.MT,Cereal production (metric tons),51304736.0
+PAK,Pakistan,2022,AG.PRD.CREL.MT,Cereal production (metric tons),48519329.0
+PAK,Pakistan,2023,AG.PRD.CREL.MT,Cereal production (metric tons),53065396.0
+PAK,Pakistan,2024,AG.PRD.CREL.MT,Cereal production (metric tons),55933133.0
+PAK,Pakistan,2010,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",185.28
+PAK,Pakistan,2011,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",179.48
+PAK,Pakistan,2012,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",187.88
+PAK,Pakistan,2013,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",183.5
+PAK,Pakistan,2014,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",194.87
+PAK,Pakistan,2015,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",196.91
+PAK,Pakistan,2016,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",199.77
+PAK,Pakistan,2017,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",199.97
+PAK,Pakistan,2018,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",192.74
+PAK,Pakistan,2019,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",177.11
+PAK,Pakistan,2020,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",189.59
+PAK,Pakistan,2021,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",184.16
+PAK,Pakistan,2022,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",179.3
+PAK,Pakistan,2010,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,31.9890020462315
+PAK,Pakistan,2011,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,32.3626382751438
+PAK,Pakistan,2012,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,31.3189732760076
+PAK,Pakistan,2013,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,30.8902743401844
+PAK,Pakistan,2014,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,29.4698256903998
+PAK,Pakistan,2015,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,26.6881860172247
+PAK,Pakistan,2016,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,24.7015780480573
+PAK,Pakistan,2017,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,25.472035002344
+PAK,Pakistan,2018,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,27.6260570796337
+PAK,Pakistan,2019,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,28.9055769867032
+PAK,Pakistan,2020,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,26.7162807328814
+PAK,Pakistan,2021,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,27.0304204125548
+PAK,Pakistan,2022,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,33.031353478032
+PAK,Pakistan,2023,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,28.4676925469837
+PAK,Pakistan,2024,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,27.5653309105795
+PAK,Pakistan,2010,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",22.6888101741789
+PAK,Pakistan,2011,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",23.819642978628
+PAK,Pakistan,2012,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",23.3861955340345
+PAK,Pakistan,2013,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",23.7075945934908
+PAK,Pakistan,2014,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",23.4927320097855
+PAK,Pakistan,2015,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",23.2628407756242
+PAK,Pakistan,2016,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",22.3283302035697
+PAK,Pakistan,2017,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",21.9632035366872
+PAK,Pakistan,2018,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",21.6512353593957
+PAK,Pakistan,2019,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",20.6778713222887
+PAK,Pakistan,2020,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",21.8541325548966
+PAK,Pakistan,2021,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",22.6625080760743
+PAK,Pakistan,2022,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",22.3268646996031
+PAK,Pakistan,2023,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",23.426703596366
+PAK,Pakistan,2024,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",23.7319671905124
+PHL,Philippines,2010,AG.LND.AGRI.ZS,Agricultural land (% of land area),40.5444880437334
+PHL,Philippines,2011,AG.LND.AGRI.ZS,Agricultural land (% of land area),41.1390817318979
+PHL,Philippines,2012,AG.LND.AGRI.ZS,Agricultural land (% of land area),41.698225844317
+PHL,Philippines,2013,AG.LND.AGRI.ZS,Agricultural land (% of land area),41.7719757185498
+PHL,Philippines,2014,AG.LND.AGRI.ZS,Agricultural land (% of land area),41.8080960525875
+PHL,Philippines,2015,AG.LND.AGRI.ZS,Agricultural land (% of land area),41.9902404668478
+PHL,Philippines,2016,AG.LND.AGRI.ZS,Agricultural land (% of land area),42.0531575946608
+PHL,Philippines,2017,AG.LND.AGRI.ZS,Agricultural land (% of land area),42.2713552671295
+PHL,Philippines,2018,AG.LND.AGRI.ZS,Agricultural land (% of land area),42.3903142502599
+PHL,Philippines,2019,AG.LND.AGRI.ZS,Agricultural land (% of land area),42.4850923969548
+PHL,Philippines,2020,AG.LND.AGRI.ZS,Agricultural land (% of land area),42.5179930911896
+PHL,Philippines,2021,AG.LND.AGRI.ZS,Agricultural land (% of land area),42.5131636314854
+PHL,Philippines,2022,AG.LND.AGRI.ZS,Agricultural land (% of land area),42.3012040111346
+PHL,Philippines,2023,AG.LND.AGRI.ZS,Agricultural land (% of land area),42.5750075460308
+PHL,Philippines,2024,AG.LND.AGRI.ZS,Agricultural land (% of land area),42.7457490693229
+PHL,Philippines,2010,AG.PRD.CREL.MT,Cereal production (metric tons),22149369.0
+PHL,Philippines,2011,AG.PRD.CREL.MT,Cereal production (metric tons),23655648.0
+PHL,Philippines,2012,AG.PRD.CREL.MT,Cereal production (metric tons),25440477.82
+PHL,Philippines,2013,AG.PRD.CREL.MT,Cereal production (metric tons),25817440.51
+PHL,Philippines,2014,AG.PRD.CREL.MT,Cereal production (metric tons),26739121.85
+PHL,Philippines,2015,AG.PRD.CREL.MT,Cereal production (metric tons),25669246.05
+PHL,Philippines,2016,AG.PRD.CREL.MT,Cereal production (metric tons),24846678.08
+PHL,Philippines,2017,AG.PRD.CREL.MT,Cereal production (metric tons),27191819.46
+PHL,Philippines,2018,AG.PRD.CREL.MT,Cereal production (metric tons),26838576.91
+PHL,Philippines,2019,AG.PRD.CREL.MT,Cereal production (metric tons),26794250.87
+PHL,Philippines,2020,AG.PRD.CREL.MT,Cereal production (metric tons),27413962.2
+PHL,Philippines,2021,AG.PRD.CREL.MT,Cereal production (metric tons),28247959.21
+PHL,Philippines,2022,AG.PRD.CREL.MT,Cereal production (metric tons),28012711.96
+PHL,Philippines,2023,AG.PRD.CREL.MT,Cereal production (metric tons),28465199.05
+PHL,Philippines,2024,AG.PRD.CREL.MT,Cereal production (metric tons),27225763.46
+PHL,Philippines,2010,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",83.273
+PHL,Philippines,2011,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",84.059
+PHL,Philippines,2012,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",84.248
+PHL,Philippines,2013,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",84.447
+PHL,Philippines,2014,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",84.432
+PHL,Philippines,2015,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",86.397
+PHL,Philippines,2016,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",87.115
+PHL,Philippines,2017,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",91.79128
+PHL,Philippines,2018,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",92.15781079
+PHL,Philippines,2019,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",85.99451398
+PHL,Philippines,2020,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",87.47726918
+PHL,Philippines,2021,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",89.00036353
+PHL,Philippines,2022,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",91.03689247
+PHL,Philippines,2010,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,66.1042785137797
+PHL,Philippines,2011,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,60.7958366999075
+PHL,Philippines,2012,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,57.8420055133082
+PHL,Philippines,2013,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,55.8247812320298
+PHL,Philippines,2014,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,57.4681720875945
+PHL,Philippines,2015,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,59.1415921053094
+PHL,Philippines,2016,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,61.7760657653871
+PHL,Philippines,2017,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,68.1683697426727
+PHL,Philippines,2018,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,72.1633982990273
+PHL,Philippines,2019,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,68.8418422595678
+PHL,Philippines,2020,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,58.1695603022281
+PHL,Philippines,2021,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,63.4846098136712
+PHL,Philippines,2022,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,72.4296836107599
+PHL,Philippines,2023,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,67.4199693171606
+PHL,Philippines,2024,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,65.8637883882752
+PHL,Philippines,2010,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",13.7488650524217
+PHL,Philippines,2011,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",14.0957351510823
+PHL,Philippines,2012,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",13.0958070106782
+PHL,Philippines,2013,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",12.4734251044125
+PHL,Philippines,2014,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",12.2716816211446
+PHL,Philippines,2015,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",10.9964991548623
+PHL,Philippines,2016,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",10.2051255325616
+PHL,Philippines,2017,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",10.1829541314109
+PHL,Philippines,2018,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",9.65014035815306
+PHL,Philippines,2019,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",8.82032374730525
+PHL,Philippines,2020,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",10.1853110317615
+PHL,Philippines,2021,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",10.0691640204876
+PHL,Philippines,2022,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",9.55176804414326
+PHL,Philippines,2023,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",9.40036652869164
+PHL,Philippines,2024,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",9.08729576020063
+SGP,Singapore,2010,AG.LND.AGRI.ZS,Agricultural land (% of land area),1.05488239486814
+SGP,Singapore,2011,AG.LND.AGRI.ZS,Agricultural land (% of land area),1.03766879886283
+SGP,Singapore,2012,AG.LND.AGRI.ZS,Agricultural land (% of land area),1.0347271438696
+SGP,Singapore,2013,AG.LND.AGRI.ZS,Agricultural land (% of land area),0.948336871903751
+SGP,Singapore,2014,AG.LND.AGRI.ZS,Agricultural land (% of land area),0.93167701863354
+SGP,Singapore,2015,AG.LND.AGRI.ZS,Agricultural land (% of land area),0.93167701863354
+SGP,Singapore,2016,AG.LND.AGRI.ZS,Agricultural land (% of land area),0.93167701863354
+SGP,Singapore,2017,AG.LND.AGRI.ZS,Agricultural land (% of land area),0.927748102333427
+SGP,Singapore,2018,AG.LND.AGRI.ZS,Agricultural land (% of land area),0.925147182506308
+SGP,Singapore,2019,AG.LND.AGRI.ZS,Agricultural land (% of land area),0.922689780511673
+SGP,Singapore,2020,AG.LND.AGRI.ZS,Agricultural land (% of land area),0.920117105813467
+SGP,Singapore,2021,AG.LND.AGRI.ZS,Agricultural land (% of land area),0.919348098620978
+SGP,Singapore,2022,AG.LND.AGRI.ZS,Agricultural land (% of land area),0.913621262458472
+SGP,Singapore,2023,AG.LND.AGRI.ZS,Agricultural land (% of land area),0.912106135986733
+SGP,Singapore,2024,AG.LND.AGRI.ZS,Agricultural land (% of land area),0.910596026490066
+SGP,Singapore,2010,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",1.3194675
+SGP,Singapore,2011,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",1.125834
+SGP,Singapore,2012,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",0.9602005
+SGP,Singapore,2013,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",0.794567
+SGP,Singapore,2014,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",0.6510335
+SGP,Singapore,2015,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",0.5075
+SGP,Singapore,2016,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",0.5098
+SGP,Singapore,2017,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",0.4993
+SGP,Singapore,2018,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",0.4883
+SGP,Singapore,2019,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",0.493
+SGP,Singapore,2020,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",0.4987
+SGP,Singapore,2021,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",0.349115668
+SGP,Singapore,2022,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",0.199531336
+SGP,Singapore,2010,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,369.685555787646
+SGP,Singapore,2011,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,379.098631377539
+SGP,Singapore,2012,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,369.212965787665
+SGP,Singapore,2013,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,367.041780049019
+SGP,Singapore,2014,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,360.467319166237
+SGP,Singapore,2015,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,329.471398940262
+SGP,Singapore,2016,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,301.338866227561
+SGP,Singapore,2017,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,315.401433455385
+SGP,Singapore,2018,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,325.725809994853
+SGP,Singapore,2019,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,324.270088576625
+SGP,Singapore,2020,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,331.080556828077
+SGP,Singapore,2021,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,326.53325458764
+SGP,Singapore,2022,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,330.246917062891
+SGP,Singapore,2023,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,323.7012199919
+SGP,Singapore,2024,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,313.299377202408
+SGP,Singapore,2010,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.0361489888834213
+SGP,Singapore,2011,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.0346076007512354
+SGP,Singapore,2012,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.033272726533169
+SGP,Singapore,2013,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.0343752167938134
+SGP,Singapore,2014,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.0345408510735362
+SGP,Singapore,2015,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.0326135138026483
+SGP,Singapore,2016,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.0313442414603302
+SGP,Singapore,2017,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.030663495025163
+SGP,Singapore,2018,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.0300492085211082
+SGP,Singapore,2019,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.0321757269350714
+SGP,Singapore,2020,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.0326659815683798
+SGP,Singapore,2021,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.0301708500316389
+SGP,Singapore,2022,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.0256846779118822
+SGP,Singapore,2023,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.0288899443180196
+SGP,Singapore,2024,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.0263227508907606
+THA,Thailand,2010,AG.LND.AGRI.ZS,Agricultural land (% of land area),44.6749789582885
+THA,Thailand,2011,AG.LND.AGRI.ZS,Agricultural land (% of land area),44.6828084323436
+THA,Thailand,2012,AG.LND.AGRI.ZS,Agricultural land (% of land area),44.6906379063986
+THA,Thailand,2013,AG.LND.AGRI.ZS,Agricultural land (% of land area),44.6989958699524
+THA,Thailand,2014,AG.LND.AGRI.ZS,Agricultural land (% of land area),44.7102115915363
+THA,Thailand,2015,AG.LND.AGRI.ZS,Agricultural land (% of land area),44.7180410655914
+THA,Thailand,2016,AG.LND.AGRI.ZS,Agricultural land (% of land area),44.7102115915363
+THA,Thailand,2017,AG.LND.AGRI.ZS,Agricultural land (% of land area),44.7199984341052
+THA,Thailand,2018,AG.LND.AGRI.ZS,Agricultural land (% of land area),44.7174538550373
+THA,Thailand,2019,AG.LND.AGRI.ZS,Agricultural land (% of land area),45.019475816712
+THA,Thailand,2020,AG.LND.AGRI.ZS,Agricultural land (% of land area),45.5516843156061
+THA,Thailand,2021,AG.LND.AGRI.ZS,Agricultural land (% of land area),45.9981600735971
+THA,Thailand,2022,AG.LND.AGRI.ZS,Agricultural land (% of land area),45.9981600735971
+THA,Thailand,2023,AG.LND.AGRI.ZS,Agricultural land (% of land area),43.2666875452641
+THA,Thailand,2024,AG.LND.AGRI.ZS,Agricultural land (% of land area),43.2666914600012
+THA,Thailand,2010,AG.PRD.CREL.MT,Cereal production (metric tons),39940959.61
+THA,Thailand,2011,AG.PRD.CREL.MT,Cereal production (metric tons),41473129.68
+THA,Thailand,2012,AG.PRD.CREL.MT,Cereal production (metric tons),44807570.0
+THA,Thailand,2013,AG.PRD.CREL.MT,Cereal production (metric tons),43134420.0
+THA,Thailand,2014,AG.PRD.CREL.MT,Cereal production (metric tons),41177062.68
+THA,Thailand,2015,AG.PRD.CREL.MT,Cereal production (metric tons),34846952.99
+THA,Thailand,2016,AG.PRD.CREL.MT,Cereal production (metric tons),33166701.95
+THA,Thailand,2017,AG.PRD.CREL.MT,Cereal production (metric tons),36825406.77
+THA,Thailand,2018,AG.PRD.CREL.MT,Cereal production (metric tons),38651676.3
+THA,Thailand,2019,AG.PRD.CREL.MT,Cereal production (metric tons),36228761.85
+THA,Thailand,2020,AG.PRD.CREL.MT,Cereal production (metric tons),36458939.1
+THA,Thailand,2021,AG.PRD.CREL.MT,Cereal production (metric tons),37471282.69
+THA,Thailand,2022,AG.PRD.CREL.MT,Cereal production (metric tons),38093913.06
+THA,Thailand,2023,AG.PRD.CREL.MT,Cereal production (metric tons),38985513.53
+THA,Thailand,2024,AG.PRD.CREL.MT,Cereal production (metric tons),38639722.31
+THA,Thailand,2010,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",57.307
+THA,Thailand,2011,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",57.307
+THA,Thailand,2012,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",57.307
+THA,Thailand,2013,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",57.307
+THA,Thailand,2014,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",57.307
+THA,Thailand,2015,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",57.307
+THA,Thailand,2016,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",57.307
+THA,Thailand,2017,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",57.307
+THA,Thailand,2018,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",57.307
+THA,Thailand,2019,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",57.307
+THA,Thailand,2020,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",57.307
+THA,Thailand,2021,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",57.307
+THA,Thailand,2022,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",57.307
+THA,Thailand,2010,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,127.250522638251
+THA,Thailand,2011,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,139.675407224576
+THA,Thailand,2012,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,137.67493851024
+THA,Thailand,2013,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,132.462274174269
+THA,Thailand,2014,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,130.905495444398
+THA,Thailand,2015,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,124.839662152526
+THA,Thailand,2016,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,120.57522728913
+THA,Thailand,2017,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,120.891427433638
+THA,Thailand,2018,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,120.841864730984
+THA,Thailand,2019,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,109.689514715166
+THA,Thailand,2020,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,97.6624419371158
+THA,Thailand,2021,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,117.131472183199
+THA,Thailand,2022,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,132.813458288082
+THA,Thailand,2023,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,128.792359690165
+THA,Thailand,2024,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,135.724935837766
+THA,Thailand,2010,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",10.5221756369849
+THA,Thailand,2011,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",11.5917917775207
+THA,Thailand,2012,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",11.5041001535767
+THA,Thailand,2013,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",11.3222153379773
+THA,Thailand,2014,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",10.0889216151042
+THA,Thailand,2015,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",8.87272364786793
+THA,Thailand,2016,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",8.47807696285562
+THA,Thailand,2017,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",8.40641258665047
+THA,Thailand,2018,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",8.20181926195524
+THA,Thailand,2019,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",8.1285680400948
+THA,Thailand,2020,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",8.70610471503835
+THA,Thailand,2021,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",8.69539558179486
+THA,Thailand,2022,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",8.71589001488812
+THA,Thailand,2023,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",8.55515003809495
+THA,Thailand,2024,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",8.89226589240955
+USA,United States,2010,AG.LND.AGRI.ZS,Agricultural land (% of land area),45.7973144340153
+USA,United States,2011,AG.LND.AGRI.ZS,Agricultural land (% of land area),46.0184937392183
+USA,United States,2012,AG.LND.AGRI.ZS,Agricultural land (% of land area),46.2396741376257
+USA,United States,2013,AG.LND.AGRI.ZS,Agricultural land (% of land area),46.3330184904596
+USA,United States,2014,AG.LND.AGRI.ZS,Agricultural land (% of land area),46.4263639364979
+USA,United States,2015,AG.LND.AGRI.ZS,Agricultural land (% of land area),46.5197082893319
+USA,United States,2016,AG.LND.AGRI.ZS,Agricultural land (% of land area),46.6130537353702
+USA,United States,2017,AG.LND.AGRI.ZS,Agricultural land (% of land area),46.7063980882041
+USA,United States,2018,AG.LND.AGRI.ZS,Agricultural land (% of land area),46.5817148441856
+USA,United States,2019,AG.LND.AGRI.ZS,Agricultural land (% of land area),46.4570305069626
+USA,United States,2020,AG.LND.AGRI.ZS,Agricultural land (% of land area),46.3323472629441
+USA,United States,2021,AG.LND.AGRI.ZS,Agricultural land (% of land area),46.2076629257211
+USA,United States,2022,AG.LND.AGRI.ZS,Agricultural land (% of land area),46.0829796817026
+USA,United States,2023,AG.LND.AGRI.ZS,Agricultural land (% of land area),46.0829796817026
+USA,United States,2024,AG.LND.AGRI.ZS,Agricultural land (% of land area),46.0829796817026
+USA,United States,2010,AG.PRD.CREL.MT,Cereal production (metric tons),401126329.74
+USA,United States,2011,AG.PRD.CREL.MT,Cereal production (metric tons),385545255.77
+USA,United States,2012,AG.PRD.CREL.MT,Cereal production (metric tons),356210124.0
+USA,United States,2013,AG.PRD.CREL.MT,Cereal production (metric tons),434308450.0
+USA,United States,2014,AG.PRD.CREL.MT,Cereal production (metric tons),442849090.0
+USA,United States,2015,AG.PRD.CREL.MT,Cereal production (metric tons),431870370.62
+USA,United States,2016,AG.PRD.CREL.MT,Cereal production (metric tons),503466147.24
+USA,United States,2017,AG.PRD.CREL.MT,Cereal production (metric tons),440271775.02
+USA,United States,2018,AG.PRD.CREL.MT,Cereal production (metric tons),439710828.46
+USA,United States,2019,AG.PRD.CREL.MT,Cereal production (metric tons),420873692.84
+USA,United States,2020,AG.PRD.CREL.MT,Cereal production (metric tons),433259869.82
+USA,United States,2021,AG.PRD.CREL.MT,Cereal production (metric tons),450200713.33
+USA,United States,2022,AG.PRD.CREL.MT,Cereal production (metric tons),408899960.3
+USA,United States,2023,AG.PRD.CREL.MT,Cereal production (metric tons),462631157.55
+USA,United States,2024,AG.PRD.CREL.MT,Cereal production (metric tons),454987916.06
+USA,United States,2010,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",418.8
+USA,United States,2011,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",423.898
+USA,United States,2012,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",428.996
+USA,United States,2013,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",434.094
+USA,United States,2014,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",439.192
+USA,United States,2015,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",444.29
+USA,United States,2016,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",444.29
+USA,United States,2017,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",444.29
+USA,United States,2018,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",444.29
+USA,United States,2019,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",444.29
+USA,United States,2020,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",444.29
+USA,United States,2021,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",444.29
+USA,United States,2022,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",444.29
+USA,United States,2010,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,28.2198829408336
+USA,United States,2011,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,30.842478575914
+USA,United States,2012,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,30.681839575193
+USA,United States,2013,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,29.9413062848227
+USA,United States,2014,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,29.906569337428
+USA,United States,2015,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,27.6882139340768
+USA,United States,2016,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,26.4525977865465
+USA,United States,2017,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,27.1253382222874
+USA,United States,2018,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,27.4453591302618
+USA,United States,2019,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,26.2584806245428
+USA,United States,2020,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,23.1399437509149
+USA,United States,2021,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,25.2327260228331
+USA,United States,2022,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,26.9078981557739
+USA,United States,2023,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,24.9292981752847
+USA,United States,2024,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,25.0160172978284
+USA,United States,2010,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.02943688973818
+USA,United States,2011,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.20055880447177
+USA,United States,2012,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.14932980065793
+USA,United States,2013,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.31815003575389
+USA,United States,2014,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.16824049198161
+USA,United States,2015,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",1.02890409132672
+USA,United States,2016,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.937140437714336
+USA,United States,2017,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.940362226343714
+USA,United States,2018,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.898498260790929
+USA,United States,2019,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.83262086291437
+USA,United States,2020,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.934873150907349
+USA,United States,2021,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",0.942961672907101
+VNM,Vietnam,2010,AG.LND.AGRI.ZS,Agricultural land (% of land area),34.3450560815081
+VNM,Vietnam,2011,AG.LND.AGRI.ZS,Agricultural land (% of land area),34.3732843043373
+VNM,Vietnam,2012,AG.LND.AGRI.ZS,Agricultural land (% of land area),34.4331120376958
+VNM,Vietnam,2013,AG.LND.AGRI.ZS,Agricultural land (% of land area),34.6726704451298
+VNM,Vietnam,2014,AG.LND.AGRI.ZS,Agricultural land (% of land area),34.6991265943562
+VNM,Vietnam,2015,AG.LND.AGRI.ZS,Agricultural land (% of land area),38.7634300520449
+VNM,Vietnam,2016,AG.LND.AGRI.ZS,Agricultural land (% of land area),38.8407942894887
+VNM,Vietnam,2017,AG.LND.AGRI.ZS,Agricultural land (% of land area),38.8279627189274
+VNM,Vietnam,2018,AG.LND.AGRI.ZS,Agricultural land (% of land area),38.7344502263671
+VNM,Vietnam,2019,AG.LND.AGRI.ZS,Agricultural land (% of land area),39.5241027473527
+VNM,Vietnam,2020,AG.LND.AGRI.ZS,Agricultural land (% of land area),39.4347683207361
+VNM,Vietnam,2021,AG.LND.AGRI.ZS,Agricultural land (% of land area),39.3629817279192
+VNM,Vietnam,2022,AG.LND.AGRI.ZS,Agricultural land (% of land area),39.2911951351024
+VNM,Vietnam,2023,AG.LND.AGRI.ZS,Agricultural land (% of land area),39.2147503900405
+VNM,Vietnam,2024,AG.LND.AGRI.ZS,Agricultural land (% of land area),39.2147503900405
+VNM,Vietnam,2010,AG.PRD.CREL.MT,Cereal production (metric tons),44613831.2
+VNM,Vietnam,2011,AG.PRD.CREL.MT,Cereal production (metric tons),47235597.59
+VNM,Vietnam,2012,AG.PRD.CREL.MT,Cereal production (metric tons),48712657.95
+VNM,Vietnam,2013,AG.PRD.CREL.MT,Cereal production (metric tons),49231389.27
+VNM,Vietnam,2014,AG.PRD.CREL.MT,Cereal production (metric tons),50178378.0
+VNM,Vietnam,2015,AG.PRD.CREL.MT,Cereal production (metric tons),50379409.69
+VNM,Vietnam,2016,AG.PRD.CREL.MT,Cereal production (metric tons),48359869.77
+VNM,Vietnam,2017,AG.PRD.CREL.MT,Cereal production (metric tons),47877218.26
+VNM,Vietnam,2018,AG.PRD.CREL.MT,Cereal production (metric tons),48923673.32
+VNM,Vietnam,2019,AG.PRD.CREL.MT,Cereal production (metric tons),48231531.65
+VNM,Vietnam,2020,AG.PRD.CREL.MT,Cereal production (metric tons),47325157.08
+VNM,Vietnam,2021,AG.PRD.CREL.MT,Cereal production (metric tons),48301162.59
+VNM,Vietnam,2022,AG.PRD.CREL.MT,Cereal production (metric tons),47085607.1
+VNM,Vietnam,2023,AG.PRD.CREL.MT,Cereal production (metric tons),47935652.71
+VNM,Vietnam,2024,AG.PRD.CREL.MT,Cereal production (metric tons),47853478.0
+VNM,Vietnam,2010,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",81.862
+VNM,Vietnam,2011,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",81.862
+VNM,Vietnam,2012,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",81.862
+VNM,Vietnam,2013,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",81.862
+VNM,Vietnam,2014,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",81.862
+VNM,Vietnam,2015,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",81.862
+VNM,Vietnam,2016,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",81.862
+VNM,Vietnam,2017,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",81.862
+VNM,Vietnam,2018,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",81.862
+VNM,Vietnam,2019,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",81.862
+VNM,Vietnam,2020,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",81.862
+VNM,Vietnam,2021,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",81.862
+VNM,Vietnam,2022,ER.H2O.FWTL.K3,"Annual freshwater withdrawals, total (billion m3)",81.862
+VNM,Vietnam,2010,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,113.977687539714
+VNM,Vietnam,2011,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,125.260577940829
+VNM,Vietnam,2012,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,123.224116745985
+VNM,Vietnam,2013,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,130.846354866743
+VNM,Vietnam,2014,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,135.410521454361
+VNM,Vietnam,2015,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,144.914228195237
+VNM,Vietnam,2016,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,145.409507973118
+VNM,Vietnam,2017,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,160.98008365887
+VNM,Vietnam,2018,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,164.663936775893
+VNM,Vietnam,2019,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,164.704215031408
+VNM,Vietnam,2020,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,163.245862814935
+VNM,Vietnam,2021,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,186.675832836814
+VNM,Vietnam,2022,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,183.153619147836
+VNM,Vietnam,2023,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,164.995585455876
+VNM,Vietnam,2024,NE.TRD.GNFS.ZS,Trade (% of GDP) - openness indicator,173.885260216071
+VNM,Vietnam,2010,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",15.3750906872381
+VNM,Vietnam,2011,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",16.2591484896283
+VNM,Vietnam,2012,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",16.199507640393
+VNM,Vietnam,2013,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",15.2156122465127
+VNM,Vietnam,2014,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",14.8803489262722
+VNM,Vietnam,2015,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",14.4747261789547
+VNM,Vietnam,2016,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",13.8182553730866
+VNM,Vietnam,2017,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",12.9298794852362
+VNM,Vietnam,2018,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",12.3066684310428
+VNM,Vietnam,2019,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",11.7845285540387
+VNM,Vietnam,2020,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",12.6554035685556
+VNM,Vietnam,2021,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",12.6030904652745
+VNM,Vietnam,2022,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",11.8802998248459
+VNM,Vietnam,2023,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",11.8713266425191
+VNM,Vietnam,2024,NV.AGR.TOTL.ZS,"Agriculture, forestry & fishing (% of GDP)",12.0289339019357

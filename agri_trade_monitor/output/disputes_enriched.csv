@@ -1,0 +1,31 @@
+case,complainant,respondent,product,agreements,status,year,us_involved,resp_iso
+DS27 EC - Bananas III,USA (+ others),EU,Bananas,"GATT, AoA",Resolved,1995,True,EU
+DS29 Canada - Import Regime for Milk,USA/EU/NZ,Canada,Dairy,"AoA, GATT",Resolved,1997,True,CAN
+DS192 US - FSC Tax Exclusions (export subsidies),EU,USA,Agri exports,"SCM, AoA",Resolved,1999,True,USA
+DS267 US - Offset Act (Byrd Amendment),EU/AUS/Canada (+10),USA,Trade remedies on agri-linked goods,"AD, SCM, AoA",Repealed after authorized retaliation,2002,True,USA
+DS294 Egypt - Steel Rebar (agri infrastructure input),USA/Turkey,Egypt,Inputs,AD,Resolved,2002,True,
+DS108 Japan - Apples (phytosanitary),USA,Japan,Apples,SPS,Resolved,2003,True,JPN
+DS269 EC - Biotech Products (approval moratorium),USA/Canada/Argentina,EU,Biotech crops & feed,"SPS, TBT",Long-standing implementation issue,2003,True,EU
+DS369 EC - Chicken Cuts (classification),USA/Brazil,EU,Poultry cuts,GATT (tariff concessions),Settled 2010 quota deal,2004,True,EU
+DS364 Mexico - Corn Syrup (HFCS),USA,Mexico,High-fructose corn syrup,"AD, GATT",Resolved via NAFTA panel track,2005,True,MEX
+DS404 China - Auto Parts (agri machinery linkage),USA/EU,China,Inputs,"TRIMs, GATT",Resolved,2006,True,CHN
+DS397 Korea - Live Cattle (delayed import bans),USA/Australia,Korea,Live cattle/beef,GATT,Resolved,2007,True,KOR
+"DS384 US - Country of Origin Labeling (COOL), beef/pork",Canada/Mexico,USA,Beef & pork,"TBT, GATT",COOL repealed 2015 after retaliation authority,2008,True,USA
+DS414 China - Chicken Cuts (safeguard),USA,China,Poultry,"Accession Protocol, SG",Safeguard terminated 2009,2009,True,CHN
+DS567 Australia - Plain Packaging (tobacco growers as co-claimants),Honduras/Dominican Rep./Ukraine,Australia,Tobacco,TBT,Claims dismissed,2012,False,AUS
+DS484 Indonesia - Import Licensing for Animal & Plant Products,NZ/USA/EU,Indonesia,"Meat, horticulture inputs","GATT, SPS",Second compliance dispute ongoing,2013,True,IDN
+DS457 Indonesia - Import Restrictions on Horticultural Products,USA,Indonesia,"Fruit, vegetables","GATT, AoA",Implementation phase (2022 compliance panel found non-compliance),2013,True,IDN
+DS517 Philippines - Distinctive Pricing (tobacco-related excise),EU,Philippines,Tobacco,"GATT, NTBs",Implementation ongoing,2014,False,PHL
+DS511 Russia - Pigs & Pork Products (ASF regionalization),EU,Russia,Pork,SPS,Ruling vs Russia; non-compliance,2014,False,
+DS510 India - Additional Import Duties on Agri-linked IT goods,USA/EU/Japan,India,Inputs,GATT,Resolved,2016,True,IND
+DS693-track Korea - Avian Influenza Regionalization (US poultry),USA (bilateral + SPS Committee item),Korea,Poultry,SPS,Regionalization talks ongoing,2016,True,KOR
+DS647 Turkey - Retaliatory Duties on US Goods incl. agri-linked,USA,Turkey,Retaliation basket,DSU Art. 22,US authorized suspension; settled bilaterally,2018,True,
+DS689 Indonesia - EU Biodiesel Countervailing Duties (palm-based),Indonesia,EU,Palm oil / biodiesel,SCM,Panel ruled vs EU (2022); implementation contested,2018,False,EU
+DS603 India - Export Subsidies on Sugar,Australia/Brazil/Guatemala,India,Sugar,"AoA, SCM",Reports adopted (2021-22); India adjusted schemes,2019,False,IND
+"DS528 China - TRQ Administration for Wheat, Rice, Corn",USA/EU/Australia,China,Grains,"Accession Protocol, AoA",Panel ruled against CHN (2022); partial compliance,2019,True,CHN
+DS604 India - Export Subsidies on Sugars (Brazil complainant),Brazil,India,Sugar,"AoA, SCM",Consolidated with DS603 outcome,2019,False,IND
+"DS631 China - Domestic Support for Wheat, Rice, Maize",USA,China,Grains,AoA (AMS caps),Panel found MPS violations; AB appeal unresolved,2019,True,CHN
+DS658 Russia - Transit Restrictions on Ukrainian Agri Goods,Ukraine,Russia,"Grain, produce",GATT,Panel ruled vs Russia (2023),2019,False,
+"DS622 India - Agricultural & Related Import Bans (apples, dairy)",New Zealand/USA,India,"Apples, dairy","GATT, SPS",Under DSB surveillance,2021,True,IND
+DS591-track Mexico - Genetically Modified Corn Decree,USA,Mexico,Corn (biotech),SPS/TBT under USMCA Ch.31 + WTO mirror claims,USMCA panel requested 2023; active friction,2023,True,MEX
+EUDR friction (pre-dispute): Malaysia/Indonesia palm oil,Malaysia/Indonesia,EU,Palm oil,TBT/GATT concerns raised at committees,Political/negotiated track (no panel yet),2023,False,EU
